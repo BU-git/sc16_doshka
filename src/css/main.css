@@ -1,13 +1,122 @@
 * {
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
+/*	box-sizing: border-box;*/
 }
 body {
-	background: url('../../src/img/background.png');
-	background-position: center;
-	
+
+	background: url('../../src/img/background.png') no-repeat;
+	background-position: top;
+	font-family: Meiryo, arial, tahoma, verdana;
 }
 .wrap {
-
+	display: block;
+	margin: 0 auto 0;
+/*	background: url('../../src/img/display-box.png');*/
+	width: 1234px;
+	height: 761px;
+}
+.menu {
+	float: left;
+	margin-top: 164px;
+	width: 100%;
+	height: 80px;
+	opacity: .7;
+	border-top: 3px solid #fff;
+	border-bottom: 3px solid #fff;
+	background-color: #000
+}
+.container-nav {
+	margin: 0 auto;
+	width: 1234px;
+	height: 80px;
+}
+.container-nav ul {
+	list-style-type: none;
+}
+.container-nav a:hover {
+	opacity: .5;
+}
+.contacts {
+	float: left;
+	text-align: center;
+	height: 100%;
+	margin-left: 20px;
+	width: 200px;
+	height: 80px;
+}
+.contacts a {
+	display: inline-block;
+	width: 122px;
+	height: 16px;
+	margin-top: 32px;
+	background: url(../../src/img/main-sprite.png) no-repeat 0px -191px;
+}
+.shop {
+	float: left;
+	width: 220px;
+	height: 80px;
+}
+.shop a {
+	display: inline-block;
+	width: 186px;
+	height: 186px;
+	margin: -53px 0 0 17px;
+	background: url(../../src/img/main-sprite.png) no-repeat 0px 0px;
+}
+.workshop {
+	float: left;
+	width: 350px;
+	height: 80px;
+}
+.workshop a {
+	display: inline-block;
+	width: 234px;
+	height: 234px;
+	margin: -77px 0 0 58px;
+	background: url(../../src/img/main-sprite.png) no-repeat -185px 0px;
+}
+.doshkawoods {
+	float: left;
+	width: 220px;
+	height: 80px;
+}
+.doshkawoods a {
+	display: inline-block;
+	width: 186px;
+	height: 186px;
+	margin: -53px 0 0 17px;
+	background: url(../../src/img/main-sprite.png) no-repeat -422px 0px;
+}
+.social-networks {
+	float: left;
+	margin: 136px 0 0 882px;
+	width: 300px;
+	height: 68px;
+}
+.social-networks a {
+	float: left;
+	width: 48px;
+	height: 66px;
+}
+.social-networks a:hover {
+	opacity: .7;
+}
+.facebook {
+	background: url(../../src/img/main-sprite.png) no-repeat -608px 0px;
+}
+.vk {
+	background: url(../../src/img/main-sprite.png) no-repeat -656px 0px;
+}
+.youtube {
+	background: url(../../src/img/main-sprite.png) no-repeat -705px 0px;
+}
+.google {
+	background: url(../../src/img/main-sprite.png) no-repeat -754px 0px;
+}
+.foto {
+	background: url(../../src/img/main-sprite.png) no-repeat -803px 0px;
+}
+.twitter {
+	background: url(../../src/img/main-sprite.png) no-repeat -852px 0px;
 }
