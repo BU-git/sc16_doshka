@@ -3,13 +3,18 @@ body {
 	background: url("../../src/img/doshka.jpg") no-repeat;
 	width: 1675px;
 }
+
 .container{
 	width: 100%;
 	min-height: 74px;
 	background: #1d120b;
 	opacity: 0.7;
-	border: #d9cbb9 4px solid;
+	border-top: #d9cbb9 4px solid;
+	border-bottom: #d9cbb9 4px solid;
 	margin-top: 150px;
+}
+.wrapper {
+	margin: 0 auto;
 }
 .circle {
 	background: url(../../src/img/studio-sprite.png) no-repeat -76px -1px;
