@@ -3,37 +3,40 @@ body {
 	background: url("../../src/img/doshka.jpg") no-repeat;
 	background-position: top;
 }
+.wrap {
+	width: 1234px;
+	margin: 0 auto;
+}
 .pliers {
 	background: url(../../src/img/sprite-studio.png) no-repeat -595px -1px;
 	height: 417px;
 	width: 448px;
 	float: left;
-	margin-top: -420px;
-    margin-left: 220px;
+	margin-top: -416px;
+    margin-left: 79px;
 }
 .paper {
 	background: url(../../src/img/sprite-studio.png) no-repeat -5px -373px;
 	height: 434px;
 	width: 521px;
 	float: right;
-	margin-top: -517px;
-	margin-right: 65px;
+	margin-top: -518px;
+	margin-right: -71px;
 }
 .container{
-	width: 100%;
 	height: 74px;
 	background: #1d120b;
-	margin: 150px 0 110px;
+	margin: 148px 0 110px;
 	opacity: 0.7;
 	border-top: #d9cbb9 4px solid;
 	border-bottom: #d9cbb9 4px solid;
 }
 .circle {
-	background: url(../../src/img/sprite-studio.png) no-repeat -1px -1px;
-	width: 245px;
+	background: url(../../src/img/sprite-studio.png) no-repeat 0px -1px;
+	width: 247px;
 	height: 245px;
 	margin: 0 auto;
-    margin-top: -81px;
+    margin-top: -85px;
 	transition: all 0.2s ease-out;
 }
 .circle:hover {
@@ -47,20 +50,19 @@ body {
 	width: 62px;
 	height: 74px;
 	float: right;
-	margin-top: -161px;
-	margin-right: 287px;
-}
-.main {
-	margin: 0 auto;
-	width: 1234px;
-	margin-top: 29px;
+	margin-top: -158px;
+	margin-right: 153px;
 }
 .block1 {
+	width: 1008px;
 	min-height: 280px;
 	background: #1d120b;
 	opacity: 0.7;
 	border: #d9cbb9 4px solid;
 	padding: 17px;
+	margin: 0 auto;
+	border-radius: 3px;
+}
 }
 .block1 img {
 	float: left;
@@ -70,30 +72,33 @@ body {
 	color: #fefefe;
 }
 .block1 h2 {
-	height: 26px;
-	width: 290px;
-	padding-top: 8px;
-	margin: 10px 0 0 530px;
+	height: 25px;
+	width: 282px;
+	padding-top: 5px;
+	margin: 18px 0 0 510px;
 	border: #fefefe 4px solid;
 	text-transform: uppercase;
 	text-align: center;
-	font-size: 18px;
+	font-size: 20px;
+	border-radius: 3px;
 }
 .block1 p {
 	font-size: 14px;
-	line-height: 19px;
+	line-height: 16px;
 	margin: 12px 0px 0px 312px;
 }
 .block1 a {
 	display: block;
-	width: 118px;
+	width: 116px;
 	height: 20px;
 	border: #fefefe 4px solid;
+	font-family: Arial;
 	text-transform: uppercase;
 	text-align: center;
-	font-size: 18px;
+	font-size: 20px;
 	font-weight: bold;
 	color: #fefefe;
-	margin: 0px 0px 11px 852px;
+	margin: -4px 0px 0px 847px;
 	text-decoration: none;
+	border-radius: 3px;
 }
