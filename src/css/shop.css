@@ -95,6 +95,10 @@ body {
     margin-top: 10px;
 }
 
+.wrap>.categories>.category:hover, .wrap>.categories>.category:hover>p {
+    transition: all .5s ease-out;
+}
+
 .wrap>.categories>.category:hover {
     background: #404040;
 }
