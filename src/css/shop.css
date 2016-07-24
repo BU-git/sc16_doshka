@@ -4,13 +4,21 @@
 }
 
 body {
-    background: url("../img/shop-background.png");
-    background-position: top -18em left -244em;
-    font-family: Arial;
+    background: url("../img/shop-background.png") no-repeat;
+    background-position: top;
+    font-family: Meiryo, Arial, Tahoma, Verdana;
 }
 
-.shop-header {
-    margin-top: 164px;
+.wrap {
+    display: block;
+    margin: 0 auto 0;
+    width: 1234px;
+    height: 761px;
+}
+
+.menu {
+    float: left;
+    margin-top: 150px;
     width: 100%;
     height: 80px;
     opacity: .7;
@@ -19,73 +27,82 @@ body {
     background-color: #000;
 }
 
-.shop-header>.shop-dir-logo {
-    display: block;
-    margin-top: -4em;
-    margin-left: 11em;
-    width: 200px;
-    height: 200px;
-    background: url("../img/shop-sprite.png") 0 0;
+.menu>.container-nav {
+    margin: 0 auto;
+    width: 1234px;
+    height: 80px;
 }
 
-.shop-header>a>.shop-logo {
-    display: block;
-    position: absolute;
-    margin-left: 24em;
-    margin-top: -14em;
-    width: 103px;
-    height: 82px;
-    background: url("../img/shop-sprite.png") -222px -83px;
+.menu>.container-nav>ul {
+    list-style-type: none;
 }
 
-.shop-header>a:hover>.shop-logo, .shop-header>a:hover>.shop-return {
-    opacity: .7;
+.menu>.container-nav>ul>li>a:hover {
+    transform: scale(1.1);
 }
 
-.shop-header>a>.shop-return {
-    display: block;
-    position: absolute;
-    margin-left: 65em;
-    margin-top: -8em;
+.menu>.container-nav>ul>li>a:active {
+    transform: scale(1);
+}
+
+.menu>.container-nav>ul>.shop {
+    float: left;
+    width: 220px;
+    height: 80px;
+}
+
+.menu>.container-nav>ul>.shop>a {
+    display: inline-block;
+    width: 186px;
+    height: 186px;
+    margin: -53px 0 0 100px;
+    background: url("../img/main-sprite.png") 0 0;
+}
+
+.menu>.container-nav>ul>.arrow {
+    float: left;
+    width: 220px;
+    height: 80px;
+}
+.menu>.container-nav>ul>.arrow>a {
+    display: inline-block;
     width: 65px;
     height: 65px;
-    background: url("../img/shop-sprite.png") -224px 0;
+    margin: 6px 0 0 750px;
+    background: url("../img/shop-sprite.png") no-repeat -224px 0;
 }
 
-
-.wrap {
-    display: block;
-    width: 1234px;
-    height: 761px;
+.wrap>.categories {
+    float: left;
+    margin: 60px 0 0 250px;
+    width: 700px;
 }
 
-.wrap>.shop-categories {
-    width: 52em;
-    margin-top: 7em;
-    margin-left: 15em;
-}
-
-.wrap>.shop-categories>.shop-category {
+.wrap>.categories>.category {
     display: inline-block;
-    width: 15em;
-    height: 15em;
-    margin: 1em;
+    width: 180px;
+    height: 180px;
+    margin: 10px;
+    border: solid 2px white;
     background: white;
-    border: solid 0.1em white;
 }
 
-.wrap>.shop-categories>.shop-category:hover {
-    background: #3a3a3a;
-}
-
-.wrap>.shop-categories>.shop-category:active>p{
-    color: white;
-}
-
-.wrap>.shop-categories>.shop-category>p {
-    margin-top: 0.55em;
-    text-transform: uppercase;
+.wrap>.categories>.category>p {
     text-align: center;
+    text-transform: uppercase;
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.wrap>.categories>.category:hover {
+    background: #404040;
+}
+
+.wrap>.categories>.category:active {
+    transform: scale(1.1);
+}
+
+.wrap>.categories>.category:hover>p {
+    color: white;
 }
