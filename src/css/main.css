@@ -63,17 +63,11 @@ body {
 .contacts-info p:last-child {
 	padding-top: 17px;
 }
-<<<<<<< HEAD
-.contacts:hover .contacts-info {
-	display: block;
-}
-=======
 
->>>>>>> 91f71b78075a6ace471b89df5bb7d79453e2fa5f
 .contacts {
-	position: relative;
 	float: left;
 	text-align: center;
+	height: 100%;
 	margin-left: 20px;
 	width: 200px;
 	height: 80px;

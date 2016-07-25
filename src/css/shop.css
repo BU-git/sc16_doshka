@@ -37,11 +37,11 @@ body {
     list-style-type: none;
 }
 
-.menu>.container-nav>ul>li>a:hover {
+.menu>.container-nav>ul>.arrow>a:hover {
     transform: scale(1.1);
 }
 
-.menu>.container-nav>ul>li>a:active {
+.menu>.container-nav>ul>.arrow>a:active {
     transform: scale(1);
 }
 
@@ -51,7 +51,7 @@ body {
     height: 80px;
 }
 
-.menu>.container-nav>ul>.shop>a {
+.menu>.container-nav>ul>.shop>a, .menu>.container-nav>ul>.shop>i {
     display: inline-block;
     width: 186px;
     height: 186px;
