@@ -63,7 +63,7 @@ body {
 .contacts-info p:last-child {
 	padding-top: 17px;
 }
-.menu .container-nav:hover .contacts-info  {
+.contacts:hover .contacts-info  {
 	display: block;
 }
 
