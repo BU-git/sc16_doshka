@@ -1,0 +1,28 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.wrap {
+	width: 320px;
+	height: 480px;
+	margin: 0 auto;
+	padding-top: 10px;
+	background: url(../../src-mobile/img/background.png) no-repeat;
+}
+.contact {
+	display: inline-block;
+	width: 320px;
+	height: 35px;
+	border-top: 3px solid #fff;
+	border-bottom: 3px solid #fff;
+	background-color: #000;
+	opacity: .7;
+	font-size: 14px;
+	text-align: center;
+}
+.contact a {
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+}
