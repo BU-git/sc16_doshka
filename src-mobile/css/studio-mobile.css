@@ -1,6 +1,6 @@
 body {
 	margin: 0;
-	background: url("../../src-mobile/img/mob-bg-studio.jpg") no-repeat;
+	background: url(../../src-mobile/img/mob-bg-studio.jpg) no-repeat;
 	background-position: top;
 }
 .wrap {
@@ -32,7 +32,7 @@ body {
 }
 
 .block1 {
-	width: 187px; /*58%; */
+	width: 187px; /*58%;*/
 	height: 248px;
 	background: #1d120b;
 	opacity: 0.7;
