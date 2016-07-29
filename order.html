@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="src/css/order.css">
+	<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+	<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.min.js"></script>
+	<script src="src/js/validate.js" defer></script>
+</head>
+<body>
+	<div class="wrap">
+		<a href="index.html" class="logo"></a>
+		<div class="order"></div>
+		<div class="window">
+			<div class="info">
+				<form class="client-info">
+					<p>Платежная информация</p>
+					<p><input class="info-form" name="firstName" type="text" placeholder="Имя Фамилия*"></p>
+					<span id="errmsg"></span>
+					<p><input class="info-form" name="tel" type="text" placeholder="Тел*"></p>
+					<span id="errmsg"></span>
+					<p><input class="info-form" name="email" type="text" placeholder="MAIL*"></p>
+					<span id="errmsg"></span>
+					<p><input class="info-form" name="city" type="text" placeholder="Город*"></p>
+					<span id="errmsg"></span>
+					<p>Примечание к заказу</p>
+					<textarea></textarea>
+				</form>
+			</div>
+			<div class="order-list">
+				<p>Ваш заказ</p>
+				<ul>
+					<li>Кахон — DOSHKA VP-100 <input id="counter" type="number" min="1" value="1" onclick="calculateResult()"><span id="price"> 5290.00</span> грн</li>
+				</ul>
+			</div>
+			<div class="submit-sum">
+				<p id="totalSum"></p>
+				<button class="button">Подтвердить<br>заказ</button>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
