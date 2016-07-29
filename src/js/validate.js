@@ -41,8 +41,15 @@ $(document).ready(function(){
     });
 });
 
+price.innerHTML = numberWithCommas(price.innerHTML);
 calculateResult();
 
 function calculateResult() {
-    totalSum.innerHTML = 'ИТОГО ' + (price.innerHTML * counter.value) + ' грн';    
+    var priceTemp = price.innerHTML.replace(',', '');
+    totalSum.innerHTML = 'ИТОГО ' + numberWithCommas(priceTemp * counter.value) + ' грн'; 
+}
+
+function numberWithCommas(x) {
+    x = parseFloat(Math.round(x * 100) / 100).toFixed(2);
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
