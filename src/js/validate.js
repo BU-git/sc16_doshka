@@ -45,6 +45,9 @@ price.innerHTML = numberWithCommas(price.innerHTML);
 calculateResult();
 
 function calculateResult() {
+    if (counter.value <= 0) {
+        counter.value = 1;
+    }
     var priceTemp = price.innerHTML.replace(',', '');
     totalSum.innerHTML = 'ИТОГО ' + numberWithCommas(priceTemp * counter.value) + ' грн'; 
 }
