@@ -44,5 +44,5 @@ $(document).ready(function(){
 calculateResult();
 
 function calculateResult() {
-    totalSum.innerHTML = price.innerHTML * counter.value + ' грн';    
+    totalSum.innerHTML = 'ИТОГО ' + (price.innerHTML * counter.value) + ' грн';    
 }
