@@ -11,7 +11,8 @@ $(document).ready(function(){
                 maxlength: 13,
             },
             email:{
-              required: true
+              required: true,
+              email: true,
             },
             city:{
                 required: true,
@@ -20,21 +21,28 @@ $(document).ready(function(){
         },
         messages:{
             firstName:{
-                required: "Это поле обязательно для заполнения",
-                minlength: "Имя должно быть задано минимум 1 символ",
+                required: "<br>Это поле обязательно для заполнения",
+                minlength: "<br>Имя должно быть задано минимум 1 символ",
             },
             tel:{
-                required: "Это поле обязательно для заполнения",
-                minlength: "Номер должен быть задан полностью +380123456789",
-                maxlength: "Номер должен быть задан полностью +380123456789",
+                required: "<br>Это поле обязательно для заполнения",
+                minlength: "<br>Номер должен быть задан форматом +380",
+                maxlength: "<br>Номер должен быть задан форматом +380",
             },
             email:{
-                required: "Введите верный email",
+                required: "<br>Это поле обязательно для заполнения",
+                email: "<br>Введите верный email",
             },
             city:{
-                required: "Это поле обязательно для заполнения",
-                minlength: "Город должен быть задан минимум 2 символами",
+                required: "<br>Это поле обязательно для заполнения",
+                minlength: "<br>Город должен быть задан минимум 2 символами",
             },
         }
     });
 });
+
+calculateResult();
+
+function calculateResult() {
+    totalSum.innerHTML = price.innerHTML * counter.value + ' грн';    
+}

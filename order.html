@@ -6,7 +6,7 @@
 	<link rel="stylesheet" href="src/css/order.css">
 	<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
 	<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.min.js"></script>
-	<script src="src/js/validate.js" deffer></script>
+	<script src="src/js/validate.js" defer></script>
 </head>
 <body>
 	<div class="wrap">
@@ -20,7 +20,7 @@
 					<span id="errmsg"></span>
 					<p><input class="info-form" name="tel" type="text" placeholder="Тел*"></p>
 					<span id="errmsg"></span>
-					<p><input class="info-form" name="email" type="email" placeholder="MAIL*"></p>
+					<p><input class="info-form" name="email" type="text" placeholder="MAIL*"></p>
 					<span id="errmsg"></span>
 					<p><input class="info-form" name="city" type="text" placeholder="Город*"></p>
 					<span id="errmsg"></span>
@@ -31,11 +31,11 @@
 			<div class="order-list">
 				<p>Ваш заказ</p>
 				<ul>
-					<li>Кахон — DOSHKA VP-100 <input class="counter" type="number" value="1"> 5,290.00 грн</li>
+					<li>Кахон — DOSHKA VP-100 <input id="counter" type="number" min="1" value="1" onclick="calculateResult()"><span id="price">5290</span> грн</li>
 				</ul>
 			</div>
 			<div class="submit-sum">
-				<p>ИТОГО 5,290.00 грн</p>
+				<p id="totalSum"></p>
 				<button class="button">Подтвердить<br>заказ</button>
 			</div>
 		</div>
