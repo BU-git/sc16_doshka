@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url("../img/shop-background.png") no-repeat;
+    background-position: top;
+    font-family: Meiryo, Arial, Tahoma, Verdana;
+}
+
+.wrap {
+    display: block;
+    margin: 0 auto 0;
+    width: 1234px;
+    height: 761px;
+}
+
+.menu {
+    float: left;
+    margin-top: 164px;
+    width: 100%;
+    height: 80px;
+    opacity: .7;
+    border-top: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+    background-color: #000;
+}
+
+.menu>.container-nav {
+    margin: 0 auto;
+    width: 1234px;
+    height: 80px;
+}
+
+.menu>.container-nav>ul {
+    list-style-type: none;
+}
+
+.menu>.container-nav>ul>.arrow>a:hover {
+    transform: scale(1.1);
+}
+
+.menu>.container-nav>ul>.arrow>a:active {
+    transform: scale(1);
+}
+
+.menu>.container-nav>ul>.shop {
+    float: left;
+    width: 220px;
+    height: 80px;
+}
+
+.menu>.container-nav>ul>.shop>a, .menu>.container-nav>ul>.shop>i {
+    display: inline-block;
+    width: 186px;
+    height: 186px;
+    margin: -53px 0 0 100px;
+    background: url("../img/main-sprite.png") 0 0;
+}
+
+.menu>.container-nav>ul>.arrow {
+    float: left;
+    width: 220px;
+    height: 80px;
+}
+.menu>.container-nav>ul>.arrow>a {
+    display: inline-block;
+    width: 65px;
+    height: 65px;
+    margin: 6px 0 0 750px;
+    background: url("../img/shop-sprite.png") no-repeat -224px 0;
+}
+
+.wrap>.categories {
+    float: left;
+    margin: 60px 0 0 250px;
+    width: 700px;
+}
+
+.wrap>.categories>.category {
+    display: inline-block;
+    width: 180px;
+    height: 180px;
+    margin: 10px;
+    border: solid 2px white;
+    background: white;
+    text-align: center;
+}
+
+.wrap>.categories>.category>p {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 24px;
+    margin-top: 78px;
+}
+
+.wrap>.categories>.category:hover, .wrap>.categories>.category:hover>p {
+    transition: all .5s ease-out;
+}
+
+.wrap>.categories>.category:hover {
+    background: #404040;
+}
+
+.wrap>.categories>.category:active {
+    transform: scale(1.1);
+}
+
+.wrap>.categories>.category:hover>p {
+    color: white;
+}
