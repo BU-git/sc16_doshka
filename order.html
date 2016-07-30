@@ -5,6 +5,7 @@
 	<title>Document</title>
 	<link rel="stylesheet" href="src/css/order.css">
 	<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+	<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 	<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.min.js"></script>
 	<script src="src/js/validate.js" defer></script>
 </head>
@@ -16,13 +17,13 @@
 			<div class="info">
 				<form class="client-info">
 					<p>Платежная информация</p>
-					<p><input class="info-form" name="firstName" type="text" placeholder="Имя Фамилия*"></p>
+					<p><input class="info-form" name="firstName" id="firstName" type="text" placeholder="Имя Фамилия*"></p>
 					<span id="errmsg"></span>
-					<p><input class="info-form" name="tel" type="text" placeholder="Тел*"></p>
+					<p><input class="info-form" name="tel" id="tel" type="text" placeholder="Тел*"></p>
 					<span id="errmsg"></span>
-					<p><input class="info-form" name="email" type="text" placeholder="MAIL*"></p>
+					<p><input class="info-form" name="email" id="email" type="text" placeholder="MAIL*"></p>
 					<span id="errmsg"></span>
-					<p><input class="info-form" name="city" type="text" placeholder="Город*"></p>
+					<p><input class="info-form" name="city" id="city" type="text" placeholder="Город*"></p>
 					<span id="errmsg"></span>
 					<p>Примечание к заказу</p>
 					<textarea></textarea>
@@ -36,7 +37,7 @@
 			</div>
 			<div class="submit-sum">
 				<p id="totalSum"></p>
-				<button class="button">Подтвердить<br>заказ</button>
+				<button class="button" onclick="sendInfo()">Подтвердить<br>заказ</button>
 			</div>
 		</div>
 	</div>
