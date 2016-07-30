@@ -57,3 +57,9 @@ function numberWithCommas(x) {
     x = parseFloat(Math.round(x * 100) / 100).toFixed(2);
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
+
+function sendInfo() {
+    var info = firstName.value + " " + tel.value + " " + email.value + " " + city.value + " " + totalSum.innerHTML.toString();
+    emailjs.init("user_8DoEkLvFtuq0IWPUxSCd5");
+    emailjs.send("gmail","template_wcvY3Sye",{message_html: info});
+}
