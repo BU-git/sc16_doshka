@@ -3,7 +3,6 @@ $(document).ready(function(){
         rules:{
             firstName:{
                 required: true,
-                minlength: 1,
             },
             tel:{
                 required: true,
@@ -16,18 +15,16 @@ $(document).ready(function(){
             },
             city:{
                 required: true,
-                minlength: 2,
             },
         },
         messages:{
             firstName:{
-                required: "<br>Это поле обязательно для заполнения",
-                minlength: "<br>Имя должно быть задано минимум 1 символ",
+                required: '<br>Это поле обязательно для заполнения',
             },
             tel:{
                 required: "<br>Это поле обязательно для заполнения",
-                minlength: "<br>Номер должен быть задан форматом +380",
-                maxlength: "<br>Номер должен быть задан форматом +380",
+                minlength: "<br>Укажите номер в формате +380",
+                maxlength: "<br>Укажите номер в формате +380",
             },
             email:{
                 required: "<br>Это поле обязательно для заполнения",
@@ -35,9 +32,8 @@ $(document).ready(function(){
             },
             city:{
                 required: "<br>Это поле обязательно для заполнения",
-                minlength: "<br>Город должен быть задан минимум 2 символами",
             },
-        }
+        },
     });
 });
 
@@ -48,7 +44,7 @@ function calculateResult() {
     if (counter.value <= 0) {
         counter.value = 1;
     }
-    counter.value = counter.value.replace('.', '');
+    counter.value = parseInt(counter.value);
     var priceTemp = price.innerHTML.replace(',', '');
     totalSum.innerHTML = 'ИТОГО ' + numberWithCommas(priceTemp * counter.value) + ' грн'; 
 }
@@ -59,7 +55,46 @@ function numberWithCommas(x) {
 }
 
 function sendInfo() {
-    var info = firstName.value + " " + tel.value + " " + email.value + " " + city.value + " " + totalSum.innerHTML.toString();
-    emailjs.init("user_8DoEkLvFtuq0IWPUxSCd5");
-    emailjs.send("gmail","template_wcvY3Sye",{message_html: info});
+    var form = $('.client-info');
+
+    if (form.valid() == true) {
+        var clientInfo = {
+            'cFirstName' : ('Имя: ' + firstName.value),
+            'cTel' : ('Тел: ' + tel.value),
+            'cEmail' : ('email: ' + email.value),
+            'cCity' : ('Город: ' + city.value),
+            'cComment' : ('Примечание к заказу: ' + comment.value),
+        }
+
+        var itemInfo = {
+            'iCategory' : ('Категория: ' + category.innerHTML),
+            'iItem' : ('Товар: ' + item.innerHTML),
+            'iQuantity' : ('Количество: ' + counter.value),
+            'iPrice' : ('Цена за штуку: ' + price.innerHTML),
+        }
+
+        var txt = "Заказчик:\n";
+
+        for (i in clientInfo) {
+            txt += "\t" + clientInfo[i] + "\n";
+        }
+
+        txt += "Товар:\n";
+
+        for (i in itemInfo) {
+            txt += "\t" + itemInfo[i] + "\n";
+        }
+
+        txt += totalSum.innerHTML;
+
+        $('.info').css('visibility', 'hidden');
+        $('.order-list').css('visibility', 'hidden');
+        $('.submit-sum').css('visibility', 'hidden');
+        $('.done').css('visibility', 'visible');
+        alert(txt);
+        emailjs.init("user_8DoEkLvFtuq0IWPUxSCd5");
+        emailjs.send("gmail","template_wcvY3Sye",{message_html: txt});
+    }
+    
+
 }

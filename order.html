@@ -11,33 +11,42 @@
 </head>
 <body>
 	<div class="wrap">
-		<a href="index.html" class="logo"></a>
+		<div class="logo-wrap">
+			<a href="index.html" class="logo"></a>
+			<ul>
+				<a href="index.html"><li>ГЛАВНАЯ</li></a>
+				<a href="studio.html"><li>МАСТЕРСКАЯ</li></a>
+				<a href="shop.html"><li>МАГАЗИН</li></a>
+			</ul>
+		</div>
 		<div class="order"></div>
 		<div class="window">
 			<div class="info">
 				<form class="client-info">
 					<p>Платежная информация</p>
 					<p><input class="info-form" name="firstName" id="firstName" type="text" placeholder="Имя Фамилия*"></p>
-					<span id="errmsg"></span>
 					<p><input class="info-form" name="tel" id="tel" type="text" placeholder="Тел*"></p>
-					<span id="errmsg"></span>
-					<p><input class="info-form" name="email" id="email" type="text" placeholder="MAIL*"></p>
-					<span id="errmsg"></span>
+					<p><input class="info-form" name="email" id="email" type="email" placeholder="MAIL*"></p>
 					<p><input class="info-form" name="city" id="city" type="text" placeholder="Город*"></p>
-					<span id="errmsg"></span>
 					<p>Примечание к заказу</p>
-					<textarea></textarea>
+					<textarea id="comment" maxlength="200"></textarea>
 				</form>
 			</div>
+			<div class="done"></div>
 			<div class="order-list">
 				<p>Ваш заказ</p>
 				<ul>
-					<li>Кахон — DOSHKA VP-100 <input id="counter" type="number" min="1" value="1" onclick="calculateResult()"><span id="price"> 5290.00</span> грн</li>
+					<li>
+						<span id="category">Кахон</span> — 
+						<span id ="item">DOSHKA VP-100</span>
+						<input id="counter" type="number" min="1" value="1" onclick="calculateResult()">
+						<span id="price"> 5290.00</span> грн
+					</li>
 				</ul>
 			</div>
 			<div class="submit-sum">
 				<p id="totalSum"></p>
-				<button class="button" onclick="sendInfo()">Подтвердить<br>заказ</button>
+				<button class="submit" onclick="sendInfo()">Подтвердить<br/>заказ</button>
 			</div>
 		</div>
 	</div>
