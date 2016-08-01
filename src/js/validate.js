@@ -1,5 +1,29 @@
-$(document).ready(function(){
-    $(".client-info").validate({
+$(document).ready(function () {
+
+    // initialize tooltipster on text input elements
+    $('.client-info input[type="text"]').tooltipster({
+        trigger: 'custom',
+        onlyOne: false,
+        position: 'right'
+    });
+
+    // initialize validate plugin on the form
+    $('.client-info').validate({
+        errorPlacement: function (error, element) {
+                        
+            var lastError = $(element).data('lastError'),
+                newError = $(error).text();
+            
+            $(element).data('lastError', newError);
+                            
+            if(newError !== '' && newError !== lastError){
+                $(element).tooltipster('content', newError);
+                $(element).tooltipster('show');
+            }
+        },
+        success: function (label, element) {
+            $(element).tooltipster('hide');
+        },
         rules:{
             firstName:{
                 required: true,
@@ -19,22 +43,23 @@ $(document).ready(function(){
         },
         messages:{
             firstName:{
-                required: '<br>Это поле обязательно для заполнения',
+                required: 'Это поле обязательно для заполнения',
             },
             tel:{
-                required: "<br>Это поле обязательно для заполнения",
-                minlength: "<br>Укажите номер в формате +380",
-                maxlength: "<br>Укажите номер в формате +380",
+                required: "Это поле обязательно для заполнения",
+                minlength: "Укажите номер в формате +380XXXXXXXXX",
+                maxlength: "Укажите номер в формате +380XXXXXXXXX",
             },
             email:{
-                required: "<br>Это поле обязательно для заполнения",
-                email: "<br>Введите верный email",
+                required: "Это поле обязательно для заполнения",
+                email: "Введите верный email",
             },
             city:{
-                required: "<br>Это поле обязательно для заполнения",
+                required: "Это поле обязательно для заполнения",
             },
         },
     });
+
 });
 
 price.innerHTML = numberWithCommas(price.innerHTML);
