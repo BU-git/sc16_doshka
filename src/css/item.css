@@ -1,0 +1,153 @@
+body {
+	background: url(../../src/img/category-background.jpg) round;
+}
+.wrap {
+	margin: 0;
+	background: url(../../src/img/kahon-bg.jpg) no-repeat;
+	width: 900px;
+	height: 900px;
+}
+.left {
+	float: left;
+	width: 270px;
+	padding: 45px 25px 25px 55px;
+	margin-right: 10px;
+	border-right: 1px solid #fff;
+
+}
+.kahon1 {
+	background: url(../../src/img/sprite-item.png) no-repeat 3px -63px;
+	width: 195px;
+	height: 260px;
+	float: left;
+	padding-bottom: 20px;
+}
+.kahon2 {
+	background: url(../../src/img/sprite-item.png) no-repeat -234px -55px;
+	width: 69px;
+	height: 109px;
+	float: right;
+}
+.kahon3 {
+	background: url(../../src/img/sprite-item.png) no-repeat -248px -190px;
+	width: 65px;
+	height: 110px;
+	float: right;
+}
+.lineleft { 
+	color: #fff;
+	margin: 0;
+	width: 338px;
+	margin-left: -45px;
+}
+iframe {
+	width: 275px;
+	height: 200px;
+	margin-top: 32px;
+
+}
+.right {
+	float: right;
+	width: 508px;
+	padding: 32px 30px 16px 0px;
+}
+
+h1 {
+	margin: 0;
+	font-size: 25px;
+	font-family: Arial;
+	color: #fff;
+	text-align: center;
+}
+h1 span {
+	text-transform: uppercase;
+}
+.lineright {
+	width: 498px;
+	color: #fff;
+}
+.itemdescr ul {
+	padding-left: 30px;
+}
+li {
+	font-size: 14px;
+	font-family: Arial;
+	color: #fff;
+	list-style-type: none;
+	line-height: 18px;
+}
+ul .title {
+    padding-bottom: 20px;
+}
+.cost {
+	font-size: 27px;
+	font-family: Arial;
+	color: #fff;
+	text-align: right;
+	margin-right: 20px 42px 20px 0px;
+}
+audio {
+	width: 360px;
+	height: 60px
+}
+
+.social {
+	display: flex;
+    align-items: center;
+    margin-top: 45px;
+    margin-bottom: 28px;
+}
+.social span {
+	font-size: 17px;
+	font-family: Arial;
+	color: #fff;
+	margin-left: 50px;
+    margin-right: 20px;
+}
+.facebook,
+.vk,
+.youtube,
+.gplus {
+	width: 35px;
+	height: 35px;
+	display: inline-block;
+	font-size: 0;
+}
+.facebook {
+	background: url(../../src/img/sprite-item.png) no-repeat -180px -7px;
+}
+.vk {
+	background: url(../../src/img/sprite-item.png) no-repeat -228px -7px;
+}
+.youtube {
+	background: url(../../src/img/sprite-item.png) no-repeat -274px -7px;
+}
+.gplus {
+	background: url(../../src/img/sprite-item.png) no-repeat -326px -7px;
+}
+.basketadd, 
+.buy {
+	vertical-align: top;	
+	border: #fff 2px solid;
+	font-family: Arial;
+	color: #fff;
+	text-transform: uppercase;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	vertical-align: top;
+}
+.basketadd {
+	width: 230px;
+	height: 18px;
+	font-size: 17px;
+	margin-left: 50px;
+	margin-right: 20px;
+	padding: 15px 0;
+}
+.buy {
+	width: 188px;
+	height: 30px;
+	font-size: 27px;
+	padding: 9px 0;
+}
