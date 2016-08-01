@@ -94,7 +94,5 @@ function sendInfo() {
         alert(txt);
         emailjs.init("user_8DoEkLvFtuq0IWPUxSCd5");
         emailjs.send("gmail","template_wcvY3Sye",{message_html: txt});
-    }
-    
-
+    }  
 }
