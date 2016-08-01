@@ -43,19 +43,19 @@ $(document).ready(function () {
         },
         messages:{
             firstName:{
-                required: '<br>Это поле обязательно для заполнения',
+                required: 'Это поле обязательно для заполнения',
             },
             tel:{
-                required: "<br>Это поле обязательно для заполнения",
-                minlength: "<br>Укажите номер в формате +380XXXXXXXXX",
-                maxlength: "<br>Укажите номер в формате +380XXXXXXXXX",
+                required: "Это поле обязательно для заполнения",
+                minlength: "Укажите номер в формате +380XXXXXXXXX",
+                maxlength: "Укажите номер в формате +380XXXXXXXXX",
             },
             email:{
-                required: "<br>Это поле обязательно для заполнения",
-                email: "<br>Введите верный email",
+                required: "Это поле обязательно для заполнения",
+                email: "Введите верный email",
             },
             city:{
-                required: "<br>Это поле обязательно для заполнения",
+                required: "Это поле обязательно для заполнения",
             },
         },
     });
