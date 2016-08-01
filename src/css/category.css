@@ -9,6 +9,7 @@ body {
 	position: fixed;
 	/*right: -360px;*/
 	right: 0px;
+	/* visibility: hidden; */
 }
 .cart {
 	background: url("../../src/img/category.sprite.png") no-repeat -596px -28px;

@@ -95,6 +95,15 @@ body {
     margin-top: 78px;
 }
 
+.wrap>.categories>.category>p>a {
+    text-decoration: none;
+    color: black;
+}
+
+.wrap>.categories>.category>p>a:hover {
+    color: white;
+}
+
 .wrap>.categories>.category:hover, .wrap>.categories>.category:hover>p {
     transition: all .5s ease-out;
 }
