@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Мастерская</title>
 	<link rel="stylesheet" href="src/css/item.css">
+	<script src="src/js/audio.js"></script>
 </head>
 <body>
 	<div class="wrap">
@@ -37,28 +38,23 @@
 					<li>Гарантия — 12 месяцев</li>
 				</ul>
 				<div class="cost">5,290.00 грн</div>
-			<!-- 	<audio controls>
+
+				<audio>
 					  <source src="audio/kahon.ogg" type="audio/ogg" preload="auto" id="sound">
 					  <source src="audio/kahon.mp3" type="audio/mpeg" preload="auto">
 					  Your browser does not support the audio element.
-				</audio> -->
+				</audio> 
 
-	<div id="audioplayer">
+<div id="audioplayer">
+  <button id="pButton" class="play" onclick="playAudio()"></button>
+    <div id="timeline">
+    <div id="playhead"></div>
+  </div>
+  <div id="volume_control">
+    <label id="rngVolume_label" for="rngVolume">Volume:</label>
+    <input type="range" onchange="setVolume(this.value)" id="rngVolume" min="0" max="1" step="0.01" value="1"></div>
+</div>
 
-
-		<button id="pButton" class="play" onclick="playAudio()"></button>
-
-  		<div id="timeline">
-    		<div id="playhead"></div>
-  		</div>
-
- 		<div id="volume_control">
-    		<label id="rngVolume_label" for="rngVolume">Volume:</label>
-    		<input type="range" onchange="setVolume(this.value)" id="rngVolume" min="0" max="1" step="0.01" value="1">
- 		 </div>
-	</div>
-
-				
 				<div class="social">
 					<span>Отзывы о товаре</span>
 					<a href="" class="facebook" alt="facebook"></a>
