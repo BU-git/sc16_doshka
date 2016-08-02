@@ -1,5 +1,4 @@
 $(document).ready(function () {
-
     // initialize tooltipster on text input elements
     $('.client-info input[type="text"]').tooltipster({
         trigger: 'custom',
@@ -62,6 +61,21 @@ $(document).ready(function () {
 
 });
 
+$('.submit').hover(
+  function() {
+    if ($('.client-info').valid()) {
+        $('.submit').css('text-shadow', '1px 1px 1px greenyellow, 0 0 1em green');
+        $('.submit').css('box-shadow', '1px 1px 1px greenyellow, 0 0 1em green');
+    } else {
+        $('.submit').css('text-shadow', '1px 1px 1px orange, 0 0 1em red');
+        $('.submit').css('box-shadow', '1px 1px 1px orange, 0 0 1em red');
+    }
+  }, function() {
+    $('.submit').css('text-shadow', 'none');
+    $('.submit').css('box-shadow', 'none')
+  }
+);
+
 price.innerHTML = numberWithCommas(price.innerHTML);
 calculateResult();
 
@@ -83,6 +97,7 @@ function sendInfo() {
     var form = $('.client-info');
 
     if (form.valid() == true) {
+
         var clientInfo = {
             'cFirstName' : ('Имя: ' + firstName.value),
             'cTel' : ('Тел: ' + tel.value),
@@ -117,7 +132,7 @@ function sendInfo() {
         $('.submit-sum').css('visibility', 'hidden');
         $('.done').css('visibility', 'visible');
         alert(txt);
-        emailjs.init("user_8DoEkLvFtuq0IWPUxSCd5");
-        emailjs.send("gmail","template_wcvY3Sye",{message_html: txt});
+        // emailjs.init("user_8DoEkLvFtuq0IWPUxSCd5");
+        // emailjs.send("gmail","template_wcvY3Sye",{message_html: txt});
     }  
 }
