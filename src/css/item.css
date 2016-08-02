@@ -86,10 +86,53 @@ ul .title {
 	text-align: right;
 	margin-right: 20px 42px 20px 0px;
 }
-audio {
-	width: 360px;
-	height: 60px
+#audioplayer{
+  width: 480px;
+  height: 75px;
+  margin: 50px auto auto auto;
 }
+ 
+#pButton{
+    height: 45px;
+    width: 45px;
+    background: url(../../src/img/sprite-item.png) no-repeat -117px -3px;
+  	float:left;
+  	border: none;
+}
+ 
+.play{background: url('Play_button.png') ;}
+.pause{background: url('Pause_button.png') ;}
+ 
+#timeline{
+    width: 300px;
+    height: 10px;
+    margin-top: 20px;
+    float: left;
+    background: #fff;
+ }
+#playhead{
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  margin-top: 1px;
+  background: rgba(0, 0, 0,1);
+}
+ 
+#volume_control{
+  margin:auto;
+  width:50%;
+}
+ 
+#rngVolume_label{
+  vertical-align:middle;
+}
+ 
+#rngVolume{
+  margin-top: 8px;vertical-align:middle;
+
+
+
+
 
 .social {
 	display: flex;
