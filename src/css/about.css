@@ -4,7 +4,7 @@
 }
 body {
 	background: url('../img/backgroundabout.png');  
-	background-repeat: no-repeat;
+	background-repeat: round;
 	width: 100%;
 	min-height: 700px;
     background-position: top;
@@ -65,19 +65,9 @@ body {
 }
 
 .logo {
-	display: block;
-    margin-top: 121px;
-    margin-left: 466px;
-    width: 378px;
+    width: 376px;
     height: 283px;
-    background: url("../img/about-sprite.png") 0 77px;
-    background-repeat: no-repeat;
-    // border: 1px solid white;
-    // background-size: cover;
-    background-position-x : 100%;
-	background-position-y : 0%;
-    float: left;
+    background: url("../img/about-sprite.png") -251px -2px;
+    margin: 121px auto;
     opacity: .7;
-
 }
-
