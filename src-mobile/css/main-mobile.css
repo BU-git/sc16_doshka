@@ -80,7 +80,7 @@ body {
 .workshop {
 	width: 86px;
 	height: 86px;
-	background: url(../../src-mobile/img/main-sprite-mobile.png) no-repeat -186px 0px;
+	background: url(../../src-mobile/img/main-sprite-mobile.png) no-repeat -184px 0px;
 }
 .doshkawoods {
 	width: 68px;
@@ -135,7 +135,7 @@ body {
 .google {
 	background: url(../../src-mobile/img/main-sprite-mobile.png) no-repeat -527px 0px;
 }
-.foto {
+.instagram {
 	background: url(../../src-mobile/img/main-sprite-mobile.png) no-repeat -565px 0px;
 }
 .twitter {
