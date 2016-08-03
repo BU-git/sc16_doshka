@@ -3,81 +3,84 @@
 	padding: 0;
 }
 body {
-	background: url('../img/backgroundabout.png');  
-	background-repeat: no-repeat;
-	width: 100%;
-	min-height: 700px;
-    background-position: top;
+	background: url('../img/background-about1.png') no-repeat;  
+    background-position: right 10px top 10px;
+    background-size: 59%;
+    // position: fixed;
 }
 
 .wrap {
     width: 1234px;
-    min-height: 1500px;
-    margin: auto;
-}
-.string {
-    width: 100%;
-    height: 80px;
-    margin: auto;
-    margin-top: 164px;
-    opacity: .7;
-    border-top: 3px solid #fff;
-    border-bottom: 3px solid #fff;
-    background-color: #000;
-
-}
-
-.empty-pointer {
-    width: 90px;
-    height: 20px;
-    // border: 1px solid white;
-    display: inline-block;
-}
-
-.pointer {
-	display: block;
-    margin-top: -18px;
-    // margin-left: 184px;
-    width: 68px;
-    height: 70px;
-    background: url("../img/about-sprite.png") 0 0;
-    float: left;
-    clear: left;
-    margin-left: 150px;
-}
-.woods {
-    margin-left: auto;
-    margin-top: -76px;
-    width: 187px;
-    height: 187px;
-    background: url("../img/about-sprite.png") 0 0; 
-    background-position-x : 157%;
-    background-position-y : 0%;
-    // border: 1px solid white;
+    min-height: 640px;
+    margin-top: 287px;
+    margin-right: 650px;
+    border: 2px solid white;
     float: right;
-    opacity: .7;
-    // margin-right: 90px;
+    position: absolute;
 }
-.empty-woods {
-    width: 90px;
-    height: 20px;
-    float: right;
-}
+// .string {
+//     width: 100%;
+//     height: 80px;
+//     margin: auto;
+//     margin-top: 164px;
+//     opacity: .7;
+//     border-top: 3px solid #fff;
+//     border-bottom: 3px solid #fff;
+//     background-color: #000;
 
-.logo {
-	display: block;
-    margin-top: 121px;
-    margin-left: 466px;
-    width: 378px;
-    height: 283px;
-    background: url("../img/about-sprite.png") 0 77px;
-    background-repeat: no-repeat;
-    // border: 1px solid white;
-    // background-size: cover;
-    background-position-x : 100%;
-	background-position-y : 0%;
-    float: left;
-    opacity: .7;
+// }
+
+// .empty-pointer {
+//     width: 90px;
+//     height: 20px;
+//     // border: 1px solid white;
+//     display: inline-block;
+// }
+
+// .pointer {
+// 	display: block;
+//     margin-top: -18px;
+//     // margin-left: 184px;
+//     width: 68px;
+//     height: 70px;
+//     background: url("../img/about-sprite.png") 0 0;
+//     float: left;
+//     clear: left;
+//     margin-left: 150px;
+// }
+// .woods {
+//     margin-left: auto;
+//     margin-top: -76px;
+//     width: 187px;
+//     height: 187px;
+//     background: url("../img/about-sprite.png") 0 0; 
+//     background-position-x : 157%;
+//     background-position-y : 0%;
+//     // border: 1px solid white;
+//     float: right;
+//     opacity: .7;
+//     // margin-right: 90px;
+// }
+// .empty-woods {
+//     width: 90px;
+//     height: 20px;
+//     float: right;
+// }
+
+// .logo {
+// 	display: block;
+//     margin-top: 121px;
+//     margin-left: 466px;
+//     width: 378px;
+//     height: 283px;
+//     background: url("../img/about-sprite.png") 0 77px;
+//     background-repeat: no-repeat;
+//     // border: 1px solid white;
+//     // background-size: cover;
+//     background-position-x : 100%;
+// 	background-position-y : 0%;
+//     float: left;
+//     opacity: .7;
 
 }
 
