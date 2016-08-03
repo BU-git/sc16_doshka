@@ -1,86 +1,56 @@
 * {
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
 }
-body {
-	background: url('../img/background-about1.png') no-repeat;  
-    background-position: right 10px top 10px;
-    background-size: 59%;
-    // position: fixed;
-}
+  body {
+    background: url('../img/background-about.png') no-repeat;  
+    width: 100%;
+    background-position: top;
+  }
+  .string {
+    margin-top: 164px;
+    width: 100%;
+    height: 80px;
+    opacity: .7;
+    border-top: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+    background-color: #000;
+  }
+  .main-logo {
+    width: 103px;
+    height: 80px;
+    background: url('../../src/img/sprite-new.png') 1534px 0;
+    margin: -89px 0 0 150px;
+    display: block;
+    float: left;
+  }
 
-.wrap {
-    width: 1234px;
-    min-height: 640px;
-    margin-top: 287px;
-    margin-right: 650px;
-    border: 2px solid white;
+  .string-logo {
+    width: 236px;
+    height: 231px;
+    background: url('../../src/img/sprite-new.png') 780px 0;
+    margin: -78px auto;
+    display: block;
+  }
+  .string-pointer {
+    width: 65px;
+    height: 66px;
+    background: url('../../src/img/sprite-new.png') 1378px 0;
+    margin: -67px 150px 0 0;
+    display: block;
     float: right;
-    position: absolute;
+  }
+  .string-pointer:hover {
+  transform: scale(1.1);
 }
-// .string {
-//     width: 100%;
-//     height: 80px;
-//     margin: auto;
-//     margin-top: 164px;
-//     opacity: .7;
-//     border-top: 3px solid #fff;
-//     border-bottom: 3px solid #fff;
-//     background-color: #000;
-
-// }
-
-// .empty-pointer {
-//     width: 90px;
-//     height: 20px;
-//     // border: 1px solid white;
-//     display: inline-block;
-// }
-
-// .pointer {
-// 	display: block;
-//     margin-top: -18px;
-//     // margin-left: 184px;
-//     width: 68px;
-//     height: 70px;
-//     background: url("../img/about-sprite.png") 0 0;
-//     float: left;
-//     clear: left;
-//     margin-left: 150px;
-// }
-// .woods {
-//     margin-left: auto;
-//     margin-top: -76px;
-//     width: 187px;
-//     height: 187px;
-//     background: url("../img/about-sprite.png") 0 0; 
-//     background-position-x : 157%;
-//     background-position-y : 0%;
-//     // border: 1px solid white;
-//     float: right;
-//     opacity: .7;
-//     // margin-right: 90px;
-// }
-// .empty-woods {
-//     width: 90px;
-//     height: 20px;
-//     float: right;
-// }
-
-// .logo {
-// 	display: block;
-//     margin-top: 121px;
-//     margin-left: 466px;
-//     width: 378px;
-//     height: 283px;
-//     background: url("../img/about-sprite.png") 0 77px;
-//     background-repeat: no-repeat;
-//     // border: 1px solid white;
-//     // background-size: cover;
-//     background-position-x : 100%;
-// 	background-position-y : 0%;
-//     float: left;
-//     opacity: .7;
-
+.string-pointer:active {
+  transform: scale(1);
 }
 
+  .logo {
+    width: 376px;
+    height: 283px;
+    background: url("../img/about-sprite.png") -251px -2px;
+    margin: 115px auto;
+    opacity: .7;
+}
