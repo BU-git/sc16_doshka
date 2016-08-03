@@ -2,20 +2,11 @@
     margin: 0;
     padding: 0;
 }
-<<<<<<< HEAD
-  body {
+body {
     background: url('../img/background-about.png') no-repeat;  
     width: 100%;
-=======
-body {
-	background: url('../img/backgroundabout.png');  
-	background-repeat: round;
-	width: 100%;
-	min-height: 700px;
->>>>>>> develop
-    background-position: top;
-  }
-  .string {
+}
+.string {
     margin-top: 164px;
     width: 100%;
     height: 80px;
@@ -23,47 +14,36 @@ body {
     border-top: 3px solid #fff;
     border-bottom: 3px solid #fff;
     background-color: #000;
-  }
-  .main-logo {
+}
+.main-logo {
     width: 103px;
     height: 80px;
     background: url('../../src/img/sprite-new.png') 1534px 0;
     margin: -89px 0 0 150px;
     display: block;
     float: left;
-  }
-
-  .string-logo {
+}
+.string-logo {
     width: 236px;
     height: 231px;
     background: url('../../src/img/sprite-new.png') 780px 0;
     margin: -78px auto;
     display: block;
-  }
-  .string-pointer {
+}
+.string-pointer {
     width: 65px;
     height: 66px;
     background: url('../../src/img/sprite-new.png') 1378px 0;
     margin: -67px 150px 0 0;
     display: block;
     float: right;
-  }
-  .string-pointer:hover {
-  transform: scale(1.1);
+}
+.string-pointer:hover {
+    transform: scale(1.1);
 }
 .string-pointer:active {
-  transform: scale(1);
+    transform: scale(1);
 }
-
-<<<<<<< HEAD
-  .logo {
-    width: 376px;
-    height: 283px;
-    background: url("../img/about-sprite.png") -251px -2px;
-    margin: 115px auto;
-    opacity: .7;
-}
-=======
 .logo {
     width: 376px;
     height: 283px;
@@ -71,4 +51,4 @@ body {
     margin: 121px auto;
     opacity: .7;
 }
->>>>>>> develop
+
