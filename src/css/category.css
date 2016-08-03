@@ -7,9 +7,13 @@ body {
 	width: 495px;
 	height: 270px;
 	position: fixed;
-	/*right: -360px;*/
-	right: 0px;
+	right: -360px;
+	/*right: 0px;*/
 	/* visibility: hidden; */
+}
+.basket:hover {
+	position: fixed;
+	right: 0;
 }
 .cart {
 	background: url("../../src/img/category.sprite.png") no-repeat -596px -28px;

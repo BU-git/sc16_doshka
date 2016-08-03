@@ -2,9 +2,17 @@
     margin: 0;
     padding: 0;
 }
+<<<<<<< HEAD
   body {
     background: url('../img/background-about.png') no-repeat;  
     width: 100%;
+=======
+body {
+	background: url('../img/backgroundabout.png');  
+	background-repeat: round;
+	width: 100%;
+	min-height: 700px;
+>>>>>>> develop
     background-position: top;
   }
   .string {
@@ -47,6 +55,7 @@
   transform: scale(1);
 }
 
+<<<<<<< HEAD
   .logo {
     width: 376px;
     height: 283px;
@@ -54,3 +63,12 @@
     margin: 115px auto;
     opacity: .7;
 }
+=======
+.logo {
+    width: 376px;
+    height: 283px;
+    background: url("../img/about-sprite.png") -251px -2px;
+    margin: 121px auto;
+    opacity: .7;
+}
+>>>>>>> develop
