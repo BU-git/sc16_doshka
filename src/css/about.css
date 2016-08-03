@@ -4,67 +4,70 @@
 }
 body {
 	background: url('../img/backgroundabout.png');  
-	// background-position: top 1px left 1px;
-	background-repeat: no-repeat;
-	min-width: 1234px;
-	min-height: 900px;
-    background-size: cover;
-    background-position: center center;
+	background-repeat: round;
+	width: 100%;
+	min-height: 700px;
+    background-position: top;
 }
 
-
+.wrap {
+    width: 1234px;
+    min-height: 1500px;
+    margin: auto;
+}
 .string {
-    margin-top: 164px;
     width: 100%;
     height: 80px;
+    margin: auto;
+    margin-top: 164px;
     opacity: .7;
     border-top: 3px solid #fff;
     border-bottom: 3px solid #fff;
     background-color: #000;
- 
+
 }
+
+.empty-pointer {
+    width: 90px;
+    height: 20px;
+    // border: 1px solid white;
+    display: inline-block;
+}
+
 .pointer {
 	display: block;
-    margin-top: 6px;
-    margin-left: 184px;
+    margin-top: -18px;
+    // margin-left: 184px;
     width: 68px;
     height: 70px;
     background: url("../img/about-sprite.png") 0 0;
+    float: left;
+    clear: left;
+    margin-left: 150px;
 }
 .woods {
-    margin-top: -128px;
-    margin-left: 900px;
+    margin-left: auto;
+    margin-top: -76px;
     width: 187px;
     height: 187px;
     background: url("../img/about-sprite.png") 0 0; 
     background-position-x : 157%;
     background-position-y : 0%;
     // border: 1px solid white;
-    float: left;
+    float: right;
+    opacity: .7;
+    // margin-right: 90px;
 }
-
-// .pointer {
-// 	display: block;
-//     margin-top: 6px;
-//     margin-left: 184px;
-//     width: 68px;
-//     height: 70px;
-//     background: url("../img/about-sprite.png") 0 0;
-// }
+.empty-woods {
+    width: 90px;
+    height: 20px;
+    float: right;
+}
 
 .logo {
-	display: block;
-    margin-top: 121px;
-    margin-left: 466px;
-    width: 378px;
+    width: 376px;
     height: 283px;
-    background: url("../img/about-sprite.png") 0 77px;
-    background-repeat: no-repeat;
-    // border: 1px solid white;
-    // background-size: cover;
-    background-position-x : 100%;
-	background-position-y : 0%;
-    float: left;
-
+    background: url("../img/about-sprite.png") -251px -2px;
+    margin: 121px auto;
+    opacity: .7;
 }
-

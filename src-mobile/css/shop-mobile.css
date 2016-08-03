@@ -68,18 +68,18 @@ body {
 .category {
 	margin: auto;
 	margin-top: 25px;
-	padding: 10px;
+	padding: 20px;
 	border: solid 2px white;
 	font-weight: bold;
 	text-transform: uppercase;
 	color: white;
-	width: 150px;
+	width: 40%;
 	text-align: center;
 	background: black;
 	opacity: .7;
 }
 
-.category:active, .category:focus {
+.category:active, .category:focus, .category:hover {
 	background: white;
 	color: black;
 }
