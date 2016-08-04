@@ -16,17 +16,24 @@ body {
 	margin: 0 auto;
 	width: 100%;
 }
+.logo-top {
+	width: 68px;
+	height: 51px;
+	background: url("../../src-mobile/img/m-sprite-studio.png") no-repeat 1px 0;
+	margin: 33px auto;
+}
+
 .string {
 	height: 36px;
 	background-color: #000;
 	opacity: .7;
 	border-top: 3px solid #fff;
 	border-bottom: 3px solid #fff;
-	margin-top: 125px;
 }
 ul {
 	list-style-type: none;
 }
+
 .doshkawoods {
 	width: 68px;
 	height: 68px;
@@ -40,5 +47,5 @@ ul {
 	height: 171px;
 	background: url(../../src-mobile/img/main-sprite-mobile.png) no-repeat 2px 0px;
 	margin: auto;
-	margin-top:50px;
+	margin-top: 100px;
 }
