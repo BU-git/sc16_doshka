@@ -1,9 +1,9 @@
 body {
-	background: url(../../src/img/category-background.jpg) round;
+	background: url(../../src/img/category-background.png) round;
 }
 .wrap {
 	margin: 0;
-	background: url(../../src/img/kahon-bg.jpg) no-repeat;
+	background: url(../../src/img/kahon-bg.png) no-repeat;
 	width: 900px;
 	height: 900px;
 }

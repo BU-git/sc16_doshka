@@ -1,6 +1,6 @@
 body {
 	margin: 0;
-	background: url("../../src/img/category-background.jpg") round;
+	background: url("../../src/img/category-background.png") round;
 }
 .basket {
 	background: url("../../src/img/category.sprite.png") no-repeat -17px -174px;
@@ -128,7 +128,7 @@ hr {
 }*/
 .items {
 	width: 985px;
-	background: url("../../src/img/items-bg.jpg") no-repeat;
+	background: url("../../src/img/items-bg.png") no-repeat;
 	margin: 0 auto;
 }
 .item {
