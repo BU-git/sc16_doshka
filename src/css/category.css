@@ -2,18 +2,24 @@ body {
 	margin: 0;
 	background: url("../../src/img/category-background.png") round;
 }
+.wrap {
+	padding-top: 45px;
+	width: 1200px;
+	margin: 0 auto;
+}
 .basket {
 	background: url("../../src/img/category.sprite.png") no-repeat -17px -174px;
 	width: 495px;
 	height: 270px;
 	position: fixed;
 	right: -360px;
-	/*right: 0px;*/
-	/* visibility: hidden; */
+	top: 280px;
+	transition: .5s ease-out;
 }
 .basket:hover {
 	position: fixed;
 	right: 0;
+	transition: .5s ease-out;
 }
 .cart {
 	background: url("../../src/img/category.sprite.png") no-repeat -596px -28px;
@@ -94,13 +100,16 @@ hr {
     margin-top: -115px;
 	text-align: center;
 }
+.logo {
+	width: 985px;
+    margin: 0px auto;
+}
 .logo:before {
 	content: "";
 	float: left;
 	background: url("../../src/img/category.sprite.png") no-repeat 0px 0px;
 	width: 80px;
 	height: 85px;
-	margin: 0 17px 53px 96px;
 }
 .logo li {
 	list-style-type: none;
@@ -113,21 +122,16 @@ hr {
 	color: #000;
 }
 .title {
-	background: url("../../src/img/category.sprite.png") no-repeat -186px -24px;
-	width: 380px;
-	height: 140px;
+	background: url("../../src/img/category.sprite.png") no-repeat -204px -9px;
+	width: 385px;
+	height: 161px;
 	margin: 0 auto;
+    position: relative;
+    top: -95px;
 }
-/*h1 {
-	
-	font-family: Arial;
-	font-size: 72px;
-	text-transform: uppercase;
-	font-weight: bold;
-	color: #010101;
-}*/
 .items {
 	width: 985px;
+	min-height: 1200px;
 	background: url("../../src/img/items-bg.png") no-repeat;
 	margin: 0 auto;
 }
@@ -148,12 +152,12 @@ hr {
 	margin-left: 20px;
 }
 .prime {
-	margin-top:68px;
+	margin-top: -92px;
 }
 .item h2 {
 	color: #fff;
 	font-family: Arial;
-	font-size: 15px;
+	font-size: 18px;
 }
 .item .about:before {
 	content: "";
@@ -166,14 +170,14 @@ hr {
 .item li {
 	color: #fff;
 	font-family: Arial;
-	font-size: 12px;
+	font-size: 15px;
 	list-style-type: none;
-	line-height: 16px;
+	line-height: 17px;
 }
 .item .price {
 	color: #fff;
 	font-family: Arial;
-	font-size: 17px;
+	font-size: 20px;
 	margin-right: 30px;
     text-align: right;
     margin-top: 20px;
