@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Jura&subset=latin,cyrillic-ext);
 
 body {
+    min-width: 320px;
 	margin: 0;
 	background: url(../img/item-bg-mob.png) round;
 }
