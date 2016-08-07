@@ -175,56 +175,13 @@ body {
 	font-family: Jura, Arial;
 	font-size: 20px;
 }
-.first .about:before {
+.item .about:before {
 	content: "";
-	background: url("../../src/img/kahon-cat-sprite.png") no-repeat -745px 0px;
+	background: url("../../src/img/category.sprite.png") no-repeat -50px -492px;
 	float: left;
 	width: 120px;
 	height: 160px;
-	padding-left: 10px;
-}
-.second .about:before {
-    content: "";
-    background: url("../../src/img/kahon-cat-sprite.png") no-repeat -184px 0px;
-    float: left;
-    width: 126px;
-    height: 160px;
-    padding-left: 10px;
-}
-.third .about:before {
-    content: "";
-    background: url("../../src/img/kahon-cat-sprite.png") no-repeat -557px 0px;
-    float: left;
-    width: 125px;
-    height: 160px;
-    padding-left: 10px;
-}
-.fourth .about:before {
-    content: "";
-    background: url("../../src/img/kahon-cat-sprite.png") no-repeat -382px 0px;
-    float: left;
-    width: 124px;
-    height: 160px;
-    padding-left: 10px;
-}
-.fifth .about:before {
-    content: "";
-    background: url("../../src/img/kahon-cat-sprite.png") no-repeat 0px -3px;
-    float: left;
-    width: 124px;
-    height: 160px;
-    padding-left: 10px;
-}
-.sixth .about:before {
-    content: "";
-    background: url("../../src/img/kahon-cat-sprite.png") no-repeat -907px 0px;
-    float: left;
-    width: 126px;
-    height: 160px;
-    padding-left: 10px;
-}
-.item ul {
-    margin-bottom: 0;
+	padding-left: 25px;
 }
 .item li {
 	color: #fff;
@@ -239,7 +196,7 @@ body {
 	font-size: 22px;
 	margin-right: 30px;
     text-align: right;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 .topbutton {
 	background: url("../../src/img/category.sprite.png") no-repeat -104px 0px;
@@ -259,28 +216,37 @@ body {
 }
 .popup .left {
     float: left;
-    width: 300px;
-    padding: 0px 15px 25px 40px;
+    width: 270px;
+    padding: 20px 25px 25px 55px;
+    margin-right: 10px;
     border-right: 2px solid #fff;
+
 }
-.popup .img1 {
+.popup .kahon1 {
+    background: url(../../src/img/sprite-item.png) no-repeat 3px -63px;
+    width: 195px;
+    height: 260px;
     float: left;
-    margin: 0 10px 30px 0;
+    padding-bottom: 20px;
 }
-.popup .img2 {
+.popup .kahon2 {
+    background: url(../../src/img/sprite-item.png) no-repeat -234px -55px;
+    width: 69px;
+    height: 109px;
     float: right;
-    margin-top: 15px;
 }
-.popup .img3 {
+.popup .kahon3 {
+    background: url(../../src/img/sprite-item.png) no-repeat -248px -190px;
+    width: 65px;
+    height: 110px;
     float: right;
-    margin-top: 20px;
 }
 .popup .lineleft { 
     background: #fff;
     margin: 0;
     width: 338px;
     height: 1px;
-    margin-left: -24px;
+    margin-left: -45px;
 }
 .popup iframe {
     width: 275px;
@@ -293,6 +259,7 @@ body {
     width: 508px;
     padding-right: 30px;
 }
+
 .popup h1 {
     margin: 0;
     font-size: 28px;
@@ -380,7 +347,8 @@ body {
 .popup .social {
     display: flex;
     align-items: center;
-    margin-top: 35px;
+    margin-top: 45px;
+    margin-bottom: 28px;
 }
 .popup .social span {
     font-size: 17px;
@@ -404,12 +372,11 @@ body {
 .popup .vk {
     background: url(../../src/img/sprite-item.png) no-repeat -228px -7px;
 }
+.popup .youtube {
+    background: url(../../src/img/sprite-item.png) no-repeat -274px -7px;
+}
 .popup .gplus {
     background: url(../../src/img/sprite-item.png) no-repeat -324px -7px;
-}
-.popup .action {
-    position: fixed;
-    bottom: 330px;
 }
 .popup .basketadd, 
 .popup .buy {
