@@ -252,7 +252,6 @@ body {
     width: 275px;
     height: 200px;
     margin-top: 32px;
-
 }
 .popup .right {
     float: right;
@@ -292,7 +291,7 @@ body {
     font-family: Jura, Arial;
     color: #fff;
     text-align: right;
-    margin-right: 20px 42px 20px 0px;
+    margin: 20px 42px 20px 0px;
 }
 
 #audioplayer{
@@ -359,7 +358,6 @@ body {
 }
 .popup .facebook,
 .popup .vk,
-.popup .youtube,
 .popup .gplus {
     width: 35px;
     height: 35px;
