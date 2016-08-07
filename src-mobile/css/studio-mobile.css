@@ -1,6 +1,8 @@
+@import url(https://fonts.googleapis.com/css?family=Jura&subset=latin,cyrillic-ext);
+
 body {
 	margin: 0;
-	background: url(../../src-mobile/img/mob-bg-studio.jpg) no-repeat;
+	background: url(../../src-mobile/img/mob-bg-studio.png) no-repeat;
 	background-position: top;
 }
 .wrap {
@@ -48,7 +50,7 @@ body {
     margin: 0 auto;
 }
 .block1 h2, p {
-	font-family: Arial;
+	font-family: Jura, Arial;
 	color: #fefefe;
 }
 .block1 h2 {
@@ -72,7 +74,7 @@ body {
 	width: 71px; /*22%; */
 	height: 14px;
 	border: #fefefe 1px solid;
-	font-family: Arial;
+	font-family: Jura, Arial;
 	text-transform: uppercase;
 	text-align: center;
 	font-size: 10px;
