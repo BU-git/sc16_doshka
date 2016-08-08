@@ -462,8 +462,8 @@ body {
 .popup {
     left: 50%; 
     z-index: 1;
-    top: 2%;
-    position: absolute;
+    top: 3%;
+    position: fixed;
 /* внешняя тень */
     /*-webkit-box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
     -moz-box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
