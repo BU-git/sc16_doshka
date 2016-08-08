@@ -14,11 +14,11 @@
 	top: 0;
 	left: -100vw;
 	transition-timing-function: linear;
-	transition-duration: .7s;
+	transition-duration: 1s;
 }
 .size {
 	width: 100vw;
-	height: 100vh;
+	height: 1080px;
 	min-height: 800px;
 	text-align: center;
 }
@@ -26,8 +26,8 @@
 	width: 1200px;
 	height: 100%;
 	margin: 0 auto;
-	border-left: 1px solid white; 
-	border-right: 1px solid white; 
+/*	border-left: 1px solid white; 
+	border-right: 1px solid white; */
 }
 .conteiner-center {
 	width: 1200px;
@@ -53,10 +53,12 @@
 	margin-top: 164px;
 	width: 100%;
 	height: 80px;
-	opacity: .7;
+/*	opacity: .7;*/
+	background: rgba(29, 18, 11, .7);
+
 	border-top: 4px solid #d9cbb9;
 	border-bottom: 4px solid #d9cbb9;
-	background: #1d120b;
+	
 }
 .animation {
 	transition: all 0.2s ease-out;
@@ -70,6 +72,32 @@
 .plus {
 	padding-top: 20px;
 }
+.arrow-left, .arrow-right, .arrow-bottom {
+	width: 70px;
+	height: 70px;
+	cursor: pointer;
+}
+.arrow-left {
+		float: right;
+	background-image: url("../img/main/arrow-left.png");
+}
+.arrow-right {
+	float: left;
+	background-image: url("../img/main/arrow-right.png");
+}
+.arrow-bottom {
+	float: right;
+	background-image: url("../img/main/arrow-bottom.png");
+}
+.arrow-left:hover {
+	transform: scale(1.1);
+}
+.arrow-right:hover {
+	transform: scale(1.1);
+}
+.arrow-bottom:hover {
+	transform: scale(1.1);
+}
 /*<<<<<<<<<<<<<<<<<<<<< END GENERAL CSS >>>>>>>>>>>>>>>>>>>>>>*/
 
 /********************************************************************/
@@ -80,7 +108,6 @@
 /*    background-position: top;
     font-family: Meiryo, Arial, Tahoma, Verdana;*/
 }
-
 .b-wrap {
     display: block;
     margin: 0 auto 0;
@@ -213,7 +240,7 @@
 .shop, .studio {
 	width: 180px;
 	height: 180px;
-	margin: -50px 20px;
+	margin: -52px 20px;
 	-moz-border-radius: 92px;
 	-webkit-border-radius: 92px;
 	border-radius: 92px;
@@ -221,7 +248,7 @@
 .doshka-woods {
 	width: 224px;
 	height: 224px;
-	margin: -72px 24px;
+	margin: -74px 24px;
 	-moz-border-radius: 116px;
 	-webkit-border-radius: 116px;
 	border-radius: 116px;
@@ -236,13 +263,13 @@
 	cursor: pointer;
 }
 .doshka-woods>.name {
-	padding-top: 6px;
+	padding-top: 8px;
 }
 .shop>.name {
-	padding-top: 20px;
+	padding-top: 22px;
 }
 .studio>.name {
-	padding-top: 20px;
+	padding-top: 22px;
 
 }	
 .circle-small-top, .circle-small-bottom {
