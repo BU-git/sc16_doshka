@@ -26,7 +26,15 @@ header h1 {
 .item h1 span {
     text-transform: uppercase;
 }
-.vp100 {
+.shaker {
+    width: 235px;
+    height: 157px;
+    margin: 20px auto;
+}
+.shaker .img2 {
+    margin-top: 36px;
+}
+.kahon {
 	width: 200px;
 	height: 165px;
 	margin: 20px auto;
@@ -89,10 +97,9 @@ header h1 {
 }
 .item .basketadd {
     width: 230px;
-    height: 50px;
+    height: 20px;
     font-size: 20px;
-    padding: 15px 0;
-    box-sizing: border-box;
+    padding: 15px 5px;
 }
 .item .buy {
     width: 160px;
