@@ -17,16 +17,12 @@ body {
 	right: -360px;
 	top: 280px;
 	transition: .5s ease-out;
-<<<<<<< HEAD
     visibility: hidden;
-=======
->>>>>>> master
 }
 .basket:hover {
 	position: fixed;
 	right: 0;
 	transition: .5s ease-out;
-<<<<<<< HEAD
 }
 .basket ul {
     position: absolute;
@@ -46,8 +42,6 @@ body {
 }
 .remove:hover {
     transform: scale(1.5);
-=======
->>>>>>> master
 }
 .cart {
 	background: url("../../src/img/category.sprite.png") no-repeat -596px -28px;
