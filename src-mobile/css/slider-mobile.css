@@ -3,17 +3,19 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+
 @import url(https://fonts.googleapis.com/css?family=Jura&subset=latin,cyrillic-ext);
 
 body {
 	width: 100%px;
 	max-width: 640px;
+	min-height: 500px;
 	margin: 0 auto;
-	font-family: arial, tahoma, verdana;
 	font-size: 11px;
-	background: url(../../src-mobile/img/background.png) no-repeat;
+	background: url("../../src-mobile/img/background.png") repeat-y;
 	background-position: center -74px;
 }
+
 .wrap {
 	margin: 0 auto;
 	width: 100%;
@@ -40,22 +42,17 @@ body {
 	border-radius: 10px;
 }
 .point1 {
-	margin-top: 5px;
+	margin-top: 7px;
 }
 h6 {
-	margin-top: 6px;
+	margin-top: 12px;
 	line-height: 19px;
 	font-family: Jura, Arial;
-	font-size: 13px;
-	color: white;
+	font-size: 15px;
 }
 .point2 {
-	margin-top: 3px;
+	margin-top: 13px;
 }
-ul {
-	list-style-type: none;
-}
-
 .doshkawoods {
 	width: 88px;
 	height: 88px;
@@ -66,10 +63,48 @@ ul {
 	border-radius: 79px;
 }
 
-.logo {
-	width: 186px;
-	height: 171px;
-	background: url(../../src-mobile/img/main-sprite-mobile.png) no-repeat 2px 0px;
+.main {
+	width: 230px;
+	min-height: 250px;
+	background-color: #000;
+	opacity: .7;
+	border: 3px solid #FFFFFF;
 	margin: auto;
-	margin-top: 100px;
+	margin-top: 40px;
 }
+h1 {
+	font-family: Jura, Arial;
+	font-size: 25px;
+	height: 40px;
+	display: table-cell;
+	vertical-align: middle;
+	padding-left: 10px;
+
+}
+.image {
+	background: url("../img/vp110/vp110-1-b.png");
+	width: 131px;
+	height: 165px;
+	margin: auto;
+	margin-top: 8px;
+}
+.read {
+	width: 114px;
+	height: 36px;
+	border: 3px solid white;
+	margin: 10px auto;
+	background-color: rgba(0,0,0,.7);
+	color: white;
+	font-size: 25px;
+}
+.buy {
+	width: 154px;
+	height: 48px;
+	border: 3px solid white;
+	margin: 10px auto;
+	background-color: rgba(0,0,0,.7);
+	color: white;
+	font-size: 29px;
+}
+
+
