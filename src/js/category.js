@@ -22,7 +22,7 @@ function numberWithCommas(x) {
 }
 
 function showResult(totalSum) {
-	$('.total').text(numberWithCommas(totalSum) + " грн");
+	$('.total').text(numberWithCommas(totalSum));
 	$('.val').text(localStorage.length);
 	$('.list li .remove').click(function(){
 		var totalSum = 0;
