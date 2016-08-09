@@ -43,6 +43,27 @@ body {
 .remove:hover {
     transform: scale(1.5);
 }
+.amount {
+    border: 3px solid black;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    display: flex;
+    justify-content:center;
+    align-content:center;
+    flex-direction:column;
+    left: 50px;
+    bottom: 60px;
+}
+.val {
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+    -ms-transform: translateY(-5%);
+    -webkit-transform: translateY(-5%);
+    transform: translateY(-5%);
+}
 .cart {
 	background: url("../../src/img/category.sprite.png") no-repeat -596px -28px;
 	width: 80px;
@@ -51,21 +72,13 @@ body {
 	left: 30px;
 	top: 27px;
 }
-.amount {
-	background: url("../../src/img/category.sprite.png") no-repeat -714px -14px;
-	width: 60px;
-	height: 60px;
-	position: absolute;
-	left: 50px;
-	bottom: 60px;
-}
 .basket hr {
 	width: 3px;
 	height: 200px;
 	background: #000;
     border: none;
-	margin-left: 150px;
-    margin-top: -40px;
+	margin-left: 120px;
+    margin-top: 20px;
 }
 .list,
 .hrn {
@@ -105,7 +118,7 @@ body {
 	text-align: center;
 	padding: 10px;
 	margin-left: 175px;
-    margin-top: -77px;
+    margin-top: -80px;
 }
 .chosen a {
 	display: inline-block;
@@ -121,7 +134,7 @@ body {
 	padding: 3px;
 	vertical-align: middle;
 	margin-left: 325px;
-    margin-top: -115px;
+    margin-top: -120px;
 	text-align: center;
 }
 .logo {
