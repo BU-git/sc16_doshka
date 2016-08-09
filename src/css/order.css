@@ -85,6 +85,11 @@ body {
 	background: transparent;
 }
 
+.subform {
+	margin-left: 8px;
+	width: 180px;
+}
+
 .info-form::-webkit-input-placeholder {
 	color: #98540b;
 }
@@ -109,11 +114,25 @@ ul {
 	list-style: none;
 }
 
+.remove {
+	display: inline-block;
+	margin-left: 5px;
+	width: 13px;
+	height: 13px;
+	background: url(https://cdn4.iconfinder.com/data/icons/32x32-free-design-icons/32/Delete.png);
+	background-size: 100%;
+	cursor: pointer;
+}
+
+.remove:hover {
+    transform: scale(1.5);
+}
+
 .submit-sum {
 	border: none;
 }
 
-#counter {
+.counter {
 	width: 10%;
 	font-size: 14px;
 	margin-top: 10px;
@@ -136,23 +155,24 @@ ul {
 
 .submit {
 	position: absolute;
-	right: 210px;
+	margin-left: 70px;
 	font-size: 14px;
 	padding: 15px 15px;
 	margin-top: -8px;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
-	float: right;
-	border: solid 2px black;
+	border: solid 4px black;
 	border-radius: 10px;
 	background: transparent;
 }
 
 .submit:active {
-	color: white;
-	border-color: white;
 	transform: scale(0.9);
+}
+
+.totalSum {
+	position: absolute;
 }
 
 .done {

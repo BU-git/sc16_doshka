@@ -17,11 +17,31 @@ body {
 	right: -360px;
 	top: 280px;
 	transition: .5s ease-out;
+    visibility: hidden;
 }
 .basket:hover {
 	position: fixed;
 	right: 0;
 	transition: .5s ease-out;
+}
+.basket ul {
+    position: absolute;
+    margin-top: 20px;
+    width: 425px;
+    list-style: none;
+}
+.remove {
+    display: block;
+    float: right;
+    margin-left: 5px;
+    width: 13px;
+    height: 13px;
+    background: url(https://cdn4.iconfinder.com/data/icons/32x32-free-design-icons/32/Delete.png);
+    background-size: 100%;
+    cursor: pointer;
+}
+.remove:hover {
+    transform: scale(1.5);
 }
 .cart {
 	background: url("../../src/img/category.sprite.png") no-repeat -596px -28px;
