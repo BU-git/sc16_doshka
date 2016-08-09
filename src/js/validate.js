@@ -123,10 +123,9 @@ function calculateResult(totalSum) {
             }
         }
         if (localStorage.length == 0) {
-            alert('У вас нет покупок.');
+            // alert('У вас нет покупок.');
             $(location).attr('href', 'category.html');
         }
-        calculateResult(totalSum);
     });
 }
 
@@ -178,8 +177,8 @@ function sendInfo() {
         $('.order-list').css('visibility', 'hidden');
         $('.submit-sum').css('visibility', 'hidden');
         $('.done').css('visibility', 'visible');
-        emailjs.init("user_8DoEkLvFtuq0IWPUxSCd5");
-        emailjs.send("gmail","template_wcvY3Sye",{message_html: txt});
+        emailjs.init("user_lxZuK7sR8MOzo4LpfHB7h");
+        emailjs.send("gmail","template_GwN4Jmsq",{message_html: txt});
         localStorage.clear();
     }
 }
