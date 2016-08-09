@@ -1,0 +1,105 @@
+body {
+	margin: 0;
+	background: url("../../src/img/studio-background.png") no-repeat;
+	background-position: top;
+}
+.wrap {
+	width: 1234px;
+	margin: 0 auto;
+}
+
+.container{
+	height: 74px;
+	background: #1d120b;
+	margin: 148px 0 110px;
+	opacity: 0.7;
+	border-top: #d9cbb9 4px solid;
+	border-bottom: #d9cbb9 4px solid;
+}
+.logo {
+	background: url("../../src/img/sprite-new.png") no-repeat 0 0;
+	width: 102px;
+	height: 78px;
+	margin: -84px 0 0 210px;
+    float: left;
+}
+.circle {
+	background: url("../../src/img/sprite-new.png") no-repeat -1346px -20px;
+	width: 187px;
+	height: 188px;
+	margin: 0 auto;
+    margin-top: -59px;
+	transition: all 0.2s ease-out;
+	opacity: 0.7;
+
+}
+.arrow:hover {
+	transform: scale(1.1);
+}
+.arrow:active {
+	transform: scale(1);
+}
+.arrow {
+	background: url("../../src/img/sprite-new.png") no-repeat -95px -313px;
+	width: 67px;
+	height: 85px;
+	float: left;
+	margin-top: -129px;
+	margin-left: 227px;
+}
+.block1 {
+	width: 1008px;
+	min-height: 280px;
+	background: #1d120b;
+	opacity: 0.7;
+	border: #d9cbb9 4px solid;
+	padding: 17px;
+	margin: 0 auto;
+	border-radius: 3px;
+}
+.block1 .pointer-up {
+	background: url("../../src/img/sprite-new.png") no-repeat -983px 0;
+	width: 63px;
+	height: 85px;
+	float: left;
+	margin-top: 227px;
+	margin-left: -99px;
+}
+.block1 img {
+	float: left;
+}
+.block1 h2, p {
+	font-family: Arial;
+	color: #fefefe;
+}
+.block1 h2 {
+	height: 25px;
+	width: 282px;
+	padding-top: 5px;
+	margin: 18px 0 0 510px;
+	border: #fefefe 4px solid;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 20px;
+	border-radius: 3px;
+}
+.block1 p {
+	font-size: 14px;
+	line-height: 16px;
+	margin: 12px 0px 0px 312px;
+}
+.block1 a {
+	display: block;
+	width: 116px;
+	height: 20px;
+	border: #fefefe 4px solid;
+	font-family: Arial;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+	color: #fefefe;
+	margin: -4px 0px 0px 847px;
+	text-decoration: none;
+	border-radius: 3px;
+}

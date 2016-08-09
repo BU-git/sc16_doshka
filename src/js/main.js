@@ -11,7 +11,11 @@ function toMain() {
 };
 
 function toDoshkaWoods() {
+<<<<<<< HEAD
 	document.getElementById('position').style.top = '-100vh';
+=======
+	document.getElementById('position').style.top = '-1080px';
+>>>>>>> master
 	document.getElementById('position').style.left = '-100vw';
 };
 
