@@ -21,8 +21,8 @@ body {
 }
 .size {
 	width: 100vw;
-	height: 1080px;
-	min-height: 800px;
+	height: 100vh;
+	min-height: 736px;
 	text-align: center;
 }
 .conteiner-1200 {
