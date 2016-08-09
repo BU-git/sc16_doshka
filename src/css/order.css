@@ -1,0 +1,191 @@
+@import url(https://fonts.googleapis.com/css?family=Jura&subset=latin,cyrillic-ext);
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: url(../../src/img/order-background.png) no-repeat;
+	background-position: top;
+	background-size: 100%;
+	font-family: Meiryo, Arial, Tahoma, Verdana;
+	padding: 20px;
+}
+
+.wrap {
+	display: block;
+	margin: auto;
+	width: 950px;
+	height: 681.5px;
+}
+
+.logo-wrap {
+	width: 250px;
+	height: 100px;
+}
+
+.logo {
+	display: block;
+	float: left;
+	width: 82px;
+	height: 82px;
+	background: url(../../src/img/shop-sprite.png) no-repeat -355px 0;
+	opacity: 0.8;
+}
+
+.wrap>.logo-wrap>ul>a {
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: Jura, Arial;
+	font-size: 27px;
+	font-weight: bold;
+	color: #000;
+}
+
+.wrap>.logo-wrap>ul>a:hover {
+	text-shadow: 1px 1px 2px orange, 0 0 1em red;
+    /* color: brown; */
+}
+
+.order {
+	position: absolute;
+	left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -75px;
+	width: 398px;
+	height: 180px;
+	background: url(../../src/img/shop-sprite.png) no-repeat -640px 0;
+}
+
+.window {
+	margin: auto;
+	width: 987px;
+	height: 547px;
+	background: url(../../src/img/order-form-bg.png) no-repeat;
+}
+
+.info {
+	display: inline-block;
+	text-align: center;
+	float: left;
+	margin-top: 90px;
+	margin-left: 90px;
+	width: 310px;
+	height: 390px;
+	border: solid 4px black;
+	border-radius: 5px;
+}
+
+.info-form, textarea {
+	width: 70%;
+	font-size: 14px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 4px 15px;
+	border: solid 2px black;
+	border-radius: 10px;
+	background: transparent;
+}
+
+.subform {
+	margin-left: 8px;
+	width: 180px;
+}
+
+.info-form::-webkit-input-placeholder {
+	color: #98540b;
+}
+
+textarea {
+	resize: none;
+	height: 90px;
+}
+
+.order-list, .submit-sum {
+	display: inline-block;
+	text-align: center;
+	width: 400px;
+	height: 150px;
+	margin-top: 90px;
+	margin-left: 90px;
+	border: solid 4px black;
+	border-radius: 5px;
+}
+
+ul {
+	list-style: none;
+}
+
+.remove {
+	display: inline-block;
+	margin-left: 5px;
+	width: 13px;
+	height: 13px;
+	background: url(https://cdn4.iconfinder.com/data/icons/32x32-free-design-icons/32/Delete.png);
+	background-size: 100%;
+	cursor: pointer;
+}
+
+.remove:hover {
+    transform: scale(1.5);
+}
+
+.submit-sum {
+	border: none;
+}
+
+.counter {
+	width: 10%;
+	font-size: 14px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 4px 4px;
+	border: solid 2px black;
+	border-radius: 10px;
+	background: transparent;
+}
+
+.submit-sum {
+	margin-top: 180px;
+	height: 50px;
+}
+
+.submit-sum>p {
+	float: left;
+	margin-top: 15px;
+}
+
+.submit {
+	position: absolute;
+	margin-left: 70px;
+	font-size: 14px;
+	padding: 15px 15px;
+	margin-top: -8px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+	border: solid 4px black;
+	border-radius: 10px;
+	background: transparent;
+}
+
+.submit:active {
+	transform: scale(0.9);
+}
+
+.totalSum {
+	position: absolute;
+}
+
+.done {
+	position: absolute;
+	background: url(../../src/img/order-done.png) no-repeat;
+	width: 372px;
+	height: 264px;
+	margin-left: 300px;
+	margin-top: 135px;
+	visibility: hidden;
+}
