@@ -109,21 +109,21 @@ body {
     text-align: center;
     box-shadow: 10px 6px 15px rgba(0, 0, 0, .5);
 }
+
 .category p {
-	color: black;
+	display: none;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 24px;
     margin-top: 78px;
 }
-.category:hover{
+.category:hover {
+	text-align: center;
 	transition: 1s;
 	background: #404040;
 }
-.category:active {
-    transform: scale(1.05);
-}
-.category:hover>p {
+.category:hover p {
+	display: table;
 	transition: 1s;
     color: white;
 }
