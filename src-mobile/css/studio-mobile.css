@@ -1,9 +1,14 @@
 @import url(https://fonts.googleapis.com/css?family=Jura&subset=latin,cyrillic-ext);
 
 body {
-	margin: 0;
-	background: url(../../src-mobile/img/mob-bg-studio.png) repeat-y;
-	background-position: top;
+	width: 100%;
+	max-width: 640px;
+	height: 100vh;
+	margin: 0 auto;
+	font-family: arial, tahoma, verdana;
+	font-size: 11px;
+	background: url(../../src-mobile/img/background.png) no-repeat;
+	background-position: center -74px;
 }
 .wrap {
 	min-width: 320px;
