@@ -43,18 +43,9 @@ body {
 .clear {
 	clear: both;
 }
-.button {
-	display: inline-block;
-	height: 40px;
-	background: grey;
-	border: 1 solid black;
-	border-radius: 10px;
-	box-shadow: 0 0 10px rgba(0,0,0,0.5);
-	cursor: pointer;
-}
 .line {
 	float: left;
-	margin-top: 150px;
+	margin-top: 140px;
 	width: 100%;
 	height: 80px;
 	background: rgba(29, 18, 11, .7);
@@ -351,7 +342,7 @@ body {
 }
 .block1 p {
 	font-size: 16px;
-	line-height: 22px;
+	line-height: 18px;
 	margin: 12px 0px 0px 312px;
 }
 .block1 a {
