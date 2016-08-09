@@ -5,6 +5,9 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+body {
+	font-family: arial;
+}
 .main-wrap {
 	width: 300vw;
 	background: url(../../src/img/background.png) no-repeat;
@@ -26,8 +29,6 @@
 	width: 1200px;
 	height: 100%;
 	margin: 0 auto;
-/*	border-left: 1px solid white; 
-	border-right: 1px solid white; */
 }
 .conteiner-center {
 	width: 1200px;
@@ -35,6 +36,9 @@
 }
 .fl {
 	float: left;
+}
+.fr {
+	float: right;
 }
 .clear {
 	clear: both;
@@ -53,12 +57,9 @@
 	margin-top: 164px;
 	width: 100%;
 	height: 80px;
-/*	opacity: .7;*/
 	background: rgba(29, 18, 11, .7);
-
 	border-top: 4px solid #d9cbb9;
 	border-bottom: 4px solid #d9cbb9;
-	
 }
 .animation {
 	transition: all 0.2s ease-out;
@@ -103,116 +104,59 @@
 /********************************************************************/
 
 /*<<<<<<<<<<<<<<<<<<<<< TOP LEFT BLOCK >>>>>>>>>>>>>>>>>>>>>>*/
-.top-left>.b-body {
-/*    background: url("../img/shop-background.png") no-repeat;*/
-/*    background-position: top;
-    font-family: Meiryo, Arial, Tahoma, Verdana;*/
-}
-.b-wrap {
-    display: block;
-    margin: 0 auto 0;
-    width: 1234px;
-    height: 761px;
-}
-.b-menu {
-    float: left;
-    margin-top: 164px;
-    width: 100%;
-    height: 80px;
-    opacity: .7;
-    border-top: 3px solid #fff;
-    border-bottom: 3px solid #fff;
-    background-color: #000;
-}
-.b-menu>.b-container-nav {
-    margin: 0 auto;
-    width: 1234px;
-    height: 80px;
-}
-.b-menu>.b-container-nav>ul {
-    list-style-type: none;
-}
-
-.b-menu>.b-container-nav>ul>.arrow>a:hover {
-    transform: scale(1.1);
-}
-.b-menu>.b-container-nav>ul>.arrow>a:active {
-    transform: scale(1);
-}
-.b-menu>.b-container-nav>ul>.shop {
-    float: left;
-    width: 220px;
-    height: 80px;
-}
-.b-menu>.b-container-nav>ul>.b-shop>a, .b-menu>.b-container-nav>ul>.b-shop>i {
-    display: inline-block;
-    width: 186px;
-    height: 186px;
-    margin: -53px 0 0 100px;
-    background: url("../img/main-sprite.png") 0 0;
-}
-
-.b-menu>.b-container-nav>ul>.b-arrow {
-    float: left;
-    width: 220px;
-    height: 80px;
-}
-.b-menu>.b-container-nav>ul>.b-arrow>a {
-    display: inline-block;
-    width: 65px;
-    height: 65px;
-    margin: 6px 0 0 750px;
-    background: url("../img/shop-sprite.png") no-repeat -224px 0;
-}
-
-.b-wrap>.b-categories {
+.categories {
     float: left;
     margin: 60px 0 0 250px;
     width: 700px;
 }
-
-.b-wrap>.b-categories>.b-category {
+.category {
     display: inline-block;
     width: 180px;
     height: 180px;
-    margin: 10px;
+    margin: 10px 15px;
     border: solid 2px white;
-    background: white;
     text-align: center;
+    box-shadow: 10px 6px 15px rgba(0, 0, 0, .5);
 }
-
-.b-wrap>.b-categories>.b-category>p {
+.category p {
+	color: black;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 24px;
     margin-top: 78px;
 }
-
-.b-wrap>.b-categories>.b-category>p>a {
-    text-decoration: none;
-    color: black;
+.category:hover{
+	transition: 1s;
+	background: #404040;
 }
-
-.b-wrap>.b-categories>.b-category>p>a:hover {
+.category:active {
+    transform: scale(1.05);
+}
+.category:hover>p {
+	transition: 1s;
     color: white;
 }
-
-.b-wrap>.b-categories>.b-category:hover, .b-wrap>.b-categories>.b-category:hover>p {
-    transition: all .5s ease-out;
+.kahon, .shaker, .barchimes, .tambourine, .darbuka, .castanets {
+	background-size: 100% 100%;
 }
-
-.b-wrap>.b-categories>.b-category:hover {
-    background: #404040;
+.kahon {
+	background-image: url("../img/main/category/kahon.png");
 }
-
-.b-wrap>.b-categories>.b-category:active {
-    transform: scale(1.1);
+.shaker {
+	background-image: url("../img/main/category/shaker.png");
 }
-
-.b-wrap>.b-categories>.b-category:hover>p {
-    color: white;
+.barchimes {
+	background-image: url("../img/main/category/barchimes.png");
 }
-
+.tambourine {
+	background-image: url("../img/main/category/tambourine.png");
+}
+.darbuka {
+	background-image: url("../img/main/category/darbuka.png");
+}
+.castanets {
+	background-image: url("../img/main/category/castanets.png");
+}
 /*<<<<<<<<<<<<<<<<<<<<< END TOP LEFT BLOCK >>>>>>>>>>>>>>>>>>>>>>*/
 
 /********************************************************************/
@@ -220,125 +164,23 @@
 /*<<<<<<<<<<<<<<<<<<<<< TOP CENTRAL BLOCK >>>>>>>>>>>>>>>>>>>>>>*/
 .contact {
 	width: 240px;
-	padding-top: 20px;
+	padding-top: 22px;
 	float: left;
-/*	color: white;
-	text-transform: uppercase;
-	text-align: center;
-	cursor: pointer;*/
-}
-
-.shop, .doshka-woods, .studio {
-	display: inline-block;
-	background-color: rgba(0, 0, 0, .6);
-	border: 4px solid #fff;
-	-moz-background-clip: padding;
-	-webkit-background-clip: padding-box;
-	background-clip: padding-box;
-
-}
-.shop, .studio {
-	width: 180px;
-	height: 180px;
-	margin: -52px 20px;
-	-moz-border-radius: 92px;
-	-webkit-border-radius: 92px;
-	border-radius: 92px;
-}
-.doshka-woods {
-	width: 224px;
-	height: 224px;
-	margin: -74px 24px;
-	-moz-border-radius: 116px;
-	-webkit-border-radius: 116px;
-	border-radius: 116px;
-}
-.name {
-	height: 72px;
-	font-family: arial;
-	font-size: 24px;
-	color: white;
-	text-transform: uppercase;
-	text-align: center;
 	cursor: pointer;
 }
-.doshka-woods>.name {
-	padding-top: 8px;
+.contact .name {
+	height: 54px;
 }
-.shop>.name {
-	padding-top: 22px;
-}
-.studio>.name {
-	padding-top: 22px;
-
-}	
-.circle-small-top, .circle-small-bottom {
-	height: 46px;
-}
-.circle-big-top, .circle-big-bottom {
-	height: 68px;
-}
-.circle-small {
-	width: 10px;
-	height: 10px;
-	background: #fff;
-/*	border: 5px solid #fff;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	border-radius: 5px;*/
-}
-.circle-big {
-	width: 24px;
-	height: 24px;
-	background: white;
-/*	border: 12px solid #fff;
-	-moz-border-radius: 12px;
-	-webkit-border-radius: 12px;
-	border-radius: 12px;*/
-}
-
-
-
-
-
-
-.s-body {
-/*	background: url('../../src/img/background.png') no-repeat;*/
-	background-position: top;
-	font-family: Meiryo, arial, tahoma, verdana;
-}
-.s-wrap {
-	display: block;
-	margin: 0 auto 0;
-	width: 1234px;
-	height: 761px;
-}
-
-.container-nav {
-	margin: 0 auto;
-	width: 1234px;
-	height: 74px;
-}
-.container-nav ul {
-	list-style-type: none;
-}
-.container-nav a {
-	transition: all 0.2s ease-out;
-}
-.container-nav a:hover {
+.contact .name:hover {
+	transition-duration: .2s;
 	transform: scale(1.1);
 }
-.container-nav a:active {
-	transform: scale(1);
-}
 .contacts-info {
-	width: 80px;
-	height: 108px;
+	width: 214px;
+	height: 120px;
 	border: 2px solid #d9cbb9;
 	background: #1d120b;
-	padding: 11px 75px 19px 50px;
-	position: absolute;
-    top: 248px;
+	padding-top: 10px;
 	display: none;
 }
 .contacts-info p{
@@ -348,205 +190,180 @@
 	color: #fefefe;
 	line-height: 30px
 }
-.contacts-info p:last-child {
-	padding-top: 17px;
+.shop, .doshka-woods, .studio {
+	display: inline-block;
+	background-color: rgba(0, 0, 0, .7);
+	border: 4px solid rgba(255, 255, 255, .7);
+	-moz-background-clip: padding;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
 }
-/*.contacts {
-	float: left;
+.shop, .studio {
+	width: 180px;
+	height: 180px;
+	margin: -52px 20px;
+	-moz-border-radius: 92px;
+	-webkit-border-radius: 92px;
+	border-radius: 92px;
+	cursor: pointer;
+}
+.doshka-woods {
+	width: 224px;
+	height: 224px;
+	margin: -74px 24px;
+	-moz-border-radius: 116px;
+	-webkit-border-radius: 116px;
+	border-radius: 116px;
+	cursor: pointer;
+}
+.name {
+	height: 72px;
+	font-family: arial;
+	font-size: 24px;
+	color: white;
+	text-transform: uppercase;
 	text-align: center;
-	height: 100%;
-	margin-left: 20px;
-	width: 200px;
-	height: 80px;
-}*/
-/*.contacts a {
-	display: inline-block;
-	width: 122px;
-	height: 16px;
-	margin-top: 32px;
-	background: url(../../src/img/main-sprite.png) no-repeat 0px -191px;
-}*/
-.contacts:hover .contacts-info {
-	display: block;
 }
-/*.shop {
-	float: left;
-	width: 220px;
-	height: 80px;
-}*/
-/*.shop a {
-	display: inline-block;
-	width: 186px;
-	height: 186px;
-	margin: -53px 0 0 17px;
-	background: url(../../src/img/main-sprite.png) no-repeat 0px 0px;
-}*/
-.workshop {
-	float: left;
-	width: 350px;
-	height: 80px;
+.doshka-woods .name {
+	padding-top: 8px;
 }
-.workshop a {
-	display: inline-block;
-	width: 234px;
-	height: 234px;
-	margin: -77px 0 0 58px;
-	background: url(../../src/img/main-sprite.png) no-repeat -185px 0px;
+.shop .name {
+	padding-top: 22px;
 }
-.doshkawoods {
-	float: left;
-	width: 220px;
-	height: 80px;
+.studio .name {
+	padding-top: 22px;
+}	
+.circle-small-top, .circle-small-bottom {
+	height: 46px;
 }
-.doshkawoods a {
-	display: inline-block;
-	width: 186px;
-	height: 186px;
-	margin: -53px 0 0 17px;
-	background: url(../../src/img/main-sprite.png) no-repeat -422px 0px;
+.circle-small-top {
+	padding-top: 20px;
 }
-.social-networks {
-	float: left;
-	margin: 136px 0 0 882px;
-	width: 300px;
+.circle-small-bottom {
+	padding-top: 12px;
+}
+.circle-big-top, .circle-big-bottom {
 	height: 68px;
 }
-.social-networks a {
-	float: left;
-	width: 48px;
-	height: 66px;
+.circle-big-top {
+	padding-top: 25px;
 }
-.social-networks a:hover {
-	opacity: .7;
+.circle-big-bottom {
+	padding-top: 25px;
+}
+.circle-small {
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	border: 9px solid #fff;
+	-moz-border-radius: 9px;
+	-webkit-border-radius: 9px;
+	border-radius: 9px;
+}
+.circle-big {
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	background: white;
+	border: 12px solid #fff;
+	-moz-border-radius: 12px;
+	-webkit-border-radius: 12px;
+	border-radius: 12px;
+}
+.lineyka {
+	position: relative;
+	top: 400px;
+	left: 850px;
+	width: 714px;
+	height: 163px;
+	background-image:  url("../img/main/social/lineyka.png");
+}
+.lineyka-container {
+	position: absolute;
+	top: 63px;
+	left: 36px;
+}
+.lineyka a {
+	float: left;
+	margin-right: 1px;
+	width: 49px;
+	height: 49px;
+}
+.lineyka a:hover {
+	transform: scale(0.95);
+	opacity: .8;
 }
 .facebook {
-	background: url(../../src/img/main-sprite.png) no-repeat -608px 0px;
+	background-image: url("../img/main/social/facebook.png");
+	margin-top: 15px;
 }
 .vk {
-	background: url(../../src/img/main-sprite.png) no-repeat -656px 0px;
+	background-image: url("../img/main/social/vk.png");
+	margin-top: 12px;
 }
 .youtube {
-	background: url(../../src/img/main-sprite.png) no-repeat -705px 0px;
+	background-image: url("../img/main/social/youtube.png");
+	margin-top: 9px;
 }
 .google {
-	background: url(../../src/img/main-sprite.png) no-repeat -754px 0px;
+	background-image: url("../img/main/social/google.png");
+	margin-top:6px;
 }
 .instagram {
-	background: url(../../src/img/main-sprite.png) no-repeat -803px 0px;
+	background-image: url("../img/main/social/instagram.png");
+	margin-top: 3px;
 }
 .twitter {
-	background: url(../../src/img/main-sprite.png) no-repeat -852px 0px;
+	background-image: url("../img/main/social/twitter.png");
+	margin-top: 0px;
 }
-
-/*<<<<<<<<<<<<<<<<<<<<< END CENTRAL BLOCK >>>>>>>>>>>>>>>>>>>>>>*/
+/*<<<<<<<<<<<<<<<<<<<<< END TOP CENTRAL BLOCK >>>>>>>>>>>>>>>>>>>>>>*/
 
 /********************************************************************/
 
 /*<<<<<<<<<<<<<<<<<<<<< TOP RIGTH BLOCK >>>>>>>>>>>>>>>>>>>>>>*/
-.y-body {
-	margin: 0;
-/*	background: url("../../src/img/studio-background.png") no-repeat;*/
-	background-position: top;
-}
-.y-wrap {
-	width: 1234px;
-	margin: 0 auto;
-}
-
-.y-container{
-	height: 74px;
-	background: #1d120b;
-	margin: 148px 0 110px;
-	opacity: 0.7;
-	border-top: #d9cbb9 4px solid;
-	border-bottom: #d9cbb9 4px solid;
-}
-.y-logo {
-	background: url("../../src/img/sprite-new.png") no-repeat 0 0;
-	width: 102px;
-	height: 78px;
-	margin: -84px 0 0 210px;
-    float: left;
-}
-.y-circle {
-	background: url("../../src/img/sprite-new.png") no-repeat -1346px -20px;
-	width: 187px;
-	height: 188px;
-	margin: 0 auto;
-    margin-top: -59px;
-	transition: all 0.2s ease-out;
-	opacity: 0.7;
-
-}
-.y-arrow:hover {
-	transform: scale(1.1);
-}
-.y-arrow:active {
-	transform: scale(1);
-}
-.y-arrow {
-	background: url("../../src/img/sprite-new.png") no-repeat -95px -313px;
-	width: 67px;
-	height: 85px;
-	float: left;
-	margin-top: -129px;
-	margin-left: 227px;
-}
-.y-block1 {
+.block1 {
 	width: 1008px;
 	min-height: 280px;
-	background: #1d120b;
-	opacity: 0.7;
+	background: rgba(29, 18, 11, .7);
 	border: #d9cbb9 4px solid;
 	padding: 17px;
 	margin: 0 auto;
 	border-radius: 3px;
-}
-.y-block1 .y-pointer-up {
-	background: url("../../src/img/sprite-new.png") no-repeat -983px 0;
-	width: 63px;
-	height: 85px;
-	float: left;
-	margin-top: 227px;
-	margin-left: -99px;
-}
-.y-block1 img {
-	float: left;
-}
-.y-block1 h2, p {
 	font-family: Arial;
 	color: #fefefe;
 }
-.y-block1 h2 {
-	height: 25px;
+.block1 img {
+	float: left;
 	width: 282px;
+	height: 282px;
+	border: 4px solid #fefefe;
+}
+.block1 h2 {
 	padding-top: 5px;
-	margin: 18px 0 0 510px;
-	border: #fefefe 4px solid;
+	margin-left: 300px;
+	border: 4px solid #fefefe;
+	border-radius: 3px;
 	text-transform: uppercase;
 	text-align: center;
 	font-size: 20px;
-	border-radius: 3px;
 }
-.y-block1 p {
-	font-size: 14px;
-	line-height: 16px;
+.block1 p {
+	font-size: 16px;
+	line-height: 22px;
 	margin: 12px 0px 0px 312px;
 }
-.y-block1 a {
+.block1 a {
 	display: block;
-	width: 116px;
-	height: 20px;
-	border: #fefefe 4px solid;
-	font-family: Arial;
+	border: 4px solid #fefefe;
 	text-transform: uppercase;
 	text-align: center;
 	font-size: 20px;
 	font-weight: bold;
-	color: #fefefe;
 	margin: -4px 0px 0px 847px;
 	text-decoration: none;
 	border-radius: 3px;
+	color: #fefefe;
 }
 /*<<<<<<<<<<<<<<<<<<<<< END RIGTH BLOCK >>>>>>>>>>>>>>>>>>>>>>*/
 
@@ -559,6 +376,15 @@
 /********************************************************************/
 
 /*<<<<<<<<<<<<<<<<<<<<< BOTTOM CENTRAL BLOCK >>>>>>>>>>>>>>>>>>>>>>*/
+.doshkawoods-logo {
+
+	display: inline-block;
+	margin-top: 215px;
+	width: 377px;
+	height: 285px;
+	background-image: url("../img/main/doshkawoods-logo.png");
+	opacity: .7;
+}
 
 /*<<<<<<<<<<<<<<<<<<<<< END BOTTOM CENTRAL BLOCK >>>>>>>>>>>>>>>>>>>>>>*/
 

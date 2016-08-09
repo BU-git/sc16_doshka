@@ -18,3 +18,9 @@ function toDoshkaWoods() {
 function toCategory() {
 	document.getElementById('position').style.left = '-200vw';
 };
+
+
+function contactDisplay() {
+	document.getElementById('phones').style.display = 'table';
+	// alert ('work');
+}
