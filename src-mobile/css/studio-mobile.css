@@ -2,7 +2,7 @@
 
 body {
 	margin: 0;
-	background: url(../../src-mobile/img/mob-bg-studio.png) no-repeat;
+	background: url(../../src-mobile/img/mob-bg-studio.png) repeat-y;
 	background-position: top;
 }
 .wrap {
@@ -26,11 +26,36 @@ body {
 	border-bottom: #d9cbb9 3px solid;
 }
 .circle {
-	background: url(../../src-mobile/img/m-sprite-studio.png) no-repeat -90px 0;
-	width: 120px;
-	height: 120px;
-	margin: 0 auto;
-    margin-top: -44px;
+	width: 80px;
+	height: 80px;
+	background-color: rgba(0,0,0,.7);
+	margin: auto;
+	margin-top:-29px;
+	border: 3px solid white;
+	border-radius: 79px;
+}
+.point {
+	margin: auto;
+	width:5px;
+	height: 5px;
+	border: 3px solid white;
+	border-radius: 10px;
+	background: white;
+}
+.point1 {
+	margin-top: 7px;
+}
+h6 {
+	margin: auto;
+	margin-top: 12px;
+	padding-left: 3px;
+	line-height: 19px;
+	font-family: Jura, Arial;
+	font-size: 13px;
+	color: white;
+}
+.point2 {
+	margin-top: 13px;
 }
 
 .block1 {
