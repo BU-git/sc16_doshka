@@ -20,6 +20,10 @@ body {
 	height: 560px;
 	padding-top: 11px;
 }
+.contacts-info a {
+	text-decoration: none;
+	color: white;
+}
 .contact {
 	width: 100%;
 	height: 90px;
