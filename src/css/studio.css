@@ -1,28 +1,13 @@
 body {
 	margin: 0;
-	background: url("../../src/img/doshka.jpg") no-repeat;
+	background: url("../../src/img/studio-background.png") no-repeat;
 	background-position: top;
 }
 .wrap {
 	width: 1234px;
 	margin: 0 auto;
 }
-.pliers {
-	background: url(../../src/img/sprite-studio.png) no-repeat -595px -1px;
-	height: 417px;
-	width: 448px;
-	float: left;
-	margin-top: -416px;
-    margin-left: 79px;
-}
-.paper {
-	background: url(../../src/img/sprite-studio.png) no-repeat -5px -373px;
-	height: 434px;
-	width: 521px;
-	float: right;
-	margin-top: -518px;
-	margin-right: -71px;
-}
+
 .container{
 	height: 74px;
 	background: #1d120b;
@@ -31,13 +16,22 @@ body {
 	border-top: #d9cbb9 4px solid;
 	border-bottom: #d9cbb9 4px solid;
 }
+.logo {
+	background: url("../../src/img/sprite-new.png") no-repeat 0 0;
+	width: 102px;
+	height: 78px;
+	margin: -84px 0 0 210px;
+    float: left;
+}
 .circle {
-	background: url(../../src/img/sprite-studio.png) no-repeat 0px -1px;
-	width: 247px;
-	height: 245px;
+	background: url("../../src/img/sprite-new.png") no-repeat -1346px -20px;
+	width: 187px;
+	height: 188px;
 	margin: 0 auto;
-    margin-top: -85px;
+    margin-top: -59px;
 	transition: all 0.2s ease-out;
+	opacity: 0.7;
+
 }
 .arrow:hover {
 	transform: scale(1.1);
@@ -46,12 +40,12 @@ body {
 	transform: scale(1);
 }
 .arrow {
-	background: url(../../src/img/sprite-studio.png) no-repeat -291px -14px;
-	width: 62px;
-	height: 74px;
-	float: right;
-	margin-top: -158px;
-	margin-right: 153px;
+	background: url("../../src/img/sprite-new.png") no-repeat -95px -313px;
+	width: 67px;
+	height: 85px;
+	float: left;
+	margin-top: -129px;
+	margin-left: 227px;
 }
 .block1 {
 	width: 1008px;
@@ -62,6 +56,14 @@ body {
 	padding: 17px;
 	margin: 0 auto;
 	border-radius: 3px;
+}
+.block1 .pointer-up {
+	background: url("../../src/img/sprite-new.png") no-repeat -983px 0;
+	width: 63px;
+	height: 85px;
+	float: left;
+	margin-top: 227px;
+	margin-left: -99px;
 }
 .block1 img {
 	float: left;
