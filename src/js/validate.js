@@ -19,9 +19,11 @@ $(document).ready(function () {
                 $(element).tooltipster('content', newError);
                 $(element).tooltipster('show');
             }
+            $(element).css('borderColor', 'red');
         },
         success: function (label, element) {
             $(element).tooltipster('hide');
+            $(element).css('borderColor', 'yellowgreen');
         },
         rules:{
             firstName:{
@@ -29,8 +31,7 @@ $(document).ready(function () {
             },
             tel:{
                 required: true,
-                minlength: 13,
-                maxlength: 13,
+                minlength: 10,
             },
             email:{
               required: true,
@@ -46,8 +47,7 @@ $(document).ready(function () {
             },
             tel:{
                 required: "Это поле обязательно для заполнения",
-                minlength: "Укажите номер в формате +380XXXXXXXXX",
-                maxlength: "Укажите номер в формате +380XXXXXXXXX",
+                minlength: "Укажите верный номер",
             },
             email:{
                 required: "Это поле обязательно для заполнения",
@@ -58,34 +58,83 @@ $(document).ready(function () {
             },
         },
     });
-
 });
+
+
+calculateResult();
+showInfo();
+
+if (localStorage.length == 0) {
+    $(location).attr('href', 'category.html');
+}
 
 $('.submit').hover(
   function() {
     if ($('.client-info').valid()) {
-        $('.submit').css('text-shadow', '1px 1px 1px greenyellow, 0 0 1em green');
-        $('.submit').css('box-shadow', '1px 1px 1px greenyellow, 0 0 1em green');
+        $('.submit').css({
+            'text-shadow' : '1px 1px 1px greenyellow, 0 0 1em greenyellow',
+            'box-shadow' : '1px 1px 1px greenyellow, 0 0 1em greenyellow',
+            'borderColor' : 'yellowgreen',
+            'color' : 'yellowgreen',
+        });
     } else {
-        $('.submit').css('text-shadow', '1px 1px 1px orange, 0 0 1em red');
-        $('.submit').css('box-shadow', '1px 1px 1px orange, 0 0 1em red');
+        $('.submit').css({
+            'text-shadow' : '1px 1px 1px red, 0 0 1em red',
+            'box-shadow' : '1px 1px 1px red, 0 0 1em red',
+            'borderColor' : 'red',
+            'color' : 'red',
+        });
     }
-  }, function() {
-    $('.submit').css('text-shadow', 'none');
-    $('.submit').css('box-shadow', 'none')
+  }
+  , function() {
+    $('.submit').css({
+        'text-shadow' : 'none',
+        'box-shadow' : 'none',
+        'borderColor' : 'black',
+        'color' : 'black',
+    });
   }
 );
 
-price.innerHTML = numberWithCommas(price.innerHTML);
-calculateResult();
-
-function calculateResult() {
-    if (counter.value <= 0) {
-        counter.value = 1;
+function showInfo(){
+    var totalSum = 0;
+    for (var i in localStorage) {
+        var listElems = JSON.parse(localStorage.getItem(i));
+        if (listElems != null) {
+            totalSum += parseInt(listElems['price'].replace(',','')) * parseInt(listElems['quantity']);
+            $('.order-list ul').append('<li>'+listElems['model']+' - '+listElems['quantity']+'шт - '+listElems['price']+' грн<a class="remove"></a></li>');
+        }
     }
-    counter.value = parseInt(counter.value);
-    var priceTemp = price.innerHTML.replace(',', '');
-    totalSum.innerHTML = 'ИТОГО ' + numberWithCommas(priceTemp * counter.value) + ' грн'; 
+    calculateResult(totalSum);
+}
+
+function calculateResult(totalSum) {
+    $('.totalSum').text('ИТОГО ' + numberWithCommas(totalSum) + " грн");
+    $('.val').text(localStorage.length);
+    $('ul li .remove').click(function(){
+        var totalSum = 0;
+        for (var i in localStorage) {
+            var listElems = JSON.parse(localStorage.getItem(i));
+            if (listElems != null && $(this).parent().text().indexOf(i) != -1) {
+                $(this).parent().remove();
+                localStorage.removeItem(i);
+            } else if (listElems != null) {
+                totalSum += parseInt(listElems['price'].replace(',','')) * parseInt(listElems['quantity']);
+            }
+        }
+        if (localStorage.length == 0) {
+            alert('У вас нет покупок.');
+            $(location).attr('href', 'category.html');
+        }
+        calculateResult(totalSum);
+    });
+}
+
+function isNumberKey(evt){
+    var charCode = (evt.which) ? evt.which : event.keyCode;
+    if (charCode > 31 && (charCode < 48 || charCode > 57))
+        return false;
+    return true;
 }
 
 function numberWithCommas(x) {
@@ -106,33 +155,31 @@ function sendInfo() {
             'cComment' : ('Примечание к заказу: ' + comment.value),
         }
 
-        var itemInfo = {
-            'iCategory' : ('Категория: ' + category.innerHTML),
-            'iItem' : ('Товар: ' + item.innerHTML),
-            'iQuantity' : ('Количество: ' + counter.value),
-            'iPrice' : ('Цена за штуку: ' + price.innerHTML),
-        }
-
-        var txt = "Заказчик:\n";
+        var txt = "";
 
         for (i in clientInfo) {
-            txt += "\t" + clientInfo[i] + "\n";
+            txt += clientInfo[i] + "<br/>";
         }
 
-        txt += "Товар:\n";
+        txt += "Заказ:<ul>";
 
-        for (i in itemInfo) {
-            txt += "\t" + itemInfo[i] + "\n";
+        for (var i in localStorage) {
+            var listElems = JSON.parse(localStorage.getItem(i));
+            if (listElems != null) {
+                txt += "<li>"+listElems['model'];
+                txt += " - "+listElems['quantity']+" шт";
+                txt += " - "+listElems['price']+" грн</li>";
+            }
         }
 
-        txt += totalSum.innerHTML;
+        txt += "</ul><hr/>"+$('.totalSum').text();
 
         $('.info').css('visibility', 'hidden');
         $('.order-list').css('visibility', 'hidden');
         $('.submit-sum').css('visibility', 'hidden');
         $('.done').css('visibility', 'visible');
-        alert(txt);
         emailjs.init("user_8DoEkLvFtuq0IWPUxSCd5");
         emailjs.send("gmail","template_wcvY3Sye",{message_html: txt});
-    }  
+        localStorage.clear();
+    }
 }
