@@ -21,13 +21,8 @@ body {
 }
 .size {
 	width: 100vw;
-<<<<<<< HEAD
 	height: 100vh;
 	min-height: 768px;
-=======
-	height: 1080px;
-	min-height: 800px;
->>>>>>> master
 	text-align: center;
 }
 .conteiner-1200 {
@@ -277,13 +272,8 @@ body {
 }
 .lineyka {
 	position: relative;
-<<<<<<< HEAD
 	top: 330px;
 	left: 690px;
-=======
-	top: 400px;
-	left: 850px;
->>>>>>> master
 	width: 714px;
 	height: 163px;
 	background-image:  url("../img/main/social/lineyka.png");
