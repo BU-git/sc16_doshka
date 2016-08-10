@@ -58,6 +58,7 @@ body {
 }
 .val {
     font-size: 30px;
+    font-weight: bold;
     text-align: center;
     position: relative;
     -ms-transform: translateY(-5%);
