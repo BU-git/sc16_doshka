@@ -8,13 +8,23 @@ $(document).ready(function() {
         this.play();
     }, false);
     
-    $('#pButton').click(function() {
+    $('.play').click(function() {
         if (isPlaying) {
             audioElement.pause();
+            $('.play').css('background', 'url(../../src/img/sprite-item.png) no-repeat -119px -4px')
             isPlaying = false;
         } else{
             audioElement.play();
+            $('.play').css('background', 'url(../../src/img/sprite-item.png) no-repeat -70px -4px')
             isPlaying = true;
+        }
+    });
+
+    $('.close').click(function(){
+        if (isPlaying) {
+            audioElement.pause();
+            $('.play').css('background', 'url(../../src/img/sprite-item.png) no-repeat -119px -4px')
+            isPlaying = false;
         }
     });
 });

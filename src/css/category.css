@@ -360,7 +360,7 @@ body {
     margin: 20px 42px 20px 0px;
 }
 
-#audioplayer{
+.audioplayer{
     width: 495px;
     height: 58px;
     margin: 20px auto -17px;
@@ -368,13 +368,16 @@ body {
     border-bottom: solid #fff 1px;
 }
  
-#pButton{
+.play{
     background: url(../../src/img/sprite-item.png) no-repeat -119px -4px;
     height: 43px;
     width: 38px;
     border: none;
     float:left;
     margin: 7px 15px 0 0;
+}
+.play:hover {
+    cursor: pointer;
 }
 #timeline{
     width: 375px;
