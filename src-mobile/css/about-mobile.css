@@ -3,6 +3,8 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+@import url(https://fonts.googleapis.com/css?family=Jura&subset=latin,cyrillic-ext);
+
 body {
 	width: 100%px;
 	max-width: 640px;
@@ -30,18 +32,40 @@ body {
 	border-top: 3px solid #fff;
 	border-bottom: 3px solid #fff;
 }
+.point {
+	margin: auto;
+	width:10px;
+	height: 10px;
+	border: 6px solid white;
+	border-radius: 10px;
+}
+.point1 {
+	margin-top: 5px;
+}
+h6 {
+	margin-top: 6px;
+	line-height: 19px;
+	font-family: Jura, Arial;
+	font-size: 13px;
+	color: white;
+}
+.point2 {
+	margin-top: 3px;
+}
 ul {
 	list-style-type: none;
 }
 
 .doshkawoods {
-	width: 68px;
-	height: 68px;
-	background: url(../../src-mobile/img/main-sprite-mobile.png) no-repeat -340px 0px;
+	width: 88px;
+	height: 88px;
+	background-color: rgba(0,0,0,.7);
 	margin: auto;
-	margin-top:-19px;
-	
+	margin-top:-29px;
+	border: 3px solid white;
+	border-radius: 79px;
 }
+
 .logo {
 	width: 186px;
 	height: 171px;
