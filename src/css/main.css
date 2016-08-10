@@ -334,7 +334,9 @@ body {
 	color: #fefefe;
 	text-align: left;
 }
+.blockfull {
 
+}
 .overlayart {
     top: 0;
     right: 0;
@@ -355,6 +357,7 @@ body {
     left: 50%; 
     z-index: 1;
     top: 15%;
+    padding: 10px;
     position: fixed;
 /* внешняя тень */
     /*-webkit-box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
