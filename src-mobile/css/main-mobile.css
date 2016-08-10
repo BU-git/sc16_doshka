@@ -11,8 +11,9 @@ body {
 	margin: 0 auto;
 	font-family: arial, tahoma, verdana;
 	font-size: 11px;
-	background: url(../../src-mobile/img/background.png) no-repeat;
-	background-position: center -74px;
+	background: url(../../src-mobile/img/background.png) repeat-y;
+	background-size: 640px;
+	background-position: center -741px;
 }
 h1 {
 	visibility: hidden;

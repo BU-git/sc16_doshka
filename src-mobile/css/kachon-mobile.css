@@ -12,8 +12,9 @@ body {
 	min-height: 500px;
 	margin: 0 auto;
 	font-size: 11px;
-	background: url("../../src-mobile/img/background.png") repeat-y;
-	background-position: center -74px;
+	background: url(../../src-mobile/img/background.png) repeat-y;
+	background-size: 640px;
+	background-position: center -1083px;
 }
 
 .wrap {

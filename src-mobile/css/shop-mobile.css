@@ -24,8 +24,9 @@
 		margin: 0 auto;
 		font-family: arial, tahoma, verdana;
 		font-size: 11px;
-		background: url(../../src-mobile/img/background.png) no-repeat;
-		background-position: center -74px;
+		background: url(../../src-mobile/img/background.png) repeat-y;
+		background-size: 640px;
+		background-position: center -1083px;
 	}
 	.wrap {
 		margin: 0 auto;
@@ -111,12 +112,12 @@
 	.category {
 		margin: auto;
 		margin-top: 25px;
-		padding: 20px;
+		padding: 16px;
 		border: solid 2px white;
 		font-weight: bold;
 		text-transform: uppercase;
 		color: white;
-		width: 40%;
+		width: 50%;
 		text-align: center;
 		background: black;
 		opacity: .7;

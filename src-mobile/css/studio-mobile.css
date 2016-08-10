@@ -8,7 +8,8 @@ body {
 	font-family: arial, tahoma, verdana;
 	font-size: 11px;
 	background: url(../../src-mobile/img/background.png) repeat-y;
-	background-position: center -74px;
+	background-size: 640px;
+	background-position: center -575px;
 }
 .wrap {
 	min-width: 320px;
