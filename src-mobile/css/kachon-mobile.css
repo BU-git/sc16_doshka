@@ -59,15 +59,14 @@ h6 {
 	background-color: rgba(0,0,0,.7);
 	margin: auto;
 	margin-top:-29px;
-	border: 3px solid white;
+	border: 3px solid #FFFFFF;
 	border-radius: 79px;
 }
 
 .main {
 	width: 230px;
 	min-height: 250px;
-	background-color: #000;
-	opacity: .7;
+	background-color: rgba(0,0,0,.7);
 	border: 3px solid #FFFFFF;
 	margin: auto;
 	margin-top: 40px;
@@ -82,11 +81,14 @@ h1 {
 
 }
 .image {
-	background: url("../img/vp110/vp110-1-b.png");
 	width: 131px;
 	height: 165px;
 	margin: auto;
 	margin-top: 8px;
+}
+.imageVP-100 {
+	background: url("../img/vp100/vp100-1-b.png");
+	width: 123px;
 }
 .read {
 	width: 114px;
@@ -106,5 +108,20 @@ h1 {
 	color: white;
 	font-size: 29px;
 }
-
+.imageGS-50 {
+	background: url("../img/gs50/gs50-1-b.png");
+}
+.imageMC-30 {
+	background: url("../img/mc30/mc30-1-b.png");
+}
+.imagehl-100 {
+	background: url("../img/hl100/hl100-1-b.png");
+	width: 128px;
+}
+.imagevp-80 {
+	background: url("../img/vp80/vp80-1-b.png");
+}
+.imagevp-110 {
+	background: url("../img/vp110/vp110-1-b.png");
+}
 
