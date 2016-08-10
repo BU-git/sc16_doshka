@@ -73,6 +73,11 @@
 		border-bottom: 3px solid #fff;
 		text-align: center;
 	}
+	.center {
+		width: 320px;
+		margin: auto;
+
+	}
 	.circle {
 		float: left;
 		margin-top: -24px;
