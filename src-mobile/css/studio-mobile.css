@@ -7,7 +7,7 @@ body {
 	margin: 0 auto;
 	font-family: arial, tahoma, verdana;
 	font-size: 11px;
-	background: url(../../src-mobile/img/background.png) no-repeat;
+	background: url(../../src-mobile/img/background.png) repeat-y;
 	background-position: center -74px;
 }
 .wrap {
@@ -65,7 +65,7 @@ h6 {
 
 .block1 {
 	width: 187px; /*58%;*/
-	height: 248px;
+	min-height: 248px;
 	background: #1d120b;
 	opacity: 0.7;
 	border: #d9cbb9 3px solid;
@@ -101,7 +101,7 @@ h6 {
 }
 .block1 a {
 	display: block;
-	width: 71px; /*22%; */
+	width: 50px; /*22%; */
 	height: 14px;
 	border: #fefefe 1px solid;
 	font-family: Jura, Arial;
@@ -113,4 +113,9 @@ h6 {
 	text-decoration: none;
 	border-radius: 3px;
 	float: right;
+	margin-top: 5px;
+	padding: 2px;
+}
+.clearfix {
+	clear: right;
 }
