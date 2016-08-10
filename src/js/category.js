@@ -21,9 +21,19 @@ function numberWithCommas(x) {
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
 
+
 function showResult(totalSum) {
 	$('.total').text(numberWithCommas(totalSum));
-	$('.val').text(localStorage.length);
+	$('.val').text(function(){
+		var quantity = 0;
+		for (var i in localStorage) {
+			var listElems = JSON.parse(localStorage.getItem(i));
+			if (listElems != null) {
+				quantity += parseInt(listElems['quantity']);
+			}
+		}
+		return quantity;
+	});
 	$('.list li .remove').click(function(){
 		var totalSum = 0;
 		for (var i in localStorage) {
