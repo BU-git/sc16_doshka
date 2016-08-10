@@ -157,7 +157,7 @@ body {
 
 /*<<<<<<<<<<<<<<<<<<<<< TOP CENTRAL BLOCK >>>>>>>>>>>>>>>>>>>>>>*/
 .contact {
-	width: 240px;
+	width: 238px;
 	padding-top: 22px;
 	float: left;
 	cursor: pointer;
@@ -167,7 +167,7 @@ body {
 }
 
 .contacts-info {
-	width: 230px;
+	width: 220px;
 	height: 120px;
 	border: 2px solid #d9cbb9;
 	background: #1d120b;
