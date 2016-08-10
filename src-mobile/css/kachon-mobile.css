@@ -4,17 +4,17 @@
 	box-sizing: border-box;
 }
 
-@import url(https://fonts.googleapis.com/css?family=Jura&subset=latin,cyrillic-ext);
+@import url("https://fonts.googleapis.com/css?family=Jura&subset=latin,cyrillic-ext");
 
 body {
-	width: 100%px;
+	width: 100%;
 	max-width: 640px;
 	min-height: 500px;
 	margin: 0 auto;
 	font-size: 11px;
 	background: url(../../src-mobile/img/background.png) repeat-y;
 	background-size: 640px;
-	background-position: center -1083px;
+	background-position: center -1270px;
 }
 
 .wrap {
@@ -25,9 +25,11 @@ body {
 	width: 68px;
 	height: 51px;
 	background: url("../../src-mobile/img/m-sprite-studio.png") no-repeat 1px 0;
-	margin: 33px auto;
+	margin: 36px auto;
 }
-
+a {
+	text-decoration: none;
+}
 .string {
 	height: 36px;
 	background-color: #000;
@@ -46,10 +48,11 @@ body {
 	margin-top: 7px;
 }
 h6 {
-	margin-top: 12px;
+	margin-top: 13px;
 	line-height: 19px;
 	font-family: Jura, Arial;
-	font-size: 15px;
+	font-size: 22px;
+	color: white;
 }
 .point2 {
 	margin-top: 13px;
@@ -92,22 +95,22 @@ h1 {
 	width: 123px;
 }
 .read {
-	width: 114px;
-	height: 36px;
-	border: 3px solid white;
+	width: 90px;
+	height: 31px;
+	border: 1px solid white;
 	margin: 10px auto;
 	background-color: rgba(0,0,0,.7);
 	color: white;
-	font-size: 25px;
+	font-size: 14px;
 }
 .buy {
-	width: 154px;
-	height: 48px;
-	border: 3px solid white;
+	width: 127px;
+	height: 40px;
+	border: 2px solid white;
 	margin: 10px auto;
 	background-color: rgba(0,0,0,.7);
 	color: white;
-	font-size: 29px;
+	font-size: 23px;
 }
 .imageGS-50 {
 	background: url("../img/gs50/gs50-1-b.png");
