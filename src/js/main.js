@@ -1,4 +1,4 @@
-// mobile-recognier v1
+// mobile-recognier v2
 if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
     $(location).attr('href', 'index-mobile.html');
 }
@@ -24,9 +24,3 @@ function toDoshkaWoods() {
 function toCategory() {
 	document.getElementById('position').style.left = '-200vw';
 };
-
-
-function contactDisplay() {
-	document.getElementById('phones').style.display = 'table';
-	// alert ('work');
-}

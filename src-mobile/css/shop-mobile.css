@@ -3,9 +3,7 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-
 @import url(https://fonts.googleapis.com/css?family=Jura&subset=latin,cyrillic-ext);
-
 body {
 	width: 100%;
 	max-width: 640px;
@@ -13,8 +11,9 @@ body {
 	margin: 0 auto;
 	font-family: arial, tahoma, verdana;
 	font-size: 11px;
-	background: url(../../src-mobile/img/background.png) no-repeat;
-	background-position: center -74px;
+	background: url(../../src-mobile/img/background.png) repeat-y;
+	background-size: 640px;
+	background-position: center -1083px;
 }
 .wrap {
 	margin: 0 auto;
@@ -41,7 +40,6 @@ body {
 	width: 65px;
 	height: 48px;
 	background: url(../../src-mobile/img/shop-mobile-sprite.png) no-repeat 0 0;
-
 }
 .navigation ul {
 	list-style-type: none;
@@ -80,7 +78,6 @@ h6 {
 ul {
 	list-style-type: none;
 }
-
 .shop {
 	width: 88px;
 	height: 88px;
@@ -90,22 +87,20 @@ ul {
 	border: 3px solid white;
 	border-radius: 79px;
 }
-
 .center {
 	height: 86px;
 	margin: 0 auto;
 	text-align: center;
 }
-
 .category {
 	margin: auto;
 	margin-top: 25px;
-	padding: 20px;
+	padding: 16px;
 	border: solid 2px white;
 	font-weight: bold;
 	text-transform: uppercase;
 	color: white;
-	width: 40%;
+	width: 50%;
 	text-align: center;
 	background: black;
 	opacity: .7;

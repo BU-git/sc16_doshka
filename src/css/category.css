@@ -2,7 +2,9 @@
 
 body {
 	margin: 0;
-	background: url("../../src/img/category-background.png") round;
+	background: url("../../src/img/category-background.png") no-repeat;
+ /*   background-position: center;*/
+    background-size: 100% 100%;
 }
 .wrap {
 	padding-top: 10px;
@@ -58,6 +60,7 @@ body {
 }
 .val {
     font-size: 30px;
+    font-weight: bold;
     text-align: center;
     position: relative;
     -ms-transform: translateY(-5%);
@@ -360,7 +363,7 @@ body {
     margin: 20px 42px 20px 0px;
 }
 
-#audioplayer{
+.audioplayer{
     width: 495px;
     height: 58px;
     margin: 20px auto -17px;
@@ -368,13 +371,16 @@ body {
     border-bottom: solid #fff 1px;
 }
  
-#pButton{
+.play{
     background: url(../../src/img/sprite-item.png) no-repeat -119px -4px;
     height: 43px;
     width: 38px;
     border: none;
     float:left;
     margin: 7px 15px 0 0;
+}
+.play:hover {
+    cursor: pointer;
 }
 #timeline{
     width: 375px;
