@@ -118,7 +118,6 @@ body {
     font-weight: bold;
     font-size: 24px;
     margin-top: 78px;
-    visibility: hidden;
 }
 .category:hover{
 	transition: 1s;
@@ -130,7 +129,6 @@ body {
 .category:hover p {
 	transition: 1s;
     color: white;
-    visibility: visible;
 }
 .kahon, .shaker, .barchimes, .tambourine, .darbuka, .castanets {
 	background-size: 100% 100%;
@@ -181,9 +179,6 @@ body {
 	transform: scale(1.1);
 }
 
-.contact:hover .contacts-info {
-	display: block;
-}
 .contacts-info p{
 	color: white;
 	font-size: 14px;
