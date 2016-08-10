@@ -169,7 +169,7 @@ body {
 	transform: scale(1.1);
 }
 .contacts-info {
-	visibility: hidden;
+	display: none;
 	width: 214px;
 	height: 120px;
 	border: 2px solid #d9cbb9;
@@ -178,7 +178,7 @@ body {
 	margin-top: -2px;
 }
 .contact:hover .contacts-info {
-	visibility: visible;
+	display: block;
 }
 .contacts-info p{
 	color: white;
@@ -334,9 +334,7 @@ body {
 	color: #fefefe;
 	text-align: left;
 }
-.blockfull {
-	width: 694px;
-}
+
 .overlayart {
     top: 0;
     right: 0;
@@ -345,7 +343,7 @@ body {
     z-index: 0;
     display: none;
 /* фон затемнения */
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.9);
     position: fixed; /* фиксированное поцизионирование */
 }
 /* активируем слой затемнения */
@@ -354,9 +352,9 @@ body {
 }
 /* стили модального окна */
 .blockfull {
-    left: 62%; 
+    left: 50%; 
     z-index: 1;
-    top: 35%;
+    top: 15%;
     position: fixed;
 /* внешняя тень */
     /*-webkit-box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
@@ -379,12 +377,25 @@ body {
     -o-transform: translate(-50%, 0);
     transform: translate(-50%, 0);
 }
+.blockfull img {
+	margin-right: 10px;
+}
 
+
+.blockfull img,
 .block1 img {
 	float: left;
 	width: 282px;
 	height: 262px;
 	border: 4px solid #fefefe;
+}
+.blockfull h2 {
+	padding: 8px;
+	margin-left: 480px;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 25px;
+	width: 280px;
 }
 .block1 h2 {
 	padding: 8px;
@@ -397,8 +408,8 @@ body {
 	width: 280px;
 }
 .block1 p {
-	font-size: 29px;
-	line-height: 33px;
+	font-size: 22px;
+	line-height: 32px;
 	margin: 12px 0px 0px 312px;
 }
 .blockfull p {
