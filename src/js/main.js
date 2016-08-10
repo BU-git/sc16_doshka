@@ -1,5 +1,11 @@
-
-
+// mobile-recognier v2
+if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+    $(location).attr('href', 'index-mobile.html');
+}
+// mobile-recognier v2
+if(typeof window.orientation !== 'undefined'){
+	$(location).attr('href', 'index-mobile.html');
+}
 
 function toShop() {
 	document.getElementById('position').style.left = '0';
