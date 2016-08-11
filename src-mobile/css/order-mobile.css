@@ -26,18 +26,39 @@ h1, p, input {
 }
 
 input {
+	text-align: left;
+	position: relative;
+	display: block;
 	margin: auto;
+	margin-bottom: 10px;
 }
 
-.order-list, .info, .send {
+.order-list, .info {
 	margin: auto;
 	background-color: yellow;
-	opacity: 0.5;
 	padding: 10px;
-	width: 40%;
+	width: 100%;
 	border: solid black 2px;
 }
 
-.submit {
+.info {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.info p {
+	margin-bottom: 10px;
+}
+
+.totalPrice, .submit {
 	display: inline-block;
+}
+
+.totalPrice {
+	margin-left: 225px;
+}
+
+.submit {
+	float: right;
+	margin-right: 225px;
 }
