@@ -3,7 +3,7 @@ var popup1 = document.querySelector(".popup1");
 var scroll = document.querySelector(".main-wrap");
 var dark = document.querySelector(".dark")
 
-// var close = document.querySelector(".krestik");
+var close = document.querySelector(".krestik");
 
 block1.addEventListener("click", function(event) {
   event.preventDefault();
@@ -12,7 +12,9 @@ block1.addEventListener("click", function(event) {
   dark.classList.add("overall");
 });
 
-// close.addEventListener("click", function(event) {
-//   event.preventDefault();
-//   popup1.classList.remove("show");
-// });
+close.addEventListener("click", function(event) {
+  event.preventDefault();
+  popup1.classList.remove("show");
+  scroll.classList.remove("scroll");
+  dark.classList.remove("overall");
+});
