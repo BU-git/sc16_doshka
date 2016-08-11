@@ -95,8 +95,8 @@ ul {
 }
 .category {
 	margin: auto;
-	margin-top: 25px;
-	padding: 10px;
+	margin-top: 23px;
+	padding: 7px;
 	border: solid 2px white;
 	font-weight: bold;
 	font-size: 20px;
@@ -108,6 +108,10 @@ ul {
 	opacity: .7;
 	margin-bottom: 10px;
 }
+p {
+	margin: auto;
+}
+
 a {
 	text-decoration: none;
 }
