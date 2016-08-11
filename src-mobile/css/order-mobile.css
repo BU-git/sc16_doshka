@@ -1,0 +1,43 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+@import url(https://fonts.googleapis.com/css?family=Jura&subset=latin,cyrillic-ext);
+body {
+	width: 100%;
+	max-width: 640px;
+	height: 100vh;
+	margin: 0 auto;
+	font-family: Jura, Arial;
+	font-size: 11px;
+	background: url(../../src-mobile/img/background.png) repeat-y;
+	background-size: 640px;
+	background-position: center -741px;
+}
+.wrap {
+	margin: 0 auto;
+	width: 100%;
+	height: 560px;
+	padding-top: 11px;
+}
+h1, p, input {
+	text-align: center;
+}
+
+input {
+	margin: auto;
+}
+
+.order-list, .info, .send {
+	margin: auto;
+	background-color: yellow;
+	opacity: 0.5;
+	padding: 10px;
+	width: 40%;
+	border: solid black 2px;
+}
+
+.submit {
+	display: inline-block;
+}
