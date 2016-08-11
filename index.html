@@ -2,11 +2,17 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="src/css/main.css" media="all"/>
-        <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
-        <script src="src/js/main.js"></script>
-        <script src="src/js/jquery-1.4.4.min.js" ></script>
-		<script src="src/js/slides.min.jquery.js"></script>
+    	<link rel="stylesheet" href="src/css/main.css" media="all"/>
+        <script src="https://code.jquery.com/jquery-3.1.0.min.js" defer></script>
+        <script src="src/js/main.js" defer></script>
+        <script src="src/js/jquery-1.4.4.min.js"  defer></script>
+        <script src="https://cdn.emailjs.com/dist/email.min.js" defer></script>
+		<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.min.js" defer></script>
+		<script src="src/js/slides.min.jquery.js" defer></script>
+		<script src="src/js/basket.js" defer></script>
+		<script src="src/js/category.js" defer></script>
+		<script src="src/js/tooltipster.js" defer></script>
+		<script src="src/js/validate.js" defer></script>
         <title>DOSHKA WOODS</title>
     </head>
     <body>
@@ -28,7 +34,7 @@
 				    <div class="b-wrap">
 				        <div class="categories">
 				           <a class="class1" onclick="scroll()"><div class="category kahon"><p>кахон</p></div></a>
-				            <a href="#"><div class="category shaker"><p>шейкер</p></div></a>
+				            <a class="class2"><div class="category shaker"><p>шейкер</p></div></a>
 				            <a href="#"><div class="category barchimes"><p>барчаймс</p></div></a>
 				            <a href="#"><div class="category tambourine"><p>тамбурин</p></div></a>
 				            <a href="#"><div class="category darbuka"><p>дарбука</p></div></a>
@@ -36,9 +42,21 @@
 				        </div>
 				    </div>
 			    </div>
-			<div class="popup1">
+	<div class="popup1">
+		<div class="basket">
+			<div class="cart"></div>
+			<div class="amount"></div>
+			<div class="list">Кахон - Doshka vp-100</div>
+			<div class="hrn">5,290.00грн</div>
+		<div class="chosen">
+			<hr>
+			<div class="total">5,290.00 грн</div>
+			<a href="order.html" alt="form">Оформить</a>
+		</div>
+	</div>		
 		<div class="items">
 			<div class="title"></div>	
+			<div class="krestik"></div>
 			<a href="#win1" class="item first prime">
 				<div class="about">
 					<h2>Кахон - Doshka vp-100</h2>
@@ -131,11 +149,11 @@
 				<div class="left">
 					<div id="container">
 						<div id="products_example">
-							<div id="products">
+							<div id="products1">
 								<div class="slides_container">
-									<img src="src/img/vp100/vp100-1-b.png" alt="kahon vp100">
-									<img src="src/img/vp100/vp100-2-b.png" alt="kahon vp100">
-									<img src="src/img/vp100/vp100-3-b.png" alt="kahon vp100">
+									<img class="big" src="src/img/vp100/vp100-1-b.png" alt="kahon vp100">
+									<img class="big" src="src/img/vp100/vp100-2-b.png" alt="kahon vp100">
+									<img class="big" src="src/img/vp100/vp100-3-b.png" alt="kahon vp100">
 								</div>
 
 								<ul class="pagination">
@@ -189,7 +207,7 @@
 						<a href="https://photos.google.com/album/AF1QipPMI5Kq2bok1heGwnJeMGW-YIak8yb-p4pnXLho?hl=ru" class="gplus" alt="gplus"></a>
 					</div>
 					<div class="action">
-						<a href="category.html" class="basketadd">Добавить в корзину</a>
+						<a href="#close" class="basketadd">Добавить в корзину</a>
 						<a href="order.html" class="buy">Купить</a>
 					</div>	
 				</div>
@@ -201,10 +219,21 @@
 	<div class="popup">
 		<div class="wrap">
 			<div class="left">
-				<div class="gs50">
-					<img class="img1" src="src/img/gs50/gs50-1-b.png" alt="kahon-gs50">
-					<img class="img2" src="src/img/gs50/gs50-2-s.png" alt="kahon-gs50">
-					<img class="img3" src="src/img/gs50/gs50-3-s.png" alt="kahon-gs50">
+				<div id="container">
+					<div id="products_example">
+						<div id="products2">
+							<div class="slides_container">
+								<img class="big" src="src/img/gs50/gs50-1-b.png" alt="kahon gs50">
+								<img class="big" src="src/img/gs50/gs50-2-b.png" alt="kahon gs50">
+								<img class="big" src="src/img/gs50/gs50-3-b.png" alt="kahon gs50">
+							</div>
+							<ul class="pagination">
+								<li><a href="#"><img class="small-icon" src="src/img/gs50/gs50-1-S.png" alt="kahon gs50"></a></li>
+								<li><a href="#"><img class="small-icon" src="src/img/gs50/gs50-2-S.png" alt="kahon gs50"></a></li>
+								<li><a href="#"><img class="small-icon" src="src/img/gs50/gs50-3-S.png" alt="kahon gs50"></a></li>
+							</ul>
+						</div>
+					</div>
 				</div>
 				<hr class="lineleft">
 				<iframe src="https://www.youtube.com/embed/XghxVnubseA" frameborder="0" allowfullscreen></iframe>
@@ -248,7 +277,7 @@
 					<a href="https://photos.google.com/album/AF1QipPxvD7rrXdVrBysOBj2arckWz320WXx9VNosZPb?hl=ru" class="gplus" alt="gplus"></a>
 				</div>
 				<div class="action">
-					<a href="category.html" class="basketadd">Добавить в корзину</a>
+					<a href="#close" class="basketadd">Добавить в корзину</a>
 					<a href="order.html" class="buy">Купить</a>
 				</div>	
 			</div>
@@ -260,10 +289,21 @@
 	<div class="popup">
 		<div class="wrap">
 			<div class="left">
-				<div class="mc30">
-					<img class="img1" src="src/img/mc30/mc30-1-b.png" alt="kahon-mc30">
-					<img class="mc30" src="src/img/mc30/mc30-2-s.png" alt="kahon-mc30">
-					<img class="img3" src="src/img/mc30/mc30-3-s.png" alt="kahon-mc30">
+				<div id="container">
+					<div id="products_example">
+						<div id="products3">
+							<div class="slides_container">
+								<img class="big" src="src/img/mc30/mc30-1-b.png" alt="kahon mc30">
+								<img class="big" src="src/img/mc30/mc30-2-b.png" alt="kahon mc30">
+								<img class="big" src="src/img/mc30/mc30-3-b.png" alt="kahon mc30">
+							</div>
+							<ul class="pagination">
+								<li><a href="#"><img class="small-icon" src="src/img/mc30/mc30-1-S.png" alt="kahon mc30"></a></li>
+								<li><a href="#"><img class="small-icon" src="src/img/mc30/mc30-2-S.png" alt="kahon mc30"></a></li>
+								<li><a href="#"><img class="small-icon" src="src/img/mc30/mc30-3-S.png" alt="kahon mc30"></a></li>
+							</ul>
+						</div>
+					</div>
 				</div>
 				<hr class="lineleft">
 				<iframe src="https://www.youtube.com/embed/FGiTDHeHMc4" frameborder="0" allowfullscreen></iframe>
@@ -309,7 +349,7 @@
 					<a href="https://photos.google.com/album/AF1QipNvkehh5l39JJNvvHc1L8k1h0WAUBJB3dG7wDSp?hl=ru" class="gplus" alt="gplus"></a>
 				</div>
 				<div class="action">
-					<a href="category.html" class="basketadd">Добавить в корзину</a>
+					<a href="#close" class="basketadd">Добавить в корзину</a>
 					<a href="order.html" class="buy">Купить</a>
 				</div>	
 			</div>
@@ -321,10 +361,21 @@
 	<div class="popup">
 		<div class="wrap">
 			<div class="left">
-				<div class="hl100">
-					<img class="img1" src="src/img/hl100/hl100-1-b.png" alt="kahon-hl100">
-					<img class="hl100" src="src/img/hl100/hl100-2-s.png" alt="kahon-hl100">
-					<img class="img3" src="src/img/hl100/hl100-3-s.png" alt="kahon-hl100">
+				<div id="container">
+					<div id="products_example">
+						<div id="products4">
+							<div class="slides_container">
+								<img class="big" src="src/img/hl100/hl100-1-b.png" alt="kahon hl100">
+								<img class="big" src="src/img/hl100/hl100-2-b.png" alt="kahon hl100">
+								<img class="big" src="src/img/hl100/hl100-3-b.png" alt="kahon hl100">
+							</div>
+							<ul class="pagination">
+								<li><a href="#"><img class="small-icon" src="src/img/hl100/hl100-1-S.png" alt="kahon hl100"></a></li>
+								<li><a href="#"><img class="small-icon" src="src/img/hl100/hl100-2-S.png" alt="kahon hl100"></a></li>
+								<li><a href="#"><img class="small-icon" src="src/img/hl100/hl100-3-S.png" alt="kahon hl100"></a></li>
+							</ul>
+						</div>
+					</div>
 				</div>
 				<hr class="lineleft">
 				<iframe src="https://www.youtube.com/embed/ibxQNBeE1GI" frameborder="0" allowfullscreen></iframe>
@@ -371,7 +422,7 @@
 				</div>
 				<div class="action">
 					<a href="category.html" class="basketadd">Добавить в корзину</a>
-					<a href="order.html" class="buy">Купить</a>
+					<a href="#close" class="buy">Купить</a>
 				</div>	
 			</div>
 		</div>	
@@ -382,10 +433,21 @@
 	<div class="popup">
 		<div class="wrap">
 			<div class="left">
-				<div class="vp80">
-					<img class="img1" src="src/img/vp80/vp80-1-b.png" alt="kahon-vp80">
-					<img class="vp80" src="src/img/vp80/vp80-2-s.png" alt="kahon-vp80">
-					<img class="img3" src="src/img/vp80/vp80-3-s.png" alt="kahon-vp80">
+				<div id="container">
+					<div id="products_example">
+						<div id="products5">
+							<div class="slides_container">
+								<img class="big" src="src/img/vp80/vp80-1-b.png" alt="kahon vp80">
+								<img class="big" src="src/img/vp80/vp80-2-b.png" alt="kahon vp80">
+								<img class="big" src="src/img/vp80/vp80-3-b.png" alt="kahon vp80">
+							</div>
+							<ul class="pagination">
+								<li><a href="#"><img class="small-icon" src="src/img/vp80/vp80-1-S.png" alt="kahon vp80"></a></li>
+								<li><a href="#"><img class="small-icon" src="src/img/vp80/vp80-2-S.png" alt="kahon vp80"></a></li>
+								<li><a href="#"><img class="small-icon" src="src/img/vp80/vp80-3-S.png" alt="kahon vp80"></a></li>
+							</ul>
+						</div>
+					</div>
 				</div>
 				<hr class="lineleft">
 				<iframe src="https://www.youtube.com/embed/yIeKQXqCKis" frameborder="0" allowfullscreen></iframe>
@@ -430,7 +492,7 @@
 					<a href="https://photos.google.com/album/AF1QipO4WGkE_Q1XNC0_zoVa8UlcBlTcqeJgS0j-oMY4?hl=ru" class="gplus" alt="gplus"></a>
 				</div>	
 				<div class="action">
-					<a href="category.html" class="basketadd">Добавить в корзину</a>
+					<a href="#close" class="basketadd">Добавить в корзину</a>
 					<a href="order.html" class="buy">Купить</a>
 				</div>	
 			</div>
@@ -442,10 +504,21 @@
 	<div class="popup">
 		<div class="wrap">
 			<div class="left">
-				<div class="vp110">
-					<img class="img1" src="src/img/vp110/vp110-1-b.png" alt="kahon-vp110">
-					<img class="vp110" src="src/img/vp110/vp110-2-s.png" alt="kahon-vp110">
-					<img class="img3" src="src/img/vp110/vp110-3-s.png" alt="kahon-vp110">
+				<div id="container">
+					<div id="products_example">
+						<div id="products6">
+							<div class="slides_container">
+								<img class="big" src="src/img/vp110/vp110-1-b.png" alt="kahon vp110">
+								<img class="big" src="src/img/vp110/vp110-2-b.png" alt="kahon vp110">
+								<img class="big" src="src/img/vp110/vp110-3-b.png" alt="kahon vp110">
+							</div>
+							<ul class="pagination">
+								<li><a href="#"><img class="small-icon" src="src/img/vp110/vp110-1-S.png" alt="kahon vp110"></a></li>
+								<li><a href="#"><img class="small-icon" src="src/img/vp110/vp110-2-S.png" alt="kahon vp110"></a></li>
+								<li><a href="#"><img class="small-icon" src="src/img/vp110/vp110-3-S.png" alt="kahon vp110"></a></li>
+							</ul>
+						</div>
+					</div>
 				</div>
 				<hr class="lineleft">
 				<iframe src="https://www.youtube.com/embed/yIeKQXqCKis" frameborder="0" allowfullscreen></iframe>
@@ -489,15 +562,69 @@
 					<a href="https://photos.google.com/album/AF1QipOu8medyi8qPsU5C5o1ZH356e0dUpygs4wve7Qq?hl=ru" class="gplus" alt="gplus"></a>
 				</div>
 				<div class="action">
-					<a href="category.html" class="basketadd">Добавить в корзину</a>
+					<a href="#close" class="basketadd">Добавить в корзину</a>
 					<a href="order.html" class="buy">Купить</a>
 				</div>	
 			</div>
 		</div>
+		<a class="close" href="#close"></a>				
+
 		</div>	
-	<a class="close" href="#close"></a>				</div>	
+
+	</div>	
 	</div>
 	 
+<!--    Модальное окно - шейкеры -->
+	<div class="basket">
+		<div class="cart"></div>
+		<div class="amount"></div>
+		<div class="list">Кахон - Doshka vp-100</div>
+		<div class="hrn">5,290.00грн</div>
+		<div class="chosen">
+			<hr>
+			<div class="total">5,290.00 грн</div>
+			<a href="order.html" alt="form">Оформить</a>
+		</div>
+	</div>		
+		<div class="popup2">
+			<div class="items2">
+				<div class="title"></div>	
+				<div class="krestik2"></div>
+				<a href="#" class="item first prime">
+					<div class="about">
+						<h2>Кахон - Doshka vp-100</h2>
+						<ul>
+							<li>Размеры — 310/310/520мм</li>
+							<li>Кожаное сиденье</li>
+							<li>Цвет — каштан</li>
+							<li>Цвет тапы — дуб</li>
+							<li>Тип подзвучки - пружина</li>
+							<li>Вес - 4,5кг</li>
+						</ul>
+					</div>	
+					<div class="price">5290грн</div>
+				</a>
+				<a href="#win2" class="item second prime">
+					<div class="about">
+						<h2>Кахон - Doshka gs-50</h2>
+						<ul>
+							<li>Размеры — 310/310/520мм</li>
+							<li>Цвет — черный</li>
+							<li>Цвет тапы — ольха</li>
+							<li>Тип подзвучки — пружина</li>
+							<li>Настройка — внутренняя</li>
+							<li>Вес - 5,6кг</li>
+						</ul>
+					</div>	
+					<div class="price">5800грн</div>
+				</a>
+			</div>
+		</div>		
+
+
+
+
+
 			</div>
 	<!-- END TOP LEFT BLOCK -->
 
