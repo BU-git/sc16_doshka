@@ -24,6 +24,7 @@ body {
 .dark {
 	display: none;
 }
+
 .overall {
     background-color: rgba(0, 0, 0, 0.9);
     height: 100vh;
@@ -493,30 +494,34 @@ body {
 /*<<<<<<<<<<<<<<<<<<<<< END BOTTOM RIGHT BLOCK >>>>>>>>>>>>>>>>>>>>>>*/
 .popup1 {
 	display: none;
-/*	 -webkit-transform: translate(50%, 500%);
-    -ms-transform: translate(0, 500%);
-    -o-transform: translate(0, 500%);
-    transform: translate(0, 500%);
-    -webkit-transition: -webkit-transform 1s ease-out;
-    -moz-transition: -moz-transform 0.7s ease-out;
-    -o-transition: -o-transform 0.7s ease-out;
-    transition: transform 1s ease-out;*/
 }
 
 .show {
 	display: block;
-	left: 14%;
-    z-index: 1;
-    position: absolute;
-    top: 4%;
-/*    -webkit-transform: translate(0, 3%);
-    -ms-transform: translate(-0, 3%);
-    -o-transform: translate(0, 3%);
-    transform: translate(15%, -60%);
-*/
+	 z-index: 1;
+    position: relative;
+    top: -88%;
+}
+.krestik {
+	background: url(../img/shop-sprite.png) -383px -157px;
+    height: 56px;
+    width: 60px;
+	position: relative;
+	top: -170px;
+    left: 934px;
 }
 
-.krestik {
+.popup2 {
+	display: none;
+}
+
+.show2 {
+	display: block;
+	 z-index: 1;
+    position: relative;
+    top: -88%;
+}
+.krestik2 {
 	background: url(../img/shop-sprite.png) -383px -157px;
     height: 56px;
     width: 60px;
@@ -531,7 +536,7 @@ body {
 	margin: 0 auto;
 }
 .basket {
-	background: url("../../src/img/category.sprite.png") no-repeat -17px -174px;
+	background: url("../img/category.sprite.png") no-repeat -17px -174px;
 	width: 495px;
 	height: 270px;
 	position: fixed;
@@ -1027,6 +1032,17 @@ body {
     -ms-transform: rotate(360deg);
     -o-transform: rotate(360deg);
     transform: rotate(360deg);    
+}
+
+/*модальное для шейкеров*/
+
+.items2 {
+	width: 985px;
+	min-height: 390px;
+	background: url("../img/categoryonerow.png") no-repeat;
+	margin: 45px auto;
+	text-align: left;
+
 }
 
 /*слайдер товаров*/

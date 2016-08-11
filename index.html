@@ -2,11 +2,17 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="src/css/main.css" media="all"/>
-        <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
-        <script src="src/js/main.js"></script>
-        <script src="src/js/jquery-1.4.4.min.js" ></script>
-		<script src="src/js/slides.min.jquery.js"></script>
+    	<link rel="stylesheet" href="src/css/main.css" media="all"/>
+        <script src="https://code.jquery.com/jquery-3.1.0.min.js" defer></script>
+        <script src="src/js/main.js" defer></script>
+        <script src="src/js/jquery-1.4.4.min.js"  defer></script>
+        <script src="https://cdn.emailjs.com/dist/email.min.js" defer></script>
+		<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.min.js" defer></script>
+		<script src="src/js/slides.min.jquery.js" defer></script>
+		<script src="src/js/basket.js" defer></script>
+		<script src="src/js/category.js" defer></script>
+		<script src="src/js/tooltipster.js" defer></script>
+		<script src="src/js/validate.js" defer></script>
         <title>DOSHKA WOODS</title>
     </head>
     <body>
@@ -28,7 +34,7 @@
 				    <div class="b-wrap">
 				        <div class="categories">
 				           <a class="class1" onclick="scroll()"><div class="category kahon"><p>кахон</p></div></a>
-				            <a href="#"><div class="category shaker"><p>шейкер</p></div></a>
+				            <a class="class2"><div class="category shaker"><p>шейкер</p></div></a>
 				            <a href="#"><div class="category barchimes"><p>барчаймс</p></div></a>
 				            <a href="#"><div class="category tambourine"><p>тамбурин</p></div></a>
 				            <a href="#"><div class="category darbuka"><p>дарбука</p></div></a>
@@ -271,7 +277,7 @@
 					<a href="https://photos.google.com/album/AF1QipPxvD7rrXdVrBysOBj2arckWz320WXx9VNosZPb?hl=ru" class="gplus" alt="gplus"></a>
 				</div>
 				<div class="action">
-					<a href="category.html" class="basketadd">Добавить в корзину</a>
+					<a href="#close" class="basketadd">Добавить в корзину</a>
 					<a href="order.html" class="buy">Купить</a>
 				</div>	
 			</div>
@@ -343,7 +349,7 @@
 					<a href="https://photos.google.com/album/AF1QipNvkehh5l39JJNvvHc1L8k1h0WAUBJB3dG7wDSp?hl=ru" class="gplus" alt="gplus"></a>
 				</div>
 				<div class="action">
-					<a href="category.html" class="basketadd">Добавить в корзину</a>
+					<a href="#close" class="basketadd">Добавить в корзину</a>
 					<a href="order.html" class="buy">Купить</a>
 				</div>	
 			</div>
@@ -416,7 +422,7 @@
 				</div>
 				<div class="action">
 					<a href="category.html" class="basketadd">Добавить в корзину</a>
-					<a href="order.html" class="buy">Купить</a>
+					<a href="#close" class="buy">Купить</a>
 				</div>	
 			</div>
 		</div>	
@@ -486,7 +492,7 @@
 					<a href="https://photos.google.com/album/AF1QipO4WGkE_Q1XNC0_zoVa8UlcBlTcqeJgS0j-oMY4?hl=ru" class="gplus" alt="gplus"></a>
 				</div>	
 				<div class="action">
-					<a href="category.html" class="basketadd">Добавить в корзину</a>
+					<a href="#close" class="basketadd">Добавить в корзину</a>
 					<a href="order.html" class="buy">Купить</a>
 				</div>	
 			</div>
@@ -556,7 +562,7 @@
 					<a href="https://photos.google.com/album/AF1QipOu8medyi8qPsU5C5o1ZH356e0dUpygs4wve7Qq?hl=ru" class="gplus" alt="gplus"></a>
 				</div>
 				<div class="action">
-					<a href="category.html" class="basketadd">Добавить в корзину</a>
+					<a href="#close" class="basketadd">Добавить в корзину</a>
 					<a href="order.html" class="buy">Купить</a>
 				</div>	
 			</div>
@@ -568,6 +574,57 @@
 	</div>	
 	</div>
 	 
+<!--    Модальное окно - шейкеры -->
+	<div class="basket">
+		<div class="cart"></div>
+		<div class="amount"></div>
+		<div class="list">Кахон - Doshka vp-100</div>
+		<div class="hrn">5,290.00грн</div>
+		<div class="chosen">
+			<hr>
+			<div class="total">5,290.00 грн</div>
+			<a href="order.html" alt="form">Оформить</a>
+		</div>
+	</div>		
+		<div class="popup2">
+			<div class="items2">
+				<div class="title"></div>	
+				<div class="krestik2"></div>
+				<a href="#" class="item first prime">
+					<div class="about">
+						<h2>Кахон - Doshka vp-100</h2>
+						<ul>
+							<li>Размеры — 310/310/520мм</li>
+							<li>Кожаное сиденье</li>
+							<li>Цвет — каштан</li>
+							<li>Цвет тапы — дуб</li>
+							<li>Тип подзвучки - пружина</li>
+							<li>Вес - 4,5кг</li>
+						</ul>
+					</div>	
+					<div class="price">5290грн</div>
+				</a>
+				<a href="#win2" class="item second prime">
+					<div class="about">
+						<h2>Кахон - Doshka gs-50</h2>
+						<ul>
+							<li>Размеры — 310/310/520мм</li>
+							<li>Цвет — черный</li>
+							<li>Цвет тапы — ольха</li>
+							<li>Тип подзвучки — пружина</li>
+							<li>Настройка — внутренняя</li>
+							<li>Вес - 5,6кг</li>
+						</ul>
+					</div>	
+					<div class="price">5800грн</div>
+				</a>
+			</div>
+		</div>		
+
+
+
+
+
 			</div>
 	<!-- END TOP LEFT BLOCK -->
 

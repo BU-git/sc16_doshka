@@ -18,3 +18,20 @@ close.addEventListener("click", function(event) {
   scroll.classList.remove("scroll");
   dark.classList.remove("overall");
 });
+
+
+var block2 = document.querySelector(".class2");
+var popup2 = document.querySelector(".popup2");
+var close2 = document.querySelector(".krestik2");
+
+block2.addEventListener("click", function(event) {
+  event.preventDefault();
+  popup2.classList.add("show2");
+  dark.classList.add("overall");
+});
+
+close2.addEventListener("click", function(event) {
+  event.preventDefault();
+  popup2.classList.remove("show2");
+  dark.classList.remove("overall");
+});
