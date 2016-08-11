@@ -10,6 +10,21 @@ $('.basketadd').click(function(){
 		elem.quantity += listElems['quantity'];
 	}
 	localStorage.setItem(elem.model, JSON.stringify(elem));
+	if (localStorage.length > 0) {
+		$('.basket').css('visibility', 'visible');
+		var totalSum = 0;
+		for (var i in localStorage) {
+			var listElems = JSON.parse(localStorage.getItem(i));
+			if (listElems != null) {
+				var result = listElems['model']+" "+listElems['quantity']+"шт "+listElems['price']+" грн";
+				totalSum += parseInt(listElems['price'].replace(',','')) * parseInt(listElems['quantity']);
+				$('.basket .list').append('<li>'+result+'<i class="remove"></i></li>');
+			}
+		}
+		showResult(totalSum);
+	} else {
+		$('.basket').css('visibility', 'hidden');
+	}
 });
 
 $('.buy').click(function(){
@@ -25,3 +40,39 @@ $('.buy').click(function(){
 	}
 	localStorage.setItem(elem.model, JSON.stringify(elem));
 });
+
+function numberWithCommas(x) {
+    x = parseFloat(Math.round(x * 100) / 100).toFixed(2);
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
+
+function showResult(totalSum) {
+	$('.total').text(numberWithCommas(totalSum));
+	$('.val').text(function(){
+		var quantity = 0;
+		for (var i in localStorage) {
+			var listElems = JSON.parse(localStorage.getItem(i));
+			if (listElems != null) {
+				quantity += parseInt(listElems['quantity']);
+			}
+		}
+		return quantity;
+	});
+	$('.list li .remove').click(function(){
+		var totalSum = 0;
+		for (var i in localStorage) {
+			var listElems = JSON.parse(localStorage.getItem(i));
+			if (listElems != null && $(this).parent().text().indexOf(i) != -1) {
+				$(this).parent().remove();
+				localStorage.removeItem(i);
+			} else if (listElems != null) {
+				totalSum += parseInt(listElems['price'].replace(',','')) * parseInt(listElems['quantity']);
+			}
+		}
+		if (localStorage.length == 0) {
+			$('.basket').css('visibility', 'hidden');
+		}
+		showResult(totalSum);
+	});
+}
+
