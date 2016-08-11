@@ -5,11 +5,13 @@
         <link rel="stylesheet" href="src/css/main.css" media="all"/>
         <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
         <script src="src/js/main.js"></script>
+        <script src="src/js/jquery-1.4.4.min.js" ></script>
+		<script src="src/js/slides.min.jquery.js"></script>
         <title>DOSHKA WOODS</title>
     </head>
     <body>
 	    <div class="main-wrap" id="position">
-
+	    <div class="dark"></div>
 	<!-- TOP LEFT BLOCK -->
 			<div class="top-left size fl">
 				<div class="line">
@@ -25,7 +27,7 @@
 				<div class="conteiner-1200">
 				    <div class="b-wrap">
 				        <div class="categories">
-				            <a href="src/pages/category.html"><div class="category kahon"><p>кахон</p></div></a>
+				           <a class="class1" onclick="scroll()"><div class="category kahon"><p>кахон</p></div></a>
 				            <a href="#"><div class="category shaker"><p>шейкер</p></div></a>
 				            <a href="#"><div class="category barchimes"><p>барчаймс</p></div></a>
 				            <a href="#"><div class="category tambourine"><p>тамбурин</p></div></a>
@@ -34,6 +36,468 @@
 				        </div>
 				    </div>
 			    </div>
+			<div class="popup1">
+		<div class="items">
+			<div class="title"></div>	
+			<a href="#win1" class="item first prime">
+				<div class="about">
+					<h2>Кахон - Doshka vp-100</h2>
+					<ul>
+						<li>Размеры — 310/310/520мм</li>
+						<li>Кожаное сиденье</li>
+						<li>Цвет — каштан</li>
+						<li>Цвет тапы — дуб</li>
+						<li>Тип подзвучки - пружина</li>
+						<li>Вес - 4,5кг</li>
+					</ul>
+				</div>	
+				<div class="price">5290грн</div>
+			</a>
+			<a href="#win2" class="item second prime">
+				<div class="about">
+					<h2>Кахон - Doshka gs-50</h2>
+					<ul>
+						<li>Размеры — 310/310/520мм</li>
+						<li>Цвет — черный</li>
+						<li>Цвет тапы — ольха</li>
+						<li>Тип подзвучки — пружина</li>
+						<li>Настройка — внутренняя</li>
+						<li>Вес - 5,6кг</li>
+					</ul>
+				</div>	
+				<div class="price">5800грн</div>
+			</a>
+			<a href="#win3" class="item third">
+				<div class="about">
+					<h2>Кахон - Doshka mc-30</h2>
+					<ul>
+						<li>Размеры — 320/315/520мм</li>
+						<li>Кожаное сиденье</li>
+						<li>Цвет — дуб</li>
+						<li>Цвет тапы — каштан</li>
+						<li>Тип подзвучки - пружина</li>
+						<li>Вес - 5,6кг</li>
+					</ul>
+				</div>	
+				<div class="price">5940грн</div>
+			</a>
+			<a href="#win4" class="item fourth">
+				<div class="about">
+					<h2>Кахон - Doshka hl-100</h2>
+					<ul>
+						<li>Размеры — 320/315/520мм</li>
+						<li>Кожаное сиденье</li>
+						<li>Цвет — красное дерево</li>
+						<li>Цвет тапы — ольха</li>
+						<li>Тип подзвучки - пружина</li>
+						<li>Вес - 5,6кг</li>
+					</ul>
+				</div>	
+				<div class="price">5940грн</div>
+			</a>
+			<a href="#win5" class="item fifth">
+				<div class="about">
+					<h2>Кахон - Doshka vp-80</h2>
+					<ul>
+						<li>Размеры — 310/320/520мм</li>
+						<li>Кожаное сиденье</li>
+						<li>Цвет — бук</li>
+						<li>Цвет тапы — бук</li>
+						<li>Тип подзвучки - пружина</li>
+						<li>Вес - 5,5кг</li>
+					</ul>
+				</div>	
+				<div class="price">5400грн</div>
+			</a>
+			<a href="#win6" class="item sixth">
+				<div class="about">
+					<h2>Кахон - Doshka vp-110</h2>
+					<ul>
+						<li>Размеры — 310/320/520мм</li>
+						<li>Цвет — ольха</li>
+						<li>Цвет тапы — черно-коричневая</li>
+						<li>Тип подзвучки — пружина</li>
+						<li>Настройка — внутренняя</li>
+						<li>Вес - 5,6кг</li>
+					</ul>
+				</div>	
+				<div class="price">5075грн</div>
+			</a>
+
+<!-- Модальное окно №1 -->
+    <a href="#x" class="overlay" id="win1"></a>
+	    <div class="popup">
+			<div class="wrap">
+				<div class="left">
+					<div id="container">
+						<div id="products_example">
+							<div id="products">
+								<div class="slides_container">
+									<img src="src/img/vp100/vp100-1-b.png" alt="kahon vp100">
+									<img src="src/img/vp100/vp100-2-b.png" alt="kahon vp100">
+									<img src="src/img/vp100/vp100-3-b.png" alt="kahon vp100">
+								</div>
+
+								<ul class="pagination">
+									<li><a href="#"><img class="small-icon" src="src/img/vp100/vp100-1-S.png" alt="kahon vp100"></a></li>
+									<li><a href="#"><img class="small-icon" src="src/img/vp100/vp100-2-S.png" alt="kahon vp100"></a></li>
+									<li><a href="#"><img class="small-icon" src="src/img/vp100/vp100-3-S.png" alt="kahon vp100"></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<hr class="lineleft">
+					<iframe src="https://www.youtube.com/embed/yIeKQXqCKis" frameborder="0" allowfullscreen></iframe>
+				</div>
+				<div class="right">
+					<h1>Кахон - <span class="model">doshka vp-100</span></h1>	
+					<hr class="lineright">
+					<ul>
+						<li>Модель — VP-100</li>
+						<li>Размеры — 310/310/520мм</li>
+						<li>Резонаторное отверстие — 140мм</li>
+						<li>Кожаное сиденье</li>
+						<li>Цвет — каштан</li>
+						<li>Цвет тапы — дуб</li>
+						<li>Крепеж тапы — шестигранный болт 3мм</li>
+						<li>Тип подзвучки — пружина</li>
+						<li>Настройка — внутренняя</li>
+						<li>Ножки имеют войлочные накладки</li>
+						<li>Вес — 4,5кг</li>
+						<li>Гарантия — 12 месяцев</li>
+					</ul>
+					<div class="cost">5,290.00 грн</div>
+					<audio>
+						  <source src="../audio/kahon.ogg" type="audio/ogg" preload="auto" id="sound">
+						  <source src="../audio/kahon.mp3" type="audio/mpeg" preload="auto">
+						  Your browser does not support the audio element.
+					</audio> 
+					<div id="audioplayer">
+						<button id="pButton" class="play" onclick="playAudio()"></button>
+				    	<div id="timeline">
+				    		<div id="playhead"></div>
+				  		</div>
+					  	<div id="volume_control">
+					     	<!-- <input type="range" onchange="setVolume(this.value)" id="rngVolume" min="0" max="1" step="0.01" value="1"> -->
+				 	   		<button type="button"></button>
+				    	</div>
+					</div>
+					<div class="social">
+						<span>Отзывы о товаре</span>
+						<a href="https://www.facebook.com/doshkadrums/photos/?tab=album&album_id=1117171848295070" class="facebook" alt="facebook"></a>
+						<a href="https://vk.com/album-109936704_225854639" class="vk" alt="vk"></a>
+						<a href="https://photos.google.com/album/AF1QipPMI5Kq2bok1heGwnJeMGW-YIak8yb-p4pnXLho?hl=ru" class="gplus" alt="gplus"></a>
+					</div>
+					<div class="action">
+						<a href="category.html" class="basketadd">Добавить в корзину</a>
+						<a href="order.html" class="buy">Купить</a>
+					</div>	
+				</div>
+			</div>	
+			<a class="close" href="#close"></a>
+		</div>
+<!-- Модальное окно №2 -->
+	<a href="#x" class="overlay" id="win2"></a>
+	<div class="popup">
+		<div class="wrap">
+			<div class="left">
+				<div class="gs50">
+					<img class="img1" src="src/img/gs50/gs50-1-b.png" alt="kahon-gs50">
+					<img class="img2" src="src/img/gs50/gs50-2-s.png" alt="kahon-gs50">
+					<img class="img3" src="src/img/gs50/gs50-3-s.png" alt="kahon-gs50">
+				</div>
+				<hr class="lineleft">
+				<iframe src="https://www.youtube.com/embed/XghxVnubseA" frameborder="0" allowfullscreen></iframe>
+			</div>
+			<div class="right">
+				<h1>Кахон - <span class="model">doshka gs-50</span></h1>	
+				<hr class="lineright">
+				<ul>
+					<li>Модель — GS-50</li>
+					<li>Размеры — 310/310/520мм</li>
+					<li>Резонаторное отверстие — 140мм</li>
+					<li>Цвет — черный</li>
+					<li>Цвет тапы — ольха</li>
+					<li>Крепеж тапы — шестигранный болт 3мм</li>
+					<li>Тип подзвучки — пружина</li>
+					<li>Настройка — внутренняя</li>
+					<li>Ножки имеют войлочные накладки</li>
+					<li>Вес — 5,6кг</li>
+					<li>Гарантия — 12 месяцев</li>
+				</ul>
+				<div class="cost">5,800.00 грн</div>
+				<audio>
+					  <source src="../audio/kahon.ogg" type="audio/ogg" preload="auto" id="sound">
+					  <source src="../audio/kahon.mp3" type="audio/mpeg" preload="auto">
+					  Your browser does not support the audio element.
+				</audio> 
+				<div id="audioplayer">
+					<button id="pButton" class="play" onclick="playAudio()"></button>
+			    	<div id="timeline">
+			    		<div id="playhead"></div>
+			  		</div>
+				  	<div id="volume_control">
+				     	<!-- <input type="range" onchange="setVolume(this.value)" id="rngVolume" min="0" max="1" step="0.01" value="1"> -->
+				 	   <button type="button"></button>
+				    </div>
+				</div>
+				<div class="social">
+					<span>Отзывы о товаре</span>
+					<a href="https://www.facebook.com/doshkadrums/photos/?tab=album&album_id=1117173298294925" class="facebook" alt="facebook"></a>
+					<a href="https://vk.com/album-109936704_225854683" class="vk" alt="vk"></a>
+					<a href="https://photos.google.com/album/AF1QipPxvD7rrXdVrBysOBj2arckWz320WXx9VNosZPb?hl=ru" class="gplus" alt="gplus"></a>
+				</div>
+				<div class="action">
+					<a href="category.html" class="basketadd">Добавить в корзину</a>
+					<a href="order.html" class="buy">Купить</a>
+				</div>	
+			</div>
+		</div>	
+	<a class="close" href="#close"></a>					
+	</div>    
+<!-- Модальное окно №3 -->
+	<a href="#x" class="overlay" id="win3"></a>
+	<div class="popup">
+		<div class="wrap">
+			<div class="left">
+				<div class="mc30">
+					<img class="img1" src="src/img/mc30/mc30-1-b.png" alt="kahon-mc30">
+					<img class="mc30" src="src/img/mc30/mc30-2-s.png" alt="kahon-mc30">
+					<img class="img3" src="src/img/mc30/mc30-3-s.png" alt="kahon-mc30">
+				</div>
+				<hr class="lineleft">
+				<iframe src="https://www.youtube.com/embed/FGiTDHeHMc4" frameborder="0" allowfullscreen></iframe>
+			</div>
+			<div class="right">
+				<h1>Кахон - <span class="model">doshka mc-30</span></h1>	
+				<hr class="lineright">
+				<ul>
+					<li>Модель — MC-30</li>
+					<li>Размеры — 320/315/520мм</li>
+					<li>Резонаторное отверстие — 130мм</li>
+					<li>Кожаное сиденье</li>
+					<li>Эргономичные вырезы для ног</li>
+					<li>Цвет — дуб</li>
+					<li>Цвет тапы — каштан</li>
+					<li>Крепеж тапы — шестигранный болт 3мм</li>
+					<li>Тип подзвучки — пружина</li>
+					<li>Настройка — внутренняя</li>
+					<li>Ножки имеют войлочные накладки</li>
+					<li>Вес — 5,6кг</li>
+					<li>Гарантия — 12 месяцев</li>
+				</ul>
+				<div class="cost">5,940.00 грн</div>
+				<audio>
+					  <source src="../audio/kahon.ogg" type="audio/ogg" preload="auto" id="sound">
+					  <source src="../audio/kahon.mp3" type="audio/mpeg" preload="auto">
+					  Your browser does not support the audio element.
+				</audio> 
+				<div id="audioplayer">
+					<button id="pButton" class="play" onclick="playAudio()"></button>
+			    	<div id="timeline">
+			    		<div id="playhead"></div>
+			  		</div>
+				  	<div id="volume_control">
+				     	<!-- <input type="range" onchange="setVolume(this.value)" id="rngVolume" min="0" max="1" step="0.01" value="1"> -->
+				 	   <button type="button"></button>
+				    </div>
+				</div>
+				<div class="social">
+					<span>Отзывы о товаре</span>
+					<a href="https://www.facebook.com/doshkadrums/photos/?tab=album&album_id=1117164961629092" class="facebook" alt="facebook"></a>
+					<a href="https://vk.com/album-109936704_225854669" class="vk" alt="vk"></a>
+					<a href="https://photos.google.com/album/AF1QipNvkehh5l39JJNvvHc1L8k1h0WAUBJB3dG7wDSp?hl=ru" class="gplus" alt="gplus"></a>
+				</div>
+				<div class="action">
+					<a href="category.html" class="basketadd">Добавить в корзину</a>
+					<a href="order.html" class="buy">Купить</a>
+				</div>	
+			</div>
+		</div>	
+	<a class="close" href="#close"></a>					
+	</div>
+	<!-- Модальное окно №4 -->
+	<a href="#x" class="overlay" id="win4"></a>
+	<div class="popup">
+		<div class="wrap">
+			<div class="left">
+				<div class="hl100">
+					<img class="img1" src="src/img/hl100/hl100-1-b.png" alt="kahon-hl100">
+					<img class="hl100" src="src/img/hl100/hl100-2-s.png" alt="kahon-hl100">
+					<img class="img3" src="src/img/hl100/hl100-3-s.png" alt="kahon-hl100">
+				</div>
+				<hr class="lineleft">
+				<iframe src="https://www.youtube.com/embed/ibxQNBeE1GI" frameborder="0" allowfullscreen></iframe>
+			</div>
+			<div class="right">
+				<h1>Кахон - <span class="model">doshka hl-100</span></h1>	
+				<hr class="lineright">
+				<ul>
+					<li>Модель — HL-30</li>
+					<li>Размеры — 320/315/520мм</li>
+					<li>Резонаторное отверстие — 130мм</li>
+					<li>Кожаное сиденье</li>
+					<li>Эргономичные вырезы для ног</li>
+					<li>Цвет — красное дерево</li>
+					<li>Цвет тапы — ольха</li>
+					<li>Крепеж тапы — шестигранный болт 3мм</li>
+					<li>Тип подзвучки — пружина</li>
+					<li>Настройка — внутренняя</li>
+					<li>Ножки имеют войлочные накладки</li>
+					<li>Вес — 5,6кг</li>
+					<li>Гарантия — 12 месяцев</li>
+				</ul>
+				<div class="cost">5,940.00 грн</div>
+				<audio>
+					  <source src="../audio/kahon.ogg" type="audio/ogg" preload="auto" id="sound">
+					  <source src="../audio/kahon.mp3" type="audio/mpeg" preload="auto">
+					  Your browser does not support the audio element.
+				</audio> 
+				<div id="audioplayer">
+					<button id="pButton" class="play" onclick="playAudio()"></button>
+			    	<div id="timeline">
+			    		<div id="playhead"></div>
+			  		</div>
+				  	<div id="volume_control">
+				     	<!-- <input type="range" onchange="setVolume(this.value)" id="rngVolume" min="0" max="1" step="0.01" value="1"> -->
+				 	   <button type="button"></button>
+				    </div>
+				</div>
+				<div class="social">
+					<span>Отзывы о товаре</span>
+					<a href="https://www.facebook.com/doshkadrums/photos/?tab=album&album_id=1117171221628466" class="facebook" alt="facebook"></a>
+					<a href="https://vk.com/album-109936704_225854679" class="vk" alt="vk"></a>
+					<a href="https://photos.google.com/album/AF1QipO2PqC60IrIjZF31VzUHlfbZm91Kx4xz5WOsWAk?hl=ru" class="gplus" alt="gplus"></a>
+				</div>
+				<div class="action">
+					<a href="category.html" class="basketadd">Добавить в корзину</a>
+					<a href="order.html" class="buy">Купить</a>
+				</div>	
+			</div>
+		</div>	
+	<a class="close" href="#close"></a>					
+	</div>
+	<!-- Модальное окно №5 -->
+	<a href="#x" class="overlay" id="win5"></a>
+	<div class="popup">
+		<div class="wrap">
+			<div class="left">
+				<div class="vp80">
+					<img class="img1" src="src/img/vp80/vp80-1-b.png" alt="kahon-vp80">
+					<img class="vp80" src="src/img/vp80/vp80-2-s.png" alt="kahon-vp80">
+					<img class="img3" src="src/img/vp80/vp80-3-s.png" alt="kahon-vp80">
+				</div>
+				<hr class="lineleft">
+				<iframe src="https://www.youtube.com/embed/yIeKQXqCKis" frameborder="0" allowfullscreen></iframe>
+			</div>
+			<div class="right">
+				<h1>Кахон - <span class="model">doshka vp-80</span></h1>	
+				<hr class="lineright">
+				<ul>
+					<li>Модель — VP-80</li>
+					<li>Размеры — 310/320/520мм</li>
+					<li>Резонаторное отверстие — 130мм</li>
+					<li>Кожаное сиденье</li>
+					<li>Цвет — бук</li>
+					<li>Цвет тапы — бук</li>
+					<li>Крепеж тапы — шестигранный болт 3мм</li>
+					<li>Тип подзвучки — пружина</li>
+					<li>Настройка — внутренняя</li>
+					<li>Ножки имеют войлочные накладки</li>
+					<li>Вес — 5,5кг</li>
+					<li>Гарантия — 12 месяцев</li>
+				</ul>
+				<div class="cost">5,400.00 грн</div>
+				<audio>
+					  <source src="../audio/kahon.ogg" type="audio/ogg" preload="auto" id="sound">
+					  <source src="../audio/kahon.mp3" type="audio/mpeg" preload="auto">
+					  Your browser does not support the audio element.
+				</audio> 
+				<div id="audioplayer">
+					<button id="pButton" class="play" onclick="playAudio()"></button>
+			    	<div id="timeline">
+			    		<div id="playhead"></div>
+			  		</div>
+				  	<div id="volume_control">
+				     	<!-- <input type="range" onchange="setVolume(this.value)" id="rngVolume" min="0" max="1" step="0.01" value="1"> -->
+				 	   <button type="button"></button>
+				    </div>
+				</div>
+				<div class="social">
+					<span>Отзывы о товаре</span>
+					<a href="https://www.facebook.com/doshkadrums/photos/?tab=album&album_id=1117172454961676" class="facebook" alt="facebook"></a>
+					<a href="https://vk.com/album-109936704_225854649" class="vk" alt="vk"></a>
+					<a href="https://photos.google.com/album/AF1QipO4WGkE_Q1XNC0_zoVa8UlcBlTcqeJgS0j-oMY4?hl=ru" class="gplus" alt="gplus"></a>
+				</div>	
+				<div class="action">
+					<a href="category.html" class="basketadd">Добавить в корзину</a>
+					<a href="order.html" class="buy">Купить</a>
+				</div>	
+			</div>
+		</div>	
+	<a class="close" href="#close"></a>					
+	</div>
+	<!-- Модальное окно №6 -->
+	<a href="#x" class="overlay" id="win6"></a>
+	<div class="popup">
+		<div class="wrap">
+			<div class="left">
+				<div class="vp110">
+					<img class="img1" src="src/img/vp110/vp110-1-b.png" alt="kahon-vp110">
+					<img class="vp110" src="src/img/vp110/vp110-2-s.png" alt="kahon-vp110">
+					<img class="img3" src="src/img/vp110/vp110-3-s.png" alt="kahon-vp110">
+				</div>
+				<hr class="lineleft">
+				<iframe src="https://www.youtube.com/embed/yIeKQXqCKis" frameborder="0" allowfullscreen></iframe>
+			</div>
+			<div class="right">
+				<h1>Кахон - <span class="model">doshka vp-110</span></h1>	
+				<hr class="lineright">
+				<ul>
+					<li>Модель — VP-110</li>
+					<li>Размеры — 310/320/520мм</li>
+					<li>Резонаторное отверстие — боковое в форме удобной ручки</li>
+					<li>Цвет — ольха</li>
+					<li>Цвет тапы — чёрно-коричневая</li>
+					<li>Крепеж тапы — шестигранный болт 3мм</li>
+					<li>Тип подзвучки — пружина</li>
+					<li>Настройка — внутренняя</li>
+					<li>Ножки имеют войлочные накладки</li>
+					<li>Вес — 5,6кг</li>
+					<li>Гарантия — 12 месяцев</li>
+				</ul>
+				<div class="cost">5,075.00 грн</div>
+				<audio>
+					  <source src="../audio/kahon.ogg" type="audio/ogg" preload="auto" id="sound">
+					  <source src="../audio/kahon.mp3" type="audio/mpeg" preload="auto">
+					  Your browser does not support the audio element.
+				</audio> 
+				<div id="audioplayer">
+					<button id="pButton" class="play" onclick="playAudio()"></button>
+			    	<div id="timeline">
+			    		<div id="playhead"></div>
+			  		</div>
+				  	<div id="volume_control">
+				     	<!-- <input type="range" onchange="setVolume(this.value)" id="rngVolume" min="0" max="1" step="0.01" value="1"> -->
+				 	   <button type="button"></button>
+				    </div>
+				</div>
+				<div class="social">
+					<span>Отзывы о товаре</span>
+					<a href="https://www.facebook.com/doshkadrums/photos/?tab=album&album_id=1117172808294974" class="facebook" alt="facebook"></a>
+					<a href="https://vk.com/album-109936704_225854658" class="vk" alt="vk"></a>
+					<a href="https://photos.google.com/album/AF1QipOu8medyi8qPsU5C5o1ZH356e0dUpygs4wve7Qq?hl=ru" class="gplus" alt="gplus"></a>
+				</div>
+				<div class="action">
+					<a href="category.html" class="basketadd">Добавить в корзину</a>
+					<a href="order.html" class="buy">Купить</a>
+				</div>	
+			</div>
+		</div>
+		</div>	
+	<a class="close" href="#close"></a>				</div>	
+	</div>
+	 
 			</div>
 	<!-- END TOP LEFT BLOCK -->
 
@@ -149,6 +613,8 @@
 			</div>
 			<div class="clear"></div>
 		</div>
+		<script src="test.js"></script>
+
     </body>
 </html>
 
