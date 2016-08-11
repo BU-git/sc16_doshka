@@ -77,12 +77,4 @@ ul {
 	margin: auto;
 	margin-top: 100px;
 }
-.animation {
-	transition: all 0.2s ease-out;
-}
-.animation:hover {
-	transform: scale(1.1);
-}
-.animation:active {
-	transform: scale(1);
-}
+
