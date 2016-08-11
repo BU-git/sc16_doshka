@@ -15,6 +15,7 @@ body {
 	background: url(../../src-mobile/img/background.png) repeat-y;
 	background-size: 640px;
 	background-position: center -1270px;
+	color: #decabd;
 }
 
 .wrap {
@@ -51,7 +52,7 @@ h6 {
 	margin-top: 13px;
 	line-height: 19px;
 	font-family: Jura, Arial;
-	font-size: 22px;
+	font-size: 17px;
 	color: white;
 }
 .point2 {
@@ -71,9 +72,10 @@ h6 {
 	width: 230px;
 	min-height: 250px;
 	background-color: rgba(0,0,0,.7);
-	border: 3px solid #FFFFFF;
+	border: 3px solid #decabd;
 	margin: auto;
 	margin-top: 40px;
+	color: #decabd;
 }
 h1 {
 	font-family: Jura, Arial;
@@ -82,6 +84,7 @@ h1 {
 	display: table-cell;
 	vertical-align: middle;
 	padding-left: 10px;
+	color: #decabd;
 
 }
 .image {
@@ -97,19 +100,19 @@ h1 {
 .read {
 	width: 90px;
 	height: 31px;
-	border: 1px solid white;
+	border: 1px solid #decabd;
 	margin: 10px auto;
 	background-color: rgba(0,0,0,.7);
-	color: white;
+	color: #decabd;
 	font-size: 14px;
 }
 .buy {
 	width: 127px;
 	height: 40px;
-	border: 2px solid white;
+	border: 2px solid #decabd;
 	margin: 10px auto;
 	background-color: rgba(0,0,0,.7);
-	color: white;
+	color: #decabd;
 	font-size: 23px;
 }
 .imageGS-50 {
