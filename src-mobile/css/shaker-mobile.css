@@ -1,0 +1,119 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Jura&subset=latin,cyrillic-ext);
+
+body {
+	width: 100%px;
+	max-width: 640px;
+	min-height: 500px;
+	margin: 0 auto;
+	font-size: 11px;
+	background: url(../../src-mobile/img/background.png) repeat-y;
+	background-size: 640px;
+	background-position: center -1083px;
+	color: #decabd;
+}
+
+.wrap {
+	margin: 0 auto;
+	width: 100%;
+}
+.logo-top {
+	width: 68px;
+	height: 51px;
+	background: url("../../src-mobile/img/m-sprite-studio.png") no-repeat 1px 0;
+	margin: 33px auto;
+}
+a {
+	text-decoration: none;
+}
+.string {
+	height: 36px;
+	background-color: #000;
+	opacity: .7;
+	border-top: 3px solid #fff;
+	border-bottom: 3px solid #fff;
+}
+.point {
+	margin: auto;
+	width:10px;
+	height: 10px;
+	border: 6px solid #decabd;
+	border-radius: 10px;
+}
+.point1 {
+	margin-top: 7px;
+}
+h6 {
+	margin-top: 12px;
+	line-height: 19px;
+	font-family: Jura, Arial;
+	font-size: 16px;
+	color: #decabd;
+}
+.point2 {
+	margin-top: 13px;
+}
+.doshkawoods {
+	width: 88px;
+	height: 88px;
+	background-color: rgba(0,0,0,.7);
+	margin: auto;
+	margin-top:-29px;
+	border: 3px solid #decabd;
+	border-radius: 79px;
+}
+
+.main {
+	width: 230px;
+	min-height: 250px;
+	background-color: rgba(0,0,0,.7);
+	border: 3px solid #decabd;
+	margin: auto;
+	margin-top: 40px;
+	color: #decabd;
+}
+h1 {
+	font-family: Jura, Arial;
+	font-size: 25px;
+	height: 40px;
+	display: table-cell;
+	vertical-align: middle;
+	padding-left: 10px;
+	color: #decabd;
+}
+.image {
+	width: 154px;
+	height: 100px;
+	margin: 20px auto;
+}
+.imageSH-50 {
+	background: url("../img/sh50/sh50-2-b.png");
+}
+.read {
+	width: 90px;
+	height: 31px;
+	border: 1px solid #decabd;
+	margin: 10px auto;
+	background-color: rgba(0,0,0,.7);
+	color: #decabd;
+	font-size: 14px;
+}
+.buy {
+	width: 154px;
+	height: 48px;
+	border: 3px solid #decabd;
+	margin: 10px auto;
+	background-color: rgba(0,0,0,.7);
+	color: #decabd;
+	font-size: 29px;
+}
+.imageSH-60 {
+	background: url("../img/sh60/sh60-2-b.png");
+	width: 146px;
+}
+
