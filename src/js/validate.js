@@ -177,8 +177,8 @@ function sendInfo() {
         $('.order-list').css('visibility', 'hidden');
         $('.submit-sum').css('visibility', 'hidden');
         $('.done').css('visibility', 'visible');
-        // emailjs.init("user_8DoEkLvFtuq0IWPUxSCd5");
-        // emailjs.send("gmail","template_wcvY3Sye",{message_html: txt});
+        emailjs.init("user_8DoEkLvFtuq0IWPUxSCd5");
+        emailjs.send("gmail","template_wcvY3Sye",{message_html: txt});
         localStorage.clear();
     }
 }

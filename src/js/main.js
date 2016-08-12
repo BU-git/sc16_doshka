@@ -20,7 +20,18 @@ function toDoshkaWoods() {
 	document.getElementById('position').style.top = '-100vh';
 	document.getElementById('position').style.left = '-100vw';
 };
-
 function toCategory() {
 	document.getElementById('position').style.left = '-200vw';
 };
+$(function(){
+	$('#products1').slides({
+		preload: true,
+		preloadImage: 'img/loading.gif',
+		effect: 'slide, fade',
+		crossfade: true,
+		slideSpeed: 200,
+		fadeSpeed: 500,
+		generateNextPrev: true,
+		generatePagination: false
+	});
+});

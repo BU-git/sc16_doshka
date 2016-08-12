@@ -19,7 +19,15 @@ body {
 	width: 950px;
 	height: 681.5px;
 }
-
+.krestik {
+    display: block;
+    background: url(../img/shop-sprite.png) -383px -157px;
+    height: 56px;
+    width: 60px;
+    position: relative;
+	top: -12px;
+    left: 934px;
+}
 .logo-wrap {
 	width: 250px;
 	height: 100px;
@@ -71,7 +79,7 @@ body {
 	display: inline-block;
 	text-align: center;
 	float: left;
-	margin-top: 90px;
+	margin-top: 35px;
 	margin-left: 90px;
 	width: 310px;
 	height: 390px;
@@ -109,7 +117,7 @@ textarea {
 	text-align: center;
 	width: 400px;
 	height: 150px;
-	margin-top: 90px;
+	margin-top: 35px;
 	margin-left: 90px;
 	border: solid 4px black;
 	border-radius: 5px;

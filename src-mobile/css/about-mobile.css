@@ -23,7 +23,7 @@ body {
 	width: 68px;
 	height: 51px;
 	background: url("../../src-mobile/img/m-sprite-studio.png") no-repeat 1px 0;
-	margin: 33px auto;
+	margin: 36px auto;
 }
 
 .string {
@@ -53,6 +53,9 @@ h6 {
 .point2 {
 	margin-top: 3px;
 }
+a {
+	text-decoration: none;
+}
 ul {
 	list-style-type: none;
 }
@@ -74,3 +77,4 @@ ul {
 	margin: auto;
 	margin-top: 100px;
 }
+
