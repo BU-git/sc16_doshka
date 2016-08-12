@@ -113,7 +113,7 @@ ul {
 }
 
 .remove {
-	display: flex;
+	float: right;
 	width: 13px;
 	height: 13px;
 	background: url(https://cdn4.iconfinder.com/data/icons/32x32-free-design-icons/32/Delete.png);
