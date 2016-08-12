@@ -20,7 +20,6 @@ function toDoshkaWoods() {
 	document.getElementById('position').style.top = '-100vh';
 	document.getElementById('position').style.left = '-100vw';
 };
-
 function toCategory() {
 	document.getElementById('position').style.left = '-200vw';
 };
