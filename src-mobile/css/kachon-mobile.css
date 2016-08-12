@@ -15,7 +15,6 @@ body {
 	background: url(../../src-mobile/img/background.png) repeat-y;
 	background-size: 640px;
 	background-position: center -1270px;
-	color: #decabd;
 }
 
 .wrap {
@@ -81,11 +80,12 @@ h1 {
 	font-family: Jura, Arial;
 	font-size: 25px;
 	height: 40px;
-	display: table-cell;
-	vertical-align: middle;
-	padding-left: 10px;
+	padding: 6px;
 	color: #decabd;
-
+	margin: auto;
+}
+hr {
+	border-color: #decabd;
 }
 .image {
 	width: 131px;
