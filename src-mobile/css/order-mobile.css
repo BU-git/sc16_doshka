@@ -52,7 +52,7 @@ input {
 	margin-bottom: 10px;
 }
 .send {
-	margin-top: 300px;
+	margin-top: 30px;
 }
 .order-list, .info {
 	margin: auto;
@@ -83,11 +83,11 @@ input {
 input[type="textarea"] {
 	height: 125px;
 }
-.totalPrice, .submit {
+.totalSum, .submit {
 	display: inline-block;
 }
 
-.totalPrice {
+.totalSum {
 	font-size: 23px;
 	margin-top: 10px;
 }
@@ -101,4 +101,21 @@ input[type="textarea"] {
     line-height: 20px;
     text-transform: uppercase;
     padding: 4px 8px;
+}
+
+ul {
+	list-style: none;
+}
+
+.remove {
+	display: flex;
+	width: 13px;
+	height: 13px;
+	background: url(https://cdn4.iconfinder.com/data/icons/32x32-free-design-icons/32/Delete.png);
+	background-size: 100%;
+}
+
+.tel {
+	display: inline-block;
+	width: 225px;
 }

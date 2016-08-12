@@ -4,6 +4,11 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" type="text/css" href="../../src-mobile/css/order-mobile.css">
+   <script src="https://code.jquery.com/jquery-3.1.0.min.js" defer></script>
+   <script src="https://cdn.emailjs.com/dist/email.min.js" defer></script>
+   <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.min.js" defer></script>
+   <script src="../js/tooltipster.js" defer></script>
+   <script src="../js/validate.js" defer></script>
    <title>Корзина</title>
  </head>
  <body>
@@ -24,16 +29,16 @@
    		<div class="info">
    			<p>Платежная информация</p>
    			<form class="client-info">
-   				<input type="text" name="name" placeholder="Имя Фамилия*">
-   				<input type="text" name="tel" placeholder="Тел*">
+   				<input type="text" name="firstName" placeholder="Имя Фамилия*">
+   				+38<input type="text" name="tel" class="tel" maxlength="10" placeholder="Тел*">
    				<input type="text" name="email" placeholder="email*">
    				<input type="text" name="city" placeholder="Город*">
    				<p>Примечание к заказу:</p>
-   				<input type="textarea" name="">
+   				<input type="textarea" name="comment" class="comment">
 			</form>
    		</div>
    		<div class="send">
-   			<p class="totalPrice">ИТОГО</p>
+   			<p class="totalSum"></p>
    			<button class="submit" onclick="sendInfo()">Подтвердить<br/>заказ</button>
    		</div>
    </div>
