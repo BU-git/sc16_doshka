@@ -5,14 +5,12 @@
     	<link rel="stylesheet" href="src/css/main.css" media="all"/>
         <script src="https://code.jquery.com/jquery-3.1.0.min.js" defer></script>
         <script src="src/js/main.js" defer></script>
-        <script src="src/js/jquery-1.4.4.min.js"  defer></script>
         <script src="https://cdn.emailjs.com/dist/email.min.js" defer></script>
 		<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.min.js" defer></script>
 		<script src="src/js/slides.min.jquery.js" defer></script>
-		<script src="src/js/basket.js" defer></script>
-		<script src="src/js/category.js" defer></script>
-		<script src="src/js/tooltipster.js" defer></script>
-		<script src="src/js/validate.js" defer></script>
+		<script src="src/js/orderlogic.js" defer></script>
+		<!-- <script src="src/js/tooltipster.js" defer></script> -->
+		<!-- <script src="src/js/validate.js" defer></script> -->
         <title>DOSHKA WOODS</title>
     </head>
     <body>
@@ -45,13 +43,12 @@
 	<div class="popup1">
 		<div class="basket">
 			<div class="cart"></div>
-			<div class="amount"></div>
-			<div class="list">Кахон - Doshka vp-100</div>
-			<div class="hrn">5,290.00грн</div>
+			<div class="amount"><p class="val"></p></div>
+			<ul class="list"></ul>
 		<div class="chosen">
 			<hr>
-			<div class="total">5,290.00 грн</div>
-			<a href="order.html" alt="form">Оформить</a>
+			<div class="total"></div>
+			<a href="#order" alt="form">Оформить</a>
 		</div>
 	</div>		
 		<div class="items">
@@ -185,20 +182,8 @@
 						<li>Гарантия — 12 месяцев</li>
 					</ul>
 					<div class="cost">5,290.00 грн</div>
-					<audio>
-						  <source src="../audio/kahon.ogg" type="audio/ogg" preload="auto" id="sound">
-						  <source src="../audio/kahon.mp3" type="audio/mpeg" preload="auto">
-						  Your browser does not support the audio element.
-					</audio> 
 					<div id="audioplayer">
 						<button id="pButton" class="play" onclick="playAudio()"></button>
-				    	<div id="timeline">
-				    		<div id="playhead"></div>
-				  		</div>
-					  	<div id="volume_control">
-					     	<!-- <input type="range" onchange="setVolume(this.value)" id="rngVolume" min="0" max="1" step="0.01" value="1"> -->
-				 	   		<button type="button"></button>
-				    	</div>
 					</div>
 					<div class="social">
 						<span>Отзывы о товаре</span>
@@ -262,13 +247,6 @@
 				</audio> 
 				<div id="audioplayer">
 					<button id="pButton" class="play" onclick="playAudio()"></button>
-			    	<div id="timeline">
-			    		<div id="playhead"></div>
-			  		</div>
-				  	<div id="volume_control">
-				     	<!-- <input type="range" onchange="setVolume(this.value)" id="rngVolume" min="0" max="1" step="0.01" value="1"> -->
-				 	   <button type="button"></button>
-				    </div>
 				</div>
 				<div class="social">
 					<span>Отзывы о товаре</span>
@@ -327,20 +305,8 @@
 					<li>Гарантия — 12 месяцев</li>
 				</ul>
 				<div class="cost">5,940.00 грн</div>
-				<audio>
-					  <source src="../audio/kahon.ogg" type="audio/ogg" preload="auto" id="sound">
-					  <source src="../audio/kahon.mp3" type="audio/mpeg" preload="auto">
-					  Your browser does not support the audio element.
-				</audio> 
 				<div id="audioplayer">
 					<button id="pButton" class="play" onclick="playAudio()"></button>
-			    	<div id="timeline">
-			    		<div id="playhead"></div>
-			  		</div>
-				  	<div id="volume_control">
-				     	<!-- <input type="range" onchange="setVolume(this.value)" id="rngVolume" min="0" max="1" step="0.01" value="1"> -->
-				 	   <button type="button"></button>
-				    </div>
 				</div>
 				<div class="social">
 					<span>Отзывы о товаре</span>
@@ -399,20 +365,8 @@
 					<li>Гарантия — 12 месяцев</li>
 				</ul>
 				<div class="cost">5,940.00 грн</div>
-				<audio>
-					  <source src="../audio/kahon.ogg" type="audio/ogg" preload="auto" id="sound">
-					  <source src="../audio/kahon.mp3" type="audio/mpeg" preload="auto">
-					  Your browser does not support the audio element.
-				</audio> 
 				<div id="audioplayer">
 					<button id="pButton" class="play" onclick="playAudio()"></button>
-			    	<div id="timeline">
-			    		<div id="playhead"></div>
-			  		</div>
-				  	<div id="volume_control">
-				     	<!-- <input type="range" onchange="setVolume(this.value)" id="rngVolume" min="0" max="1" step="0.01" value="1"> -->
-				 	   <button type="button"></button>
-				    </div>
 				</div>
 				<div class="social">
 					<span>Отзывы о товаре</span>
@@ -470,20 +424,8 @@
 					<li>Гарантия — 12 месяцев</li>
 				</ul>
 				<div class="cost">5,400.00 грн</div>
-				<audio>
-					  <source src="../audio/kahon.ogg" type="audio/ogg" preload="auto" id="sound">
-					  <source src="../audio/kahon.mp3" type="audio/mpeg" preload="auto">
-					  Your browser does not support the audio element.
-				</audio> 
 				<div id="audioplayer">
 					<button id="pButton" class="play" onclick="playAudio()"></button>
-			    	<div id="timeline">
-			    		<div id="playhead"></div>
-			  		</div>
-				  	<div id="volume_control">
-				     	<!-- <input type="range" onchange="setVolume(this.value)" id="rngVolume" min="0" max="1" step="0.01" value="1"> -->
-				 	   <button type="button"></button>
-				    </div>
 				</div>
 				<div class="social">
 					<span>Отзывы о товаре</span>
@@ -540,20 +482,8 @@
 					<li>Гарантия — 12 месяцев</li>
 				</ul>
 				<div class="cost">5,075.00 грн</div>
-				<audio>
-					  <source src="../audio/kahon.ogg" type="audio/ogg" preload="auto" id="sound">
-					  <source src="../audio/kahon.mp3" type="audio/mpeg" preload="auto">
-					  Your browser does not support the audio element.
-				</audio> 
 				<div id="audioplayer">
 					<button id="pButton" class="play" onclick="playAudio()"></button>
-			    	<div id="timeline">
-			    		<div id="playhead"></div>
-			  		</div>
-				  	<div id="volume_control">
-				     	<!-- <input type="range" onchange="setVolume(this.value)" id="rngVolume" min="0" max="1" step="0.01" value="1"> -->
-				 	   <button type="button"></button>
-				    </div>
 				</div>
 				<div class="social">
 					<span>Отзывы о товаре</span>
