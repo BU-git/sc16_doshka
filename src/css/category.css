@@ -177,11 +177,20 @@ body {
     position: relative;
     top: -95px;
 }
+.krestik {
+    display: block;
+    background: url(../img/shop-sprite.png) -383px -157px;
+    height: 56px;
+    width: 60px;
+    position: relative;
+    top: -170px;
+    left: 934px;
+}
 .items {
 	width: 985px;
 	min-height: 990px;
 	background: url("../../src/img/items-bg.png") no-repeat;
-	margin: 45px auto;
+	margin: 130px auto;
 }
 .item {
 	vertical-align: top;
@@ -194,17 +203,23 @@ body {
 	margin-top: 108px;
 	border: solid 2px #000;
 	text-decoration: none;
+    padding-left: 12px;
 }
 .item:hover {
-	background: rgba(73,66,53,0.7);
+    background: rgba(73,66,53,0.7);
     transform: scale(1.01);
+    -webkit-box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
+    -moz-box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
+    -ms-box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
+    box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
+}
 }
 .about {
 	margin-top: 25px;
 	margin-left: 20px;
 }
 .prime {
-	margin-top: -92px;
+	margin-top: -147px;
 }
 .item h2 {
 	color: #fff;
@@ -276,15 +291,6 @@ body {
 	margin-right: 30px;
     text-align: right;
     margin-top: 10px;
-}
-.topbutton {
-	background: url("../../src/img/category.sprite.png") no-repeat -104px 0px;
-	width: 67px;
-	height: 90px;
-	position: fixed;
-	left: 23px;
-	bottom: 30px;
-	opacity: 0.7;
 }
 .popup .wrap {
     margin: 0;
@@ -364,11 +370,19 @@ body {
 }
 
 .audioplayer{
-    width: 495px;
-    height: 58px;
-    margin: 20px auto -17px;
-    border-top: solid #fff 1px;
-    border-bottom: solid #fff 1px;
+    width: 32px;
+    height: 44px;
+    padding: 14px 50px;
+    margin: -21px 15px 0 37px;
+    border: #fff 2px solid;
+    -webkit-box-shadow:  0 6px 12px rgba(0,0,0,0.2),0 6px 12px rgba(0,0,0,.3);
+    -moz-box-shadow:  0 6px 12px rgba(0,0,0,0.2),0 6px 12px rgba(0,0,0,.3);
+    -ms-box-shadow:  0 6px 12px rgba(0,0,0,0.2),0 6px 12px rgba(0,0,0,.3);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2),0 6px 12px rgba(0,0,0,.3);
+}
+.audioplayer:hover {
+    opacity: 0.8;
+    transform: scale(1.02);
 }
  
 .play{
@@ -376,8 +390,6 @@ body {
     height: 43px;
     width: 38px;
     border: none;
-    float:left;
-    margin: 7px 15px 0 0;
 }
 .play:hover {
     cursor: pointer;
@@ -391,34 +403,11 @@ body {
     background-color: #000;
     position: relative;
 }
- 
-#playhead{
-    width: 18px;
-    height: 18px;
-    border-radius: 50%;
-    margin-top: -6px;
-    background: #fff;
-}
- 
-/*#volume_control{
-    float: right;
-    margin-top: -110px;
-}
-#rngVolume{
-    margin-right: -87px;
-    -webkit-appearance: slider-vertical;
-}*/
-#volume_control button {
-    background: url(../../src/img/vol-i.png) no-repeat;
-    height: 48px;
-    width: 48px;
-    border: none;
-    margin: 4px 0 0 19px;
-}
+
 .popup .social {
     display: flex;
     align-items: center;
-    margin-top: 35px;
+    margin: -20px 0 0 155px;
 }
 .popup .social span {
     font-size: 17px;
@@ -445,8 +434,8 @@ body {
     background: url(../../src/img/sprite-item.png) no-repeat -324px -7px;
 }
 .popup .action {
-    position: fixed;
-    bottom: 330px;
+    position: relative;
+    bottom: -50px;
 }
 .popup .basketadd, 
 .popup .buy {
@@ -459,17 +448,21 @@ body {
     text-decoration: none;
     display: inline-block;
     vertical-align: top;
+   -webkit-box-shadow:  0 6px 12px rgba(0,0,0,0.2),0 6px 12px rgba(0,0,0,.3);
+    -moz-box-shadow:  0 6px 12px rgba(0,0,0,0.2),0 6px 12px rgba(0,0,0,.3);
+    -ms-box-shadow:  0 6px 12px rgba(0,0,0,0.2),0 6px 12px rgba(0,0,0,.3);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2),0 6px 12px rgba(0,0,0,.3);
 }
 .popup .basketadd:hover, 
 .popup .buy:hover {
     opacity: 0.8;
-    transform: scale(1.01);
+    transform: scale(1.02);
 }
 .popup .basketadd {
     width: 230px;
     height: 19px;
     font-size: 21px;
-    margin-left: 50px;
+    margin-left: 35px;
     margin-right: 20px;
     padding: 14px 0;
 }
