@@ -43,18 +43,18 @@ $(document).ready(function () {
         },
         messages:{
             firstName:{
-                required: 'Это поле обязательно для заполнения',
+                required: ' ',
             },
             tel:{
-                required: "Это поле обязательно для заполнения",
-                minlength: "Укажите верный номер",
+                required: " ",
+                minlength: " ",
             },
             email:{
-                required: "Это поле обязательно для заполнения",
-                email: "Введите верный email",
+                required: " ",
+                email: " ",
             },
             city:{
-                required: "Это поле обязательно для заполнения",
+                required: " ",
             },
         },
     });
@@ -64,9 +64,9 @@ $(document).ready(function () {
 calculateResult();
 showInfo();
 
-if (localStorage.length == 0) {
-    $(location).attr('href', 'category.html');
-}
+// if (localStorage.length == 0) {
+//     $(location).attr('href', 'category.html');
+// }
 
 $('.submit').hover(
   function() {
@@ -109,7 +109,7 @@ function showInfo(){
 }
 
 function calculateResult(totalSum) {
-    $('.totalSum').text('ИТОГО ' + numberWithCommas(totalSum) + " грн");
+    $('.totalSum').text(numberWithCommas(totalSum));
     $('.val').text(localStorage.length);
     $('ul li .remove').click(function(){
         var totalSum = 0;
@@ -123,7 +123,7 @@ function calculateResult(totalSum) {
             }
         }
         if (localStorage.length == 0) {
-            $(location).attr('href', 'category.html');
+            $(location).attr('href', 'shop-mobile.html');
         }
         calculateResult(totalSum);
     });
@@ -147,11 +147,11 @@ function sendInfo() {
     if (form.valid() == true) {
 
         var clientInfo = {
-            'cFirstName' : ('Имя: ' + firstName.value),
-            'cTel' : ('Тел: ' + tel.value),
-            'cEmail' : ('email: ' + email.value),
-            'cCity' : ('Город: ' + city.value),
-            'cComment' : ('Примечание к заказу: ' + comment.value),
+            'cFirstName' : ('Имя: ' + $('.firstName').value),
+            'cTel' : ('Тел: ' + $('.tel').value),
+            'cEmail' : ('email: ' + $('.email').value),
+            'cCity' : ('Город: ' + $('.city').value),
+            'cComment' : ('Примечание к заказу: ' + $('.comment').value),
         }
 
         var txt = "";
@@ -172,13 +172,9 @@ function sendInfo() {
         }
 
         txt += "</ul><hr/>"+$('.totalSum').text();
-
-        $('.info').css('visibility', 'hidden');
-        $('.order-list').css('visibility', 'hidden');
-        $('.submit-sum').css('visibility', 'hidden');
-        $('.done').css('visibility', 'visible');
         emailjs.init("user_8DoEkLvFtuq0IWPUxSCd5");
         emailjs.send("gmail","template_wcvY3Sye",{message_html: txt});
         localStorage.clear();
+        $(location).attr('href', '../../index-mobile.html');
     }
 }
