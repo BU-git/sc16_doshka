@@ -122,12 +122,13 @@ header h1 {
     margin: 15px auto;
 }
 #pButton{
-    background: url(../img/sprite-mob-item.png) no-repeat 0px 0px;
-    height: 32px;
-    width: 27px;
+    background: url(../../src/img/sprite-item.png) no-repeat -119px -4px;
+    height: 42px;
+    width: 42px;
     border: none;
     float: left;
-    margin-right: 10px;
+    margin-right: 50%;
+    margin-left: calc(50% - 21px);
 }
 #timeline{
     width: 220px;
