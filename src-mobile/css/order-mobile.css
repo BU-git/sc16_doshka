@@ -60,13 +60,15 @@ input {
 .order-list, .info {
 	margin: auto;
 	padding: 5px;
-	height: 100px;
+	min-height: 100px;
 	border: solid black 3px;
 	font-size: 13px;
 	font-family: Jura, Arial;
 	border-radius: 8px;
 }
-
+li {
+	margin-bottom: 5px;
+}
 .info {
 	margin-top: 15px;
 	margin-bottom: 15px;
